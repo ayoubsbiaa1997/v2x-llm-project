@@ -1,0 +1,4 @@
+{
+  "decision": "HANDOVER_NOW",
+  "explanation": "Network congestion is critical and handover risk is high.\u001b[5D\u001b[K\nhigh. UE speed indicates potential movement into a dense area, so immediate\u001b[9D\u001b[K\nimmediate handover is needed to prevent critical QoS degradation."
+}

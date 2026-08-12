@@ -1,0 +1,93 @@
+[0/2] Re-checking globbed directories...
+ninja: no work to do.
+[0/2] Re-checking globbed directories...
+ninja: no work to do.
+HANDOVER_START 0.300001 IMSI=6 FROM=4 RNTI=1 TO=1
+HANDOVER_START 0.300001 IMSI=10 FROM=3 RNTI=2 TO=1
+HANDOVER_START 0.300001 IMSI=9 FROM=2 RNTI=4 TO=1
+HANDOVER_START 0.300001 IMSI=7 FROM=4 RNTI=2 TO=1
+HANDOVER_START 0.300001 IMSI=5 FROM=3 RNTI=1 TO=1
+HANDOVER_START 0.300002 IMSI=11 FROM=4 RNTI=4 TO=1
+HANDOVER_SUCCESS 0.300254 IMSI=10 CELL=1 RNTI=2 DELAY_MS=0.253
+HANDOVER_SUCCESS 0.300 IMSI=6 CELL=1 RNTI=1 DELAY_MS=0.253
+HANDOVER_SUCCESS 0.300 IMSI=9 CELL=1 RNTI=3 DELAY_MS=0.316
+HANDOVER_SUCCESS 0.301 IMSI=5 CELL=1 RNTI=5 DELAY_MS=0.816
+HANDOVER_SUCCESS 0.301 IMSI=7 CELL=1 RNTI=4 DELAY_MS=0.816
+HANDOVER_SUCCESS 0.301 IMSI=11 CELL=1 RNTI=6 DELAY_MS=1.378
+HANDOVER_START 0.700 IMSI=4 FROM=2 RNTI=1 TO=3
+HANDOVER_START 0.700 IMSI=6 FROM=1 RNTI=1 TO=3
+HANDOVER_START 0.700 IMSI=9 FROM=1 RNTI=3 TO=4
+HANDOVER_START 0.700 IMSI=8 FROM=2 RNTI=2 TO=3
+HANDOVER_START 0.700 IMSI=10 FROM=1 RNTI=2 TO=3
+HANDOVER_START 0.700 IMSI=5 FROM=1 RNTI=5 TO=3
+HANDOVER_START 0.700 IMSI=7 FROM=1 RNTI=4 TO=3
+HANDOVER_START 0.700 IMSI=11 FROM=1 RNTI=6 TO=3
+HANDOVER_SUCCESS 0.700 IMSI=6 CELL=3 RNTI=4 DELAY_MS=0.253
+HANDOVER_SUCCESS 0.700 IMSI=4 CELL=3 RNTI=3 DELAY_MS=0.253
+HANDOVER_SUCCESS 0.700 IMSI=9 CELL=4 RNTI=5 DELAY_MS=0.253
+HANDOVER_SUCCESS 0.701 IMSI=8 CELL=3 RNTI=5 DELAY_MS=0.816
+HANDOVER_SUCCESS 0.701 IMSI=10 CELL=3 RNTI=6 DELAY_MS=1.378
+HANDOVER_SUCCESS 0.701 IMSI=5 CELL=3 RNTI=7 DELAY_MS=1.378
+HANDOVER_SUCCESS 0.702 IMSI=7 CELL=3 RNTI=8 DELAY_MS=1.940
+HANDOVER_SUCCESS 0.702 IMSI=11 CELL=3 RNTI=9 DELAY_MS=1.940
+HANDOVER_START 0.900 IMSI=9 FROM=4 RNTI=5 TO=3
+HANDOVER_SUCCESS 0.900 IMSI=9 CELL=3 RNTI=10 DELAY_MS=0.253
+HANDOVER_START 2.124 IMSI=4 FROM=3 RNTI=3 TO=1
+HANDOVER_START 2.124 IMSI=8 FROM=3 RNTI=5 TO=2
+HANDOVER_START 2.124 IMSI=6 FROM=3 RNTI=4 TO=1
+HANDOVER_START 2.124 IMSI=5 FROM=3 RNTI=7 TO=2
+HANDOVER_START 2.124 IMSI=10 FROM=3 RNTI=6 TO=1
+HANDOVER_START 2.124 IMSI=7 FROM=3 RNTI=8 TO=1
+HANDOVER_START 2.124 IMSI=9 FROM=3 RNTI=10 TO=1
+HANDOVER_START 2.124 IMSI=11 FROM=3 RNTI=9 TO=1
+HANDOVER_SUCCESS 2.124 IMSI=4 CELL=1 RNTI=7 DELAY_MS=0.253
+HANDOVER_SUCCESS 2.124 IMSI=6 CELL=1 RNTI=8 DELAY_MS=0.253
+HANDOVER_SUCCESS 2.124 IMSI=8 CELL=2 RNTI=5 DELAY_MS=0.253
+HANDOVER_SUCCESS 2.124 IMSI=5 CELL=2 RNTI=6 DELAY_MS=0.253
+HANDOVER_SUCCESS 2.125 IMSI=10 CELL=1 RNTI=9 DELAY_MS=0.815
+HANDOVER_SUCCESS 2.125 IMSI=7 CELL=1 RNTI=10 DELAY_MS=0.815
+HANDOVER_SUCCESS 2.125 IMSI=9 CELL=1 RNTI=11 DELAY_MS=1.378
+HANDOVER_SUCCESS 2.126 IMSI=11 CELL=1 RNTI=12 DELAY_MS=1.940
+msg="Removing incomplete header.", +3.168742855s 4 file=/home/ayoub/ns-3-dev/src/network/model/packet-metadata.cc, line=691
+NS_FATAL, terminating
+   0# ns3::PacketMetadata::RemoveHeader(ns3::Header const&, unsigned int) at /home/ayoub/ns-3-dev/src/network/model/packet-metadata.cc:691
+   1# ns3::Packet::RemoveHeader(ns3::Header&) at /home/ayoub/ns-3-dev/src/network/model/packet.cc:289
+   2# ns3::Ipv4L3Protocol::Receive(ns3::Ptr<ns3::NetDevice>, ns3::Ptr<ns3::Packet const>, unsigned short, ns3::Address const&, ns3::Address const&, ns3::NetDevice::PacketType) at /home/ayoub/ns-3-dev/src/internet/model/ipv4-l3-protocol.cc:590
+   3# std::_Function_handler<void (ns3::Ipv4L3Protocol*, ns3::Ptr<ns3::NetDevice>, ns3::Ptr<ns3::Packet const>, unsigned short, ns3::Address const&, ns3::Address const&, ns3::NetDevice::PacketType), void (ns3::Ipv4L3Protocol::*)(ns3::Ptr<ns3::NetDevice>, ns3::Ptr<ns3::Packet const>, unsigned short, ns3::Address const&, ns3::Address const&, ns3::NetDevice::PacketType)>::_M_invoke(std::_Any_data const&, ns3::Ipv4L3Protocol*&&, ns3::Ptr<ns3::NetDevice>&&, ns3::Ptr<ns3::Packet const>&&, unsigned short&&, ns3::Address const&, ns3::Address const&, ns3::NetDevice::PacketType&&) at :0
+   4# std::_Function_handler<void (ns3::Ptr<ns3::NetDevice>, ns3::Ptr<ns3::Packet const>, unsigned short, ns3::Address const&, ns3::Address const&, ns3::NetDevice::PacketType), ns3::Callback<void, ns3::Ptr<ns3::NetDevice>, ns3::Ptr<ns3::Packet const>, unsigned short, ns3::Address const&, ns3::Address const&, ns3::NetDevice::PacketType>::Callback<void (ns3::Ipv4L3Protocol::*)(ns3::Ptr<ns3::NetDevice>, ns3::Ptr<ns3::Packet const>, unsigned short, ns3::Address const&, ns3::Address const&, ns3::NetDevice::PacketType), ns3::Ipv4L3Protocol*, 0>(void (ns3::Ipv4L3Protocol::*)(ns3::Ptr<ns3::NetDevice>, ns3::Ptr<ns3::Packet const>, unsigned short, ns3::Address const&, ns3::Address const&, ns3::NetDevice::PacketType), ns3::Ipv4L3Protocol*)::{lambda((auto:1&&)...)#1}>::_M_invoke(std::_Any_data const&, ns3::Ptr<ns3::NetDevice>&&, ns3::Ptr<ns3::Packet const>&&, unsigned short&&, ns3::Address const&, ns3::Address const&, ns3::NetDevice::PacketType&&) at :0
+   5# std::function<void (ns3::Ptr<ns3::NetDevice>, ns3::Ptr<ns3::Packet const>, unsigned short, ns3::Address const&, ns3::Address const&, ns3::NetDevice::PacketType)>::operator()(ns3::Ptr<ns3::NetDevice>, ns3::Ptr<ns3::Packet const>, unsigned short, ns3::Address const&, ns3::Address const&, ns3::NetDevice::PacketType) const at /usr/include/c++/13/bits/std_function.h:591
+   6# void std::__invoke_impl<void, void (ns3::TrafficControlLayer::*&)(ns3::Ptr<ns3::NetDevice>, ns3::Ptr<ns3::Packet const>, unsigned short, ns3::Address const&, ns3::Address const&, ns3::NetDevice::PacketType), ns3::Ptr<ns3::TrafficControlLayer>, ns3::Ptr<ns3::NetDevice>, ns3::Ptr<ns3::Packet const>, unsigned short, ns3::Address const&, ns3::Address const&, ns3::NetDevice::PacketType>(std::__invoke_memfun_deref, void (ns3::TrafficControlLayer::*&)(ns3::Ptr<ns3::NetDevice>, ns3::Ptr<ns3::Packet const>, unsigned short, ns3::Address const&, ns3::Address const&, ns3::NetDevice::PacketType), ns3::Ptr<ns3::TrafficControlLayer>&&, ns3::Ptr<ns3::NetDevice>&&, ns3::Ptr<ns3::Packet const>&&, unsigned short&&, ns3::Address const&, ns3::Address const&, ns3::NetDevice::PacketType&&) at /usr/include/c++/13/bits/invoke.h:74
+   7# std::function<void (ns3::Ptr<ns3::TrafficControlLayer>, ns3::Ptr<ns3::NetDevice>, ns3::Ptr<ns3::Packet const>, unsigned short, ns3::Address const&, ns3::Address const&, ns3::NetDevice::PacketType)>::operator()(ns3::Ptr<ns3::TrafficControlLayer>, ns3::Ptr<ns3::NetDevice>, ns3::Ptr<ns3::Packet const>, unsigned short, ns3::Address const&, ns3::Address const&, ns3::NetDevice::PacketType) const at /usr/include/c++/13/bits/std_function.h:591
+   8# std::function<void (ns3::Ptr<ns3::NetDevice>, ns3::Ptr<ns3::Packet const>, unsigned short, ns3::Address const&, ns3::Address const&, ns3::NetDevice::PacketType)>::operator()(ns3::Ptr<ns3::NetDevice>, ns3::Ptr<ns3::Packet const>, unsigned short, ns3::Address const&, ns3::Address const&, ns3::NetDevice::PacketType) const at /usr/include/c++/13/bits/std_function.h:591
+   9# ns3::Node::NonPromiscReceiveFromDevice(ns3::Ptr<ns3::NetDevice>, ns3::Ptr<ns3::Packet const>, unsigned short, ns3::Address const&) at /home/ayoub/ns-3-dev/src/network/model/node.cc:293
+  10# bool std::__invoke_impl<bool, bool (ns3::Node::*&)(ns3::Ptr<ns3::NetDevice>, ns3::Ptr<ns3::Packet const>, unsigned short, ns3::Address const&), ns3::Node*, ns3::Ptr<ns3::NetDevice>, ns3::Ptr<ns3::Packet const>, unsigned short, ns3::Address const&>(std::__invoke_memfun_deref, bool (ns3::Node::*&)(ns3::Ptr<ns3::NetDevice>, ns3::Ptr<ns3::Packet const>, unsigned short, ns3::Address const&), ns3::Node*&&, ns3::Ptr<ns3::NetDevice>&&, ns3::Ptr<ns3::Packet const>&&, unsigned short&&, ns3::Address const&) at /usr/include/c++/13/bits/invoke.h:74
+  11# std::function<bool (ns3::Node*, ns3::Ptr<ns3::NetDevice>, ns3::Ptr<ns3::Packet const>, unsigned short, ns3::Address const&)>::operator()(ns3::Node*, ns3::Ptr<ns3::NetDevice>, ns3::Ptr<ns3::Packet const>, unsigned short, ns3::Address const&) const at /usr/include/c++/13/bits/std_function.h:591
+  12# std::function<bool (ns3::Ptr<ns3::NetDevice>, ns3::Ptr<ns3::Packet const>, unsigned short, ns3::Address const&)>::operator()(ns3::Ptr<ns3::NetDevice>, ns3::Ptr<ns3::Packet const>, unsigned short, ns3::Address const&) const at /usr/include/c++/13/bits/std_function.h:591
+  13# ns3::NrNetDevice::Receive(ns3::Ptr<ns3::Packet>) at /home/ayoub/ns-3-dev/contrib/nr/model/nr-net-device.cc:237
+  14# std::_Function_handler<void (ns3::Ptr<ns3::NrUeNetDevice>, ns3::Ptr<ns3::Packet>), void (ns3::NrNetDevice::*)(ns3::Ptr<ns3::Packet>)>::_M_invoke(std::_Any_data const&, ns3::Ptr<ns3::NrUeNetDevice>&&, ns3::Ptr<ns3::Packet>&&) at :0
+  15# std::_Function_handler<void (ns3::Ptr<ns3::Packet>), ns3::Callback<void, ns3::Ptr<ns3::Packet> >::Callback<void (ns3::NrNetDevice::*)(ns3::Ptr<ns3::Packet>), ns3::Ptr<ns3::NrUeNetDevice>, 0>(void (ns3::NrNetDevice::*)(ns3::Ptr<ns3::Packet>), ns3::Ptr<ns3::NrUeNetDevice>)::{lambda((auto:1&&)...)#1}>::_M_invoke(std::_Any_data const&, ns3::Ptr<ns3::Packet>&&) at :0
+  16# std::function<void (ns3::Ptr<ns3::Packet>)>::operator()(ns3::Ptr<ns3::Packet>) const at /usr/include/c++/13/bits/std_function.h:591
+  17# ns3::MemberNrAsSapUser<ns3::NrEpcUeNas>::RecvData(ns3::Ptr<ns3::Packet>) at /home/ayoub/ns-3-dev/contrib/nr/model/nr-as-sap.h:249
+  18# ns3::NrUeRrc::DoReceivePdcpSdu(ns3::NrPdcpSapUser::ReceivePdcpSduParameters) at /home/ayoub/ns-3-dev/contrib/nr/model/nr-ue-rrc.cc:689
+  19# ns3::NrPdcpSpecificNrPdcpSapUser<ns3::NrUeRrc>::ReceivePdcpSdu(ns3::NrPdcpSapUser::ReceivePdcpSduParameters) at /home/ayoub/ns-3-dev/contrib/nr/model/nr-pdcp-sap.h:145
+  20# ns3::NrPdcp::DoReceivePdu(ns3::Ptr<ns3::Packet>) at /home/ayoub/ns-3-dev/contrib/nr/model/nr-pdcp.cc:221
+  21# ns3::NrPdcpSpecificNrRlcSapUser::ReceivePdcpPdu(ns3::Ptr<ns3::Packet>) at /home/ayoub/ns-3-dev/contrib/nr/model/nr-pdcp.cc:52
+  22# ns3::NrRlcUm::ReassembleAndDeliver(ns3::Ptr<ns3::Packet>) at /home/ayoub/ns-3-dev/contrib/nr/model/nr-rlc-um.cc:830
+  23# ns3::NrRlcUm::ReassembleSnInterval(ns3::nr::SequenceNumber10, ns3::nr::SequenceNumber10) at /home/ayoub/ns-3-dev/contrib/nr/model/nr-rlc-um.cc:1180
+  24# ns3::NrRlcUm::DoReceivePdu(ns3::NrMacSapUser::ReceivePduParameters) at /home/ayoub/ns-3-dev/contrib/nr/model/nr-rlc-um.cc:577
+  25# ns3::NrRlcSpecificNrMacSapUser::ReceivePdu(ns3::NrMacSapUser::ReceivePduParameters) at /home/ayoub/ns-3-dev/contrib/nr/model/nr-rlc.cc:67
+  26# ns3::NrSimpleUeComponentCarrierManager::DoReceivePdu(ns3::NrMacSapUser::ReceivePduParameters) at /home/ayoub/ns-3-dev/contrib/nr/model/nr-simple-ue-component-carrier-manager.cc:239
+  27# ns3::NrSimpleUeCcmMacSapUser::ReceivePdu(ns3::NrMacSapUser::ReceivePduParameters) at /home/ayoub/ns-3-dev/contrib/nr/model/nr-simple-ue-component-carrier-manager.cc:104
+  28# ns3::NrUeMac::DoReceivePhyPdu(ns3::Ptr<ns3::Packet>) at /home/ayoub/ns-3-dev/contrib/nr/model/nr-ue-mac.cc:695
+  29# ns3::MacUeMemberPhySapUser::ReceivePhyPdu(ns3::Ptr<ns3::Packet>) at /home/ayoub/ns-3-dev/contrib/nr/model/nr-ue-mac.cc:188
+  30# void std::__invoke_impl<void, void (ns3::NrUePhySapUser::*&)(ns3::Ptr<ns3::Packet>), ns3::NrUePhySapUser*&, ns3::Ptr<ns3::Packet>&>(std::__invoke_memfun_deref, void (ns3::NrUePhySapUser::*&)(ns3::Ptr<ns3::Packet>), ns3::NrUePhySapUser*&, ns3::Ptr<ns3::Packet>&) at /usr/include/c++/13/bits/invoke.h:74
+  31# ns3::DefaultSimulatorImpl::ProcessOneEvent() at /home/ayoub/ns-3-dev/src/core/model/default-simulator-impl.cc:131
+  32# ns3::DefaultSimulatorImpl::Run() at /home/ayoub/ns-3-dev/src/core/model/default-simulator-impl.cc:184
+  33# main at /home/ayoub/ns-3-dev/scratch/v2x-5g-handover-stable.cc:781
+  34#      at :0
+  35# __libc_start_main at :0
+  36# _start at :0
+  37# 
+
+terminate called without an active exception
+Command 'build/scratch/ns3-dev-v2x-5g-handover-stable-default --gNbNum=4 --ueNumPergNb=2 --bsDistance=300 --scenarioLength=300 --enableUeMobility=true --ueSpeed=60 --lambdaULL=3000 --lambdaBe=3000 --simTime=6s --doubleOperationalBand=false --simTag=exp_0161_g4_u2_d300_v60_L1' died with <Signals.SIGABRT: 6>.

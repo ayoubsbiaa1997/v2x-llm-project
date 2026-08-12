@@ -1,0 +1,16 @@
+\begin{table}[!htbp]
+\centering
+\caption{Tests exacts de McNemar entre les modèles de langage.}
+\label{tab:llm_mcnemar}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{llrrrrl}
+\toprule
+\textbf{Modèle A} & \textbf{Modèle B} & \textbf{$n_{10}$} & \textbf{$n_{01}$} & \textbf{Paires discordantes} & \textbf{$p$-value} & \textbf{Conclusion} \\
+\midrule
+Llama 3.2 1B & Qwen 2.5 3B & 0 & 5 & 5 & 0.0625 & Non significative \\
+Llama 3.2 1B & DeepSeek-R1 8B & 0 & 9 & 9 & 0.0039 & Différence significative \\
+Qwen 2.5 3B & DeepSeek-R1 8B & 4 & 8 & 12 & 0.3877 & Non significative \\
+\bottomrule
+\end{tabular}%
+}
+\end{table}

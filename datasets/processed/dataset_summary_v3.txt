@@ -1,0 +1,75 @@
+RAPPORT DU DATASET DÉCISIONNEL V3
+=================================================================
+Nombre d'observations : 190
+Nombre de colonnes : 34
+Valeurs manquantes : 0
+Doublons complets : 0
+
+Distribution QoSLevel :
+            Nombre  Pourcentage
+QoSLevel                       
+DEGRADED        77        40.53
+ACCEPTABLE      73        38.42
+GOOD            20        10.53
+CRITICAL        20        10.53
+
+Distribution CongestionLevel :
+                 Nombre  Pourcentage
+CongestionLevel                     
+HIGH                 75        39.47
+MODERATE             55        28.95
+LOW                  32        16.84
+CRITICAL             28        14.74
+
+Distribution HORisk :
+        Nombre  Pourcentage
+HORisk                     
+HIGH       121        63.68
+MEDIUM      69        36.32
+
+Distribution Decision :
+                     Nombre  Pourcentage
+Decision                                
+PREPARE_HANDOVER         91        47.89
+MONITOR_NETWORK          61        32.11
+HANDOVER_NOW             20        10.53
+REDUCE_TRAFFIC_LOAD      18         9.47
+
+Distribution PolicyRule :
+            Nombre  Pourcentage
+PolicyRule                     
+R08             91        47.89
+R12             60        31.58
+R04             20        10.53
+R06B            10         5.26
+R07              7         3.68
+R11              1         0.53
+R05              1         0.53
+
+Statistiques numériques principales :
+                      count        mean         std         min         25%         50%         75%          max
+Throughput            190.0   13.164693   13.750445    0.155672    4.657312    9.105170   16.895075    92.154500
+Delay                 190.0  388.516137  385.225777    0.262414   65.469250  278.476000  577.520000  1666.120000
+Jitter                190.0    2.444571    6.940209    0.021847    0.084737    0.258937    1.312760    65.652800
+PacketLoss            190.0   75.107639   24.114148    0.008928   69.544350   84.079850   92.304050    99.575000
+PDR                   190.0   24.892361   24.114149    0.425029    7.695968   15.920150   30.455650    99.991100
+Congestion            190.0    0.796704    0.173375    0.218239    0.710285    0.864473    0.924783     0.997838
+HOAttempts            190.0   21.668421   14.157114    2.000000   12.000000   15.500000   32.000000    57.000000
+HOSuccessRate         190.0  100.000000    0.000000  100.000000  100.000000  100.000000  100.000000   100.000000
+HOFailureRate         190.0    0.000000    0.000000    0.000000    0.000000    0.000000    0.000000     0.000000
+HODelay               190.0    1.227206    0.558463    0.253180    0.774169    1.307440    1.691690     2.104270
+QoSScore              190.0    0.501053    0.197708    0.062895    0.342829    0.511316    0.657434     0.927368
+CongestionScore       190.0    0.502105    0.224245    0.039474    0.306974    0.529474    0.680855     0.956842
+HORiskScore           190.0    0.501316    0.091135    0.319737    0.442368    0.530263    0.551842     0.686579
+NetworkSeverityScore  190.0    0.501487    0.170433    0.118908    0.366174    0.518408    0.634398     0.851697
+
+MÉTHODOLOGIE
+-----------------------------------------------------------------
+Les scores continus sont calculés à partir des rangs percentiles des métriques de la campagne expérimentale.
+Les niveaux qualitatifs sont obtenus à partir de seuils explicites appliqués aux scores normalisés.
+Les décisions sont générées par un moteur de règles métier V2X et non par une répartition forcée des classes.
+Chaque observation contient l'identifiant de la règle appliquée afin d'assurer la traçabilité de la décision.
+
+AVERTISSEMENT SCIENTIFIQUE
+-----------------------------------------------------------------
+Les décisions et niveaux générés sont des pseudo-labels. La politique proposée est une politique expérimentale explicable ; elle ne constitue ni une recommandation 3GPP officielle ni une décision validée par un opérateur réel.

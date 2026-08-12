@@ -1,0 +1,31 @@
+{
+  "scenario": {
+    "scenarioName": "pilot_030_exp_0123_g3_u6_d300_v30_L1_deepseek-r1_8b",
+    "gNbNum": 3,
+    "ueNumPerGnb": 6,
+    "totalUE": 18,
+    "bsDistance": 300.0,
+    "scenarioLength": 600.0,
+    "ueSpeed": 30.0,
+    "lambdaULL": 3000.0,
+    "lambdaBe": 3000.0,
+    "packetULL": 128.0,
+    "packetBE": 1024.0
+  },
+  "analysis": {
+    "scores": {
+      "QoSScore": 0.744131,
+      "CongestionScore": 0.783378,
+      "HORiskScore": 0.535945,
+      "NetworkSeverityScore": 0.705821
+    },
+    "levels": {
+      "QoSLevel": "DEGRADED",
+      "CongestionLevel": "CRITICAL",
+      "HORisk": "HIGH"
+    },
+    "decision": "REDUCE_TRAFFIC_LOAD",
+    "policyRule": "R06B",
+    "policyReason": "La congestion critique reste la cause dominante."
+  }
+}

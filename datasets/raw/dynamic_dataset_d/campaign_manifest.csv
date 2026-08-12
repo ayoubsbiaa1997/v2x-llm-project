@@ -1,0 +1,9 @@
+run_id,ue_count,distance_m,seed,run_number,stable_lambda,medium_lambda,high_lambda,recovery_lambda,packet_size_be,phase1_end,phase2_end,phase3_end,sim_time,status,exit_code
+dyn_u8_d100_s111,8,100,111,1,50,400,1400,100,1200,3,7,11,15,SUCCESS,0
+dyn_u8_d100_s222,8,100,222,2,50,450,1550,125,1200,4,8,12,15,SUCCESS,0
+dyn_u8_d300_s111,8,300,111,1,50,400,1400,100,1200,3,7,11,15,SUCCESS,0
+dyn_u8_d300_s222,8,300,222,2,50,450,1550,125,1200,4,8,12,15,SUCCESS,0
+dyn_u16_d100_s111,16,100,111,1,50,300,1000,100,1200,3,7,11,15,SUCCESS,0
+dyn_u16_d100_s222,16,100,222,2,50,350,1150,125,1200,4,8,12,15,SUCCESS,0
+dyn_u16_d300_s111,16,300,111,1,50,300,1000,100,1200,3,7,11,15,SUCCESS,0
+dyn_u16_d300_s222,16,300,222,2,50,350,1150,125,1200,4,8,12,15,SUCCESS,0

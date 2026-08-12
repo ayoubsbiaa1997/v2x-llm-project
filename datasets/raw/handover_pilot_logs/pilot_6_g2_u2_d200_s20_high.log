@@ -1,0 +1,66 @@
+[0/2] Re-checking globbed directories...
+ninja: no work to do.
+[0/2] Re-checking globbed directories...
+ninja: no work to do.
+HANDOVER_START 0.300001 IMSI=3 FROM=2 RNTI=2 TO=1
+HANDOVER_START 0.300001 IMSI=5 FROM=2 RNTI=6 TO=1
+HANDOVER_SUCCESS 0.300254 IMSI=3 CELL=1 RNTI=1 DELAY_MS=0.253
+HANDOVER_SUCCESS 0.300 IMSI=5 CELL=1 RNTI=2 DELAY_MS=0.253
+Flow 1 (1.0.0.2:49153 -> 7.0.0.2:1234) proto UDP
+  Tx Packets: 56000
+  Tx Bytes:   7168000
+  TxOffered:  10.240000 Mbps
+  Rx Bytes:   5205760
+  Throughput: 7.436800 Mbps
+  Mean delay:  12.188310 ms
+  Mean jitter:  0.075603 ms
+  Rx Packets: 40670
+Flow 2 (1.0.0.2:49154 -> 7.0.0.3:1234) proto UDP
+  Tx Packets: 56000
+  Tx Bytes:   7168000
+  TxOffered:  10.240000 Mbps
+  Rx Bytes:   6655744
+  Throughput: 9.508206 Mbps
+  Mean delay:  3.678894 ms
+  Mean jitter:  0.036682 ms
+  Rx Packets: 51998
+Flow 3 (1.0.0.2:49155 -> 7.0.0.4:1235) proto UDP
+  Tx Packets: 56000
+  Tx Bytes:   71680000
+  TxOffered:  102.400000 Mbps
+  Rx Bytes:   47060480
+  Throughput: 67.229257 Mbps
+  Mean delay:  372.994961 ms
+  Mean jitter:  0.070745 ms
+  Rx Packets: 36766
+Flow 4 (1.0.0.2:49156 -> 7.0.0.5:1235) proto UDP
+  Tx Packets: 56000
+  Tx Bytes:   71680000
+  TxOffered:  102.400000 Mbps
+  Rx Bytes:   34127360
+  Throughput: 48.753371 Mbps
+  Mean delay:  423.298358 ms
+  Mean jitter:  0.125972 ms
+  Rx Packets: 26662
+
+
+  Mean flow throughput: 33.231909
+  Mean flow delay: 203.040131
+  Mean flow jitter: 0.077250
+  Tx Packets Total: 224000
+  Rx Packets Total: 156096
+  Lost Packets Total: 67904
+  Packet loss: 30.314286
+  PDR: 69.685714
+  Congestion index: 0.624783
+  Handover attempts: 2
+  Handover success: 2
+  Handover failures: 0
+  Handover failure events: 0
+  Failure Max RACH: 0
+  Failure No Preamble: 0
+  Failure Joining: 0
+  Failure Leaving: 0
+  Handover success rate: 100.000000
+  Handover failure rate: 0.000000
+  Mean handover delay: 0.253180

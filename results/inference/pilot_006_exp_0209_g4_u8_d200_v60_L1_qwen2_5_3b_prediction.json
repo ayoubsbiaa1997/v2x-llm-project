@@ -1,0 +1,31 @@
+{
+  "scenario": {
+    "scenarioName": "pilot_006_exp_0209_g4_u8_d200_v60_L1_qwen2_5_3b",
+    "gNbNum": 4,
+    "ueNumPerGnb": 8,
+    "totalUE": 32,
+    "bsDistance": 200.0,
+    "scenarioLength": 600.0,
+    "ueSpeed": 60.0,
+    "lambdaULL": 3000.0,
+    "lambdaBe": 3000.0,
+    "packetULL": 128.0,
+    "packetBE": 1024.0
+  },
+  "analysis": {
+    "scores": {
+      "QoSScore": 0.856062,
+      "CongestionScore": 0.899753,
+      "HORiskScore": 0.583421,
+      "NetworkSeverityScore": 0.803193
+    },
+    "levels": {
+      "QoSLevel": "CRITICAL",
+      "CongestionLevel": "CRITICAL",
+      "HORisk": "HIGH"
+    },
+    "decision": "HANDOVER_NOW",
+    "policyRule": "R04",
+    "policyReason": "La QoS est critique et le risque de handover est élevé."
+  }
+}

@@ -1,0 +1,4 @@
+{
+  "decision": "PREPARE_HANDOVER",
+  "explanation": "SELECT PREPARE_HANDOVER FROM SCENARIO WHERE adaptive_scenario_class = \"HIGH\u001b[5D\u001b[K\n\"HIGH_LOAD\""
+}

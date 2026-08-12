@@ -1,0 +1,98 @@
+[0/2] Re-checking globbed directories...
+ninja: no work to do.
+[0/2] Re-checking globbed directories...
+ninja: no work to do.
+Flow 1 (1.0.0.2:49153 -> 7.0.0.2:1234) proto UDP
+  Tx Packets: 181
+  Tx Bytes:   28236
+  TxOffered:  0.376480 Mbps
+  Rx Bytes:   0
+  Throughput:  0 Mbps
+  Mean delay:  0 ms
+  Mean jitter: 0 ms
+  Rx Packets: 0
+Flow 2 (1.0.0.2:49154 -> 7.0.0.3:1234) proto UDP
+  Tx Packets: 181
+  Tx Bytes:   28236
+  TxOffered:  0.376480 Mbps
+  Rx Bytes:   0
+  Throughput:  0 Mbps
+  Mean delay:  0 ms
+  Mean jitter: 0 ms
+  Rx Packets: 0
+Flow 3 (1.0.0.2:49155 -> 7.0.0.4:1234) proto UDP
+  Tx Packets: 181
+  Tx Bytes:   28236
+  TxOffered:  0.376480 Mbps
+  Rx Bytes:   0
+  Throughput:  0 Mbps
+  Mean delay:  0 ms
+  Mean jitter: 0 ms
+  Rx Packets: 0
+Flow 4 (1.0.0.2:49156 -> 7.0.0.5:1234) proto UDP
+  Tx Packets: 181
+  Tx Bytes:   28236
+  TxOffered:  0.376480 Mbps
+  Rx Bytes:   0
+  Throughput:  0 Mbps
+  Mean delay:  0 ms
+  Mean jitter: 0 ms
+  Rx Packets: 0
+Flow 5 (1.0.0.2:49157 -> 7.0.0.6:1234) proto UDP
+  Tx Packets: 181
+  Tx Bytes:   28236
+  TxOffered:  0.376480 Mbps
+  Rx Bytes:   0
+  Throughput:  0 Mbps
+  Mean delay:  0 ms
+  Mean jitter: 0 ms
+  Rx Packets: 0
+Flow 6 (1.0.0.2:49158 -> 7.0.0.7:1235) proto UDP
+  Tx Packets: 181
+  Tx Bytes:   28236
+  TxOffered:  0.376480 Mbps
+  Rx Bytes:   28080
+  Throughput: 0.374400 Mbps
+  Mean delay:  0.846457 ms
+  Mean jitter:  0.118518 ms
+  Rx Packets: 180
+Flow 7 (1.0.0.2:49159 -> 7.0.0.8:1235) proto UDP
+  Tx Packets: 181
+  Tx Bytes:   28236
+  TxOffered:  0.376480 Mbps
+  Rx Bytes:   28080
+  Throughput: 0.374400 Mbps
+  Mean delay:  0.828600 ms
+  Mean jitter:  0.118518 ms
+  Rx Packets: 180
+Flow 8 (1.0.0.2:49160 -> 7.0.0.9:1235) proto UDP
+  Tx Packets: 181
+  Tx Bytes:   28236
+  TxOffered:  0.376480 Mbps
+  Rx Bytes:   28080
+  Throughput: 0.374400 Mbps
+  Mean delay:  0.863520 ms
+  Mean jitter:  0.117725 ms
+  Rx Packets: 180
+Flow 9 (1.0.0.2:49161 -> 7.0.0.10:1235) proto UDP
+  Tx Packets: 181
+  Tx Bytes:   28236
+  TxOffered:  0.376480 Mbps
+  Rx Bytes:   28080
+  Throughput: 0.374400 Mbps
+  Mean delay:  0.882072 ms
+  Mean jitter:  0.118419 ms
+  Rx Packets: 180
+Flow 10 (1.0.0.2:49162 -> 7.0.0.11:1235) proto UDP
+  Tx Packets: 181
+  Tx Bytes:   28236
+  TxOffered:  0.376480 Mbps
+  Rx Bytes:   28080
+  Throughput: 0.374400 Mbps
+  Mean delay:  0.810743 ms
+  Mean jitter:  0.118518 ms
+  Rx Packets: 180
+
+
+  Mean flow throughput: 0.187200
+  Mean flow delay: 0.423139

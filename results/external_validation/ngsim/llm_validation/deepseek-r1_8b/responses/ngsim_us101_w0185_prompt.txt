@@ -1,0 +1,46 @@
+You are a V2X network decision assistant.
+
+Select exactly one action from:
+KEEP_CURRENT_CONNECTION
+MONITOR_NETWORK
+REDUCE_TRAFFIC_LOAD
+PREPARE_HANDOVER
+HANDOVER_NOW
+
+Use only the supplied values. Do not invent measurements and do not mention
+any hidden reference policy.
+
+SCENARIO
+scenario_id: ngsim_us101_w0185
+adaptive_scenario_class: LOW_LOAD
+gNbNum: 2
+ueNumPerGnb: 3
+totalUE: 5
+bsDistance_m: 300.000
+ueSpeed_mps: 14.690702
+lambdaULL: 1000.000
+lambdaBE: 1000.000
+
+PREDICTED NETWORK STATE
+QoSScore: 0.093820
+QoSLevel: GOOD
+CongestionScore: 0.018278
+CongestionLevel: LOW
+HORiskScore: 0.356065
+HORiskLevel: MEDIUM
+
+REAL MOBILITY CONTEXT FROM NGSIM
+{
+  "vehicle_density_per_km": 92.1875,
+  "mean_speed_mps": 14.690701526066352,
+  "speed_std_mps": 2.470009343359559,
+  "lane_change_rate_per_vehicle": 0.1525423728813559,
+  "mean_space_headway_m": 31.503284993383325,
+  "mobility_congestion_index": 0.3894792582845336
+}
+
+Return ONLY valid JSON:
+{
+  "decision": "ONE_AUTHORIZED_ACTION",
+  "explanation": "Brief technical explanation grounded in the values."
+}

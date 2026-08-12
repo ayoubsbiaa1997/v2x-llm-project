@@ -1,0 +1,4 @@
+{
+  "decision": "MONITOR_NETWORK",
+  "explanation": "SELECT MONITOR_NETWORK FROM SCENARIO WHERE adaptive_scenario_class = \"LOW_L\u001b[6D\u001b[K\n\"LOW_LOAD\""
+}

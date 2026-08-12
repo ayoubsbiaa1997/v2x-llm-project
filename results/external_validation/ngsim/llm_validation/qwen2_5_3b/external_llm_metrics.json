@@ -1,0 +1,114 @@
+{
+  "model": "qwen2.5:3b",
+  "requested": 20,
+  "successful": 20,
+  "failed": 0,
+  "valid_json_rate": 1.0,
+  "agreement_rate": 0.05,
+  "balanced_agreement": 0.06666666666666667,
+  "macro_precision": 0.2,
+  "macro_recall": 0.04,
+  "macro_f1": 0.06666666666666667,
+  "active_macro_f1": 0.1111111111111111,
+  "weighted_f1": 0.08333333333333333,
+  "mean_inference_seconds": 15.76633780945267,
+  "median_inference_seconds": 18.253934581502108,
+  "p95_inference_seconds": 22.03415923141875,
+  "active_reference_labels": [
+    "MONITOR_NETWORK",
+    "PREPARE_HANDOVER",
+    "HANDOVER_NOW"
+  ],
+  "reference_distribution": {
+    "HANDOVER_NOW": 10,
+    "PREPARE_HANDOVER": 5,
+    "MONITOR_NETWORK": 5
+  },
+  "llm_distribution": {
+    "REDUCE_TRAFFIC_LOAD": 19,
+    "MONITOR_NETWORK": 1
+  },
+  "classification_report": {
+    "KEEP_CURRENT_CONNECTION": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 0.0
+    },
+    "MONITOR_NETWORK": {
+      "precision": 1.0,
+      "recall": 0.2,
+      "f1-score": 0.3333333333333333,
+      "support": 5.0
+    },
+    "REDUCE_TRAFFIC_LOAD": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 0.0
+    },
+    "PREPARE_HANDOVER": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 5.0
+    },
+    "HANDOVER_NOW": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 10.0
+    },
+    "accuracy": 0.05,
+    "macro avg": {
+      "precision": 0.2,
+      "recall": 0.04,
+      "f1-score": 0.06666666666666667,
+      "support": 20.0
+    },
+    "weighted avg": {
+      "precision": 0.25,
+      "recall": 0.05,
+      "f1-score": 0.08333333333333333,
+      "support": 20.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      4,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      5,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      10,
+      0,
+      0
+    ]
+  ],
+  "methodological_note": "Les métriques mesurent l'accord avec une politique dérivée des états ML transférés, et non une accuracy radio externe."
+}

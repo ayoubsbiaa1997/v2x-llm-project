@@ -1,0 +1,31 @@
+{
+  "scenario": {
+    "scenarioName": "pilot_115_exp_0147_g4_u2_d100_v30_L1_qwen2_5_3b",
+    "gNbNum": 4,
+    "ueNumPerGnb": 2,
+    "totalUE": 8,
+    "bsDistance": 100.0,
+    "scenarioLength": 600.0,
+    "ueSpeed": 30.0,
+    "lambdaULL": 3000.0,
+    "lambdaBe": 3000.0,
+    "packetULL": 128.0,
+    "packetBE": 1024.0
+  },
+  "analysis": {
+    "scores": {
+      "QoSScore": 0.338537,
+      "CongestionScore": 0.339987,
+      "HORiskScore": 0.51085,
+      "NetworkSeverityScore": 0.382123
+    },
+    "levels": {
+      "QoSLevel": "ACCEPTABLE",
+      "CongestionLevel": "MODERATE",
+      "HORisk": "HIGH"
+    },
+    "decision": "PREPARE_HANDOVER",
+    "policyRule": "R08",
+    "policyReason": "Le risque de handover est élevé. La cellule cible et les ressources doivent être préparées."
+  }
+}

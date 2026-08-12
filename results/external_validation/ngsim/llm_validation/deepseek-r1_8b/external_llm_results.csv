@@ -1,0 +1,72 @@
+Scenario,model,reference_policy,reference_reason,llm_decision,llm_explanation,agreement,valid_json,inference_seconds,status,error
+ngsim_us101_w0053,deepseek-r1:8b,HANDOVER_NOW,Risque de handover élevé associé à une QoS critique.,HANDOVER_NOW,"Network congestion is critical, indicating immediate risk[4D[K
+risk of service degradation for all connected vehicles. The high handover r[1D[K
+risk level combined with vehicle density suggests that maintaining existing[8D[K
+existing connections would likely lead to packet loss or dropped services i[1D[K
+if handover does not occur promptly.",True,True,161.22570328804431,SUCCESS,
+ngsim_us101_w0156,deepseek-r1:8b,PREPARE_HANDOVER,Le risque de handover est élevé sans urgence immédiate.,HANDOVER_NOW,"High network congestion and degraded QoS conditions, coup[4D[K
+coupled with a dense highway scenario indicated by NGSIM data (vehicle_dens[13D[K
+(vehicle_density_per_km:278.125), necessitate immediate handover to relieve[7D[K
+relieve the gNB from critical load.",False,True,283.813245048048,SUCCESS,
+ngsim_us101_w0180,deepseek-r1:8b,HANDOVER_NOW,Risque de handover élevé associé à une QoS critique.,HANDOVER_NOW,"Network congestion and QoS levels are critically high (0.[3D[K
+(0.786/0.799), indicating immediate degradation despite moderate user densi[5D[K
+density per gNB, necessitating an urgent handover to maintain service quali[5D[K
+quality.",True,True,168.01233663398307,SUCCESS,
+ngsim_us101_w0065,deepseek-r1:8b,HANDOVER_NOW,Risque de handover élevé associé à une QoS critique.,,,False,False,,FAILED,"Command '['ollama', 'run', 'deepseek-r1:8b']' timed out after 300 seconds"
+ngsim_us101_w0099,deepseek-r1:8b,HANDOVER_NOW,Risque de handover élevé associé à une QoS critique.,PREPARE_HANDOVER,"High UE density and critical congestion/quality scores co[2D[K
+combined with a HIGH handover risk level suggest imminent cell boundary cro[3D[K
+crossing or network stress. Preparing for handover allows proactive configu[7D[K
+configuration before the situation escalates.",False,True,175.96366921300068,SUCCESS,
+ngsim_us101_w0051,deepseek-r1:8b,HANDOVER_NOW,Risque de handover élevé associé à une QoS critique.,HANDOVER_NOW,"Network congestion is critical and handover risk is high.[5D[K
+high. UE speed indicates potential movement into a dense area, so immediate[9D[K
+immediate handover is needed to prevent critical QoS degradation.",True,True,244.4518664269708,SUCCESS,
+ngsim_us101_w0184,deepseek-r1:8b,MONITOR_NETWORK,Au moins un indicateur est dégradé et nécessite une surveillance.,PREPARE_HANDOVER,"The network load is low, but there's a medium handover ri[2D[K
+risk score despite good QoS. Given two gNBs with moderate UE connections an[2D[K
+and proximity (300m), preparing for potential handovers addresses the predi[5D[K
+predicted instability without triggering immediate congestion.",False,True,214.7270394549705,SUCCESS,
+ngsim_us101_w0108,deepseek-r1:8b,HANDOVER_NOW,Risque de handover élevé associé à une QoS critique.,HANDOVER_NOW,"Uplink and downlink load levels are high (2000) with crit[4D[K
+critical congestion scores. The UE speed suggests imminent movement requiri[7D[K
+requiring resource handover, despite a moderate vehicle density.",True,True,183.11118773196358,SUCCESS,
+ngsim_us101_w0105,deepseek-r1:8b,HANDOVER_NOW,Risque de handover élevé associé à une QoS critique.,HANDOVER_NOW,"The network is congested at a CRITICAL level, despite mod[3D[K
+moderate vehicle density and mean speed, suggesting immediate action to tra[3D[K
+transfer the UE connection to another cell.",True,True,127.25356434297282,SUCCESS,
+ngsim_us101_w0157,deepseek-r1:8b,PREPARE_HANDOVER,Le risque de handover est élevé sans urgence immédiate.,PREPARE_HANDOVER,"The network congestion and QoS degradation are high, sugg[4D[K
+suggesting that users might soon experience poor service. The predicted veh[3D[K
+vehicle density indicates persistent traffic conditions. Preparing for hand[4D[K
+handover is necessary to mitigate potential issues when the current gNBs be[2D[K
+become overloaded.",True,True,189.6150283809984,SUCCESS,
+ngsim_us101_w0187,deepseek-r1:8b,MONITOR_NETWORK,Au moins un indicateur est dégradé et nécessite une surveillance.,KEEP_CURRENT_CONNECTION,"Both network congestion and QoS levels remain low, indica[6D[K
+indicating sufficient capacity for existing connections including five user[4D[K
+users at moderate speeds (16.13 mps) in light traffic conditions with a veh[3D[K
+vehicle density of only 53 vehicles per km.",False,True,211.35482594295172,SUCCESS,
+ngsim_us101_w0164,deepseek-r1:8b,PREPARE_HANDOVER,Le risque de handover est élevé sans urgence immédiate.,HANDOVER_NOW,"Both the predicted and real data indicate extremely high [K
+congestion levels (CongestionLevel: HIGH, Mobility Congestion Index near th[2D[K
+threshold). The high handover risk level (HORiskLevel: HIGH) combined with [K
+significant network degradation (QoSScore Degraded) necessitates immediate [K
+action to transfer connections for improved reliability.",False,True,157.06432494695764,SUCCESS,
+ngsim_us101_w0005,deepseek-r1:8b,MONITOR_NETWORK,Au moins un indicateur est dégradé et nécessite une surveillance.,,,False,False,,FAILED,"Command '['ollama', 'run', 'deepseek-r1:8b']' timed out after 300 seconds"
+ngsim_us101_w0183,deepseek-r1:8b,MONITOR_NETWORK,Au moins un indicateur est dégradé et nécessite une surveillance.,KEEP_CURRENT_CONNECTION,"Network congestion and QoS are both moderate/acceptable l[1D[K
+levels (HORisk is medium). With a low load scenario, existing connections c[1D[K
+can be maintained as the network has sufficient capacity to handle current [K
+UE density and traffic.",False,True,249.14846731896978,SUCCESS,
+ngsim_us101_w0017,deepseek-r1:8b,HANDOVER_NOW,Risque de handover élevé associé à une QoS critique.,HANDOVER_NOW,"The predicted network state indicates critical QoS and co[2D[K
+congestion levels, while the mobility context shows a moderate-to-high phys[4D[K
+physical road congestion index. Triggering an immediate handover is necessa[7D[K
+necessary to mitigate potential service degradation due to high UE density.[8D[K
+density.",True,True,148.42740297596902,SUCCESS,
+ngsim_us101_w0173,deepseek-r1:8b,PREPARE_HANDOVER,Le risque de handover est élevé sans urgence immédiate.,PREPARE_HANDOVER,"Network congestion is already high (CongestionLevel: HIGH[4D[K
+HIGH) with a score of 0.568, while the road traffic density and speed sugge[5D[K
+suggest potential for increased load or risk. Preparing handover allows pro[3D[K
+proactive management before conditions deteriorate further.",True,True,190.2591207820224,SUCCESS,
+ngsim_us101_w0011,deepseek-r1:8b,HANDOVER_NOW,Risque de handover élevé associé à une QoS critique.,HANDOVER_NOW,"Network congestion is critical (CongestionScore: 0.88) an[2D[K
+and QoS is also critical (QoSScore: 0.84), indicating immediate need for re[2D[K
+resource relief despite moderate load conditions.",True,True,249.992864631,SUCCESS,
+ngsim_us101_w0171,deepseek-r1:8b,PREPARE_HANDOVER,Le risque de handover est élevé sans urgence immédiate.,HANDOVER_NOW,"The network is experiencing high congestion (CongestionSc[13D[K
+(CongestionScore: 0.568) and a degraded QoSScore (0.570), alongside a high [K
+mobility congestion index (0.783). Immediate handover to another cell is ne[2D[K
+necessary to prevent further degradation of service, especially given the c[1D[K
+critical load scenario.",False,True,289.5559019399807,SUCCESS,
+ngsim_us101_w0046,deepseek-r1:8b,HANDOVER_NOW,Risque de handover élevé associé à une QoS critique.,REDUCE_TRAFFIC_LOAD,"Based on predicted network congestion level (CRITICAL) wi[2D[K
+with a score of 0.883 and high load conditions, reducing traffic load is ne[2D[K
+necessary to prevent further degradation in cell performance.",False,True,143.65069476899225,SUCCESS,
+ngsim_us101_w0185,deepseek-r1:8b,MONITOR_NETWORK,Au moins un indicateur est dégradé et nécessite une surveillance.,,,False,False,,FAILED,"Command '['ollama', 'run', 'deepseek-r1:8b']' timed out after 300 seconds"

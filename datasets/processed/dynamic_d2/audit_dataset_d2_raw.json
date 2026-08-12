@@ -1,0 +1,154 @@
+{
+  "dataset_shape": {
+    "rows": 1872,
+    "columns": 29
+  },
+  "runs": {
+    "manifest_runs": 48,
+    "merged_runs": 48
+  },
+  "profiles": {
+    "count": 6,
+    "values": [
+      "ABRUPT_DEGRADATION",
+      "EARLY_DEGRADATION",
+      "LATE_DEGRADATION",
+      "MEDIUM_CONTROL",
+      "PERSISTENT_HIGH",
+      "STABLE_CONTROL"
+    ],
+    "observations_per_profile": {
+      "ABRUPT_DEGRADATION": 312,
+      "EARLY_DEGRADATION": 312,
+      "LATE_DEGRADATION": 312,
+      "MEDIUM_CONTROL": 312,
+      "PERSISTENT_HIGH": 312,
+      "STABLE_CONTROL": 312
+    }
+  },
+  "phases": {
+    "count": 4,
+    "values": [
+      "HIGH",
+      "MEDIUM",
+      "RECOVERY",
+      "STABLE"
+    ],
+    "phases_by_profile": {
+      "ABRUPT_DEGRADATION": [
+        "HIGH",
+        "MEDIUM",
+        "RECOVERY",
+        "STABLE"
+      ],
+      "EARLY_DEGRADATION": [
+        "HIGH",
+        "MEDIUM",
+        "RECOVERY",
+        "STABLE"
+      ],
+      "LATE_DEGRADATION": [
+        "HIGH",
+        "MEDIUM",
+        "RECOVERY",
+        "STABLE"
+      ],
+      "MEDIUM_CONTROL": [
+        "HIGH",
+        "MEDIUM",
+        "RECOVERY",
+        "STABLE"
+      ],
+      "PERSISTENT_HIGH": [
+        "HIGH",
+        "MEDIUM",
+        "RECOVERY",
+        "STABLE"
+      ],
+      "STABLE_CONTROL": [
+        "HIGH",
+        "MEDIUM",
+        "RECOVERY",
+        "STABLE"
+      ]
+    }
+  },
+  "lambda_values_by_profile": {
+    "ABRUPT_DEGRADATION": [
+      50,
+      100,
+      1000,
+      1150,
+      1400,
+      1550
+    ],
+    "EARLY_DEGRADATION": [
+      50,
+      100,
+      300,
+      350,
+      400,
+      450,
+      1000,
+      1150,
+      1400,
+      1550
+    ],
+    "LATE_DEGRADATION": [
+      50,
+      100,
+      300,
+      350,
+      400,
+      450,
+      1000,
+      1150,
+      1400,
+      1550
+    ],
+    "MEDIUM_CONTROL": [
+      50,
+      100,
+      300,
+      350,
+      400,
+      450
+    ],
+    "PERSISTENT_HIGH": [
+      50,
+      300,
+      350,
+      400,
+      450,
+      1000,
+      1150,
+      1400,
+      1550
+    ],
+    "STABLE_CONTROL": [
+      50
+    ]
+  },
+  "rows_per_run": {
+    "minimum": 39,
+    "maximum": 39,
+    "mean": 39.0,
+    "unique_counts": [
+      39
+    ]
+  },
+  "missing_values": {},
+  "constant_numeric_columns": [
+    "stable_lambda",
+    "packet_size_be",
+    "sim_time",
+    "exit_code"
+  ],
+  "duplicates": {
+    "exact_duplicate_rows": 0,
+    "duplicate_run_time_rows": 0
+  },
+  "manifest_status_counts": {
+    "SUCCESS": 48
+  }
+}

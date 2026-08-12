@@ -1,0 +1,60 @@
+# ============================================================
+# Python
+# ============================================================
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.ipynb_checkpoints/
+
+# ============================================================
+# Editor / OS temporary files
+# ============================================================
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# ============================================================
+# Archives / temporary exports
+# ============================================================
+*.tar.gz
+*.zip
+
+# ============================================================
+# Third-party mobility datasets
+# Download separately - not distributed in this repository
+# ============================================================
+datasets/mobility/public_sumo/LuSTScenario/
+
+# ============================================================
+# NGSIM raw data
+# Raw dataset must be downloaded separately
+# ============================================================
+
+# ============================================================
+# Temporary / generated logs
+# ============================================================
+*.tmp
+*.bak
+
+# ============================================================
+# Local experiment caches
+# ============================================================
+.cache/
+
+
+# ============================================================
+# NGSIM raw third-party data
+# ============================================================
+external_validation/ngsim/raw/*
+!external_validation/ngsim/raw/README.md
+
+# Raw individual LLM responses
+results/llm_evaluation/**/*_llm_response.json
+
+# Raw individual LLM inference responses
+results/**/*_llm_response.json

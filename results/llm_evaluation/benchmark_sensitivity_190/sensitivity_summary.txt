@@ -1,0 +1,48 @@
+ANALYSE DE SENSIBILITÉ MULTICRITÈRE DES LLM V2X
+============================================================================
+
+CLASSEMENT PAR PROFIL
+----------------------------------------------------------------------------
+
+Performance
+  1. DeepSeek-R1 8B (score=0.8847)
+  2. Qwen 2.5 3B (score=0.6435)
+  3. Llama 3.2 1B (score=0.1000)
+
+Equilibre
+  1. DeepSeek-R1 8B (score=0.7565)
+  2. Qwen 2.5 3B (score=0.6417)
+  3. Llama 3.2 1B (score=0.2500)
+
+Temps_reel
+  1. Qwen 2.5 3B (score=0.6759)
+  2. DeepSeek-R1 8B (score=0.5565)
+  3. Llama 3.2 1B (score=0.4500)
+
+Ultra_temps_reel
+  1. Qwen 2.5 3B (score=0.7191)
+  2. Llama 3.2 1B (score=0.7000)
+  3. DeepSeek-R1 8B (score=0.3282)
+
+Recherche
+  1. DeepSeek-R1 8B (score=0.8847)
+  2. Qwen 2.5 3B (score=0.6469)
+  3. Llama 3.2 1B (score=0.1000)
+
+STABILITÉ
+----------------------------------------------------------------------------
+Qwen 2.5 3B | victoire=0.519 | rang moyen=1.481 | rang min=1 | rang max=2
+DeepSeek-R1 8B | victoire=0.346 | rang moyen=2.086 | rang min=1 | rang max=3
+Llama 3.2 1B | victoire=0.136 | rang moyen=2.432 | rang min=1 | rang max=3
+
+INTERVALLES DE DOMINANCE
+----------------------------------------------------------------------------
+Poids latence [0.00, 0.27] : DeepSeek-R1 8B
+Poids latence [0.28, 0.69] : Qwen 2.5 3B
+Poids latence [0.70, 0.80] : Llama 3.2 1B
+
+PRÉCAUTIONS
+----------------------------------------------------------------------------
+La normalisation min-max est relative aux trois modèles comparés.
+Le classement dépend des poids choisis et ne remplace pas les contraintes réelles.
+La latence correspond à l'environnement local d'inférence.

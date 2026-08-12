@@ -1,0 +1,111 @@
+{
+  "input_file": "/home/ayoub/v2x-llm-project/external_validation/ngsim/processed/ngsim_windows_adaptive_ml.csv",
+  "output_file": "/home/ayoub/v2x-llm-project/results/external_validation/ngsim/adaptive_ml/ml_predictions_ngsim.csv",
+  "observation_count": 190,
+  "features": [
+    "gNbNum",
+    "ueNumPerGnb",
+    "totalUE",
+    "bsDistance",
+    "ueSpeed",
+    "lambdaULL",
+    "lambdaBe"
+  ],
+  "models": {
+    "QoSScore": {
+      "path": "/home/ayoub/v2x-llm-project/models/network_state_v1/QoSScore_HistGradientBoosting.joblib",
+      "loaded_type": "Pipeline"
+    },
+    "CongestionScore": {
+      "path": "/home/ayoub/v2x-llm-project/models/network_state_v1/CongestionScore_HistGradientBoosting.joblib",
+      "loaded_type": "Pipeline"
+    },
+    "HORiskScore": {
+      "path": "/home/ayoub/v2x-llm-project/models/network_state_v1/HORiskScore_ExtraTrees.joblib",
+      "loaded_type": "Pipeline"
+    }
+  },
+  "score_statistics": {
+    "QoSScore": {
+      "min": 0.0938196648875397,
+      "q25": 0.570512771002452,
+      "median": 0.8440959402167869,
+      "mean": 0.7363831048289943,
+      "q75": 0.8440959402167869,
+      "max": 0.8440959402167869,
+      "std": 0.19819256412132358
+    },
+    "CongestionScore": {
+      "min": 0.018278340772545983,
+      "q25": 0.5682899380645164,
+      "median": 0.8833619125708285,
+      "mean": 0.7571732650227267,
+      "q75": 0.8833619125708285,
+      "max": 0.8833619125708285,
+      "std": 0.22866361623677925
+    },
+    "HORiskScore": {
+      "min": 0.35564421052631595,
+      "q25": 0.5451143859649158,
+      "median": 0.5452491228070212,
+      "mean": 0.5345690563250257,
+      "q75": 0.5454891228070213,
+      "max": 0.5782870175438606,
+      "std": 0.04445201846280117
+    }
+  },
+  "level_distributions": {
+    "QoSLevel": {
+      "CRITICAL": {
+        "count": 137,
+        "rate": 0.7210526315789474
+      },
+      "DEGRADED": {
+        "count": 39,
+        "rate": 0.20526315789473684
+      },
+      "GOOD": {
+        "count": 11,
+        "rate": 0.05789473684210526
+      },
+      "ACCEPTABLE": {
+        "count": 3,
+        "rate": 0.015789473684210527
+      }
+    },
+    "CongestionLevel": {
+      "CRITICAL": {
+        "count": 137,
+        "rate": 0.7210526315789474
+      },
+      "HIGH": {
+        "count": 39,
+        "rate": 0.20526315789473684
+      },
+      "LOW": {
+        "count": 12,
+        "rate": 0.06315789473684211
+      },
+      "MODERATE": {
+        "count": 2,
+        "rate": 0.010526315789473684
+      }
+    },
+    "HORiskLevel": {
+      "HIGH": {
+        "count": 177,
+        "rate": 0.9315789473684211
+      },
+      "MEDIUM": {
+        "count": 13,
+        "rate": 0.06842105263157895
+      }
+    }
+  },
+  "methodological_warning": "Les prédictions sont obtenues par transfert vers des variables construites à partir de NGSIM. Elles ne disposent pas de vérité terrain radio externe pour calculer MAE, RMSE ou R². L'analyse porte donc sur la plausibilité, la stabilité et la cohérence des distributions.",
+  "mobility_vs_predicted_congestion": {
+    "pearson_correlation": 0.5035593601617473,
+    "spearman_correlation": -0.09402702631358982,
+    "mean_absolute_gap": 0.22964741037137412
+  }
+}

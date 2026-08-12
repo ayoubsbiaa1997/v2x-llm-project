@@ -1,0 +1,7 @@
+Model,Reference,Accuracy,MacroF1
+Llama 3.2 1B,Politique issue des états ML,0.3473684210526316,0.103125
+Llama 3.2 1B,Politique du dataset,0.32105263157894737,0.09721115537848606
+Qwen 2.5 3B,Politique issue des états ML,0.3736842105263158,0.1620779220779221
+Qwen 2.5 3B,Politique du dataset,0.34210526315789475,0.1483231707317073
+DeepSeek-R1 8B,Politique issue des états ML,0.39473684210526316,0.19760312151616502
+DeepSeek-R1 8B,Politique du dataset,0.3631578947368421,0.18338616938616942

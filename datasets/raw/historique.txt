@@ -1,0 +1,148 @@
+    1  sudo apt update
+    2  sudo apt upgrade -y
+    3  sudo apt install -y build-essential gcc g++ python3 python3-pip git cmake ninja-build
+    4  git clone https://gitlab.com/nsnam/ns-3-dev.git
+    5  cd ns-3-dev
+    6  ./ns3 configure --enable-examples --enable-tests
+    7  sudo apt update
+    8  sudo apt install -y python3-dev python3-setuptools python3-wheel
+    9  ./ns3 configure --enable-examples --enable-tests
+   10  sudo apt update
+   11  sudo apt install -y python3-dev libpython3-dev python3.12-dev
+   12  ls /usr/include/python3.12/Python.h
+   13  rm -rf build
+   14  ./ns3 configure --enable-examples --enable-tests
+   15  dpkg -l | grep python3-dev
+   16  python3 --version
+   17  ls /usr/include | grep python
+   18  rm -rf build cmake-cache
+   19  ./ns3 clean
+   20  ./ns3 configure --enable-examples --enable-tests
+   21  ./ns3 configure --enable-examples --enable-tests -- -DPython3_EXECUTABLE=/usr/bin/python3 -DPython3_INCLUDE_DIR=/usr/include/python3.12 -DPython3_LIBRARY=/usr/lib/x86_64-linux-gnu/libpython3.12.so
+   22  ls /usr/lib/x86_64-linux-gnu/libpython3.12.so*
+   23  rm -rf build cmake-cache
+   24  ./ns3 configure --enable-examples --enable-tests -- -DPython3_EXECUTABLE=/usr/bin/python3 -DPython3_INCLUDE_DIR=/usr/include/python3.12 -DPython3_LIBRARY=/usr/lib/x86_64-linux-gnu/libpython3.12.so
+   25  ./ns3 build
+   26  ./ns3 run hello-simulator
+   27  rm -rf build cmake-cache
+   28  ./ns3 configure --enable-examples --enable-tests -- -DPython3_EXECUTABLE=/usr/bin/python3 -DPython3_INCLUDE_DIR=/usr/include/python3.12 -DPython3_LIBRARY=/usr/lib/x86_64-linux-gnu/libpython3.12.so
+   29  ./ns3 build
+   30  ./ns3 run hello-simulator
+   31  cd contrib
+   32  git clone https://gitlab.com/cttc-lena/nr.git
+   33  cd ..
+   34  ./ns3 configure
+   35  ./ns3 build
+   36  ./ns3 run nr-simple
+   37  ls contrib
+   38  ./ns3 configure --enable-examples --enable-tests
+   39  ./ns3 build
+   40  find contrib/nr -name "*.cc" | grep examples
+   41  ./ns3 run cttc-nr-demo
+   42  ./ns3 show programs | grep nr
+   43  ./ns3 show targets | grep nr
+   44  ./ns3 run cttc-nr-demo
+   45  ./ns3 show targets | grep nr
+   46  ./ns3 run gsoc-nr-channel-models
+   47  cd ~
+   48  mkdir -p ~/v2x-5g-sumo
+   49  cd ~/v2x-5g-sumo
+   50  nano simple.net.xml
+   51  netgenerate --grid --grid.number=3 --output-file=city.net.xml
+   52  sudo apt update
+   53  sudo apt install -y sumo sumo-tools sumo-doc
+   54  netgenerate --help
+   55  netgenerate --grid --grid.number=3 --output-file=city.net.xml
+   56  python3 /usr/share/sumo/tools/randomTrips.py -n city.net.xml -r routes.rou.xml -e 100
+   57  sumo-gui -n city.net.xml -r routes.rou.xml
+   58  sumo -n city.net.xml -r routes.rou.xml --remote-port 9999
+   59  find contrib/ns3-sumo-coupling -name "*.cc"
+   60  cd ~/ns-3-dev/contrib
+   61  git clone https://github.com/vodafone-chair/ns3-sumo-coupling.git
+   62  cd ~/ns-3-dev
+   63  ./ns3 configure --enable-examples --enable-tests
+   64  ./ns3 build
+   65  find contrib/ns3-sumo-coupling -name "*.cc"
+   66  cd ~/ns-3-dev/scratch
+   67  nano v2x-5g.cc
+   68  cd ~/ns-3-dev
+   69  ./ns3 run scratch/v2x-5g
+   70  nano ~/ns-3-dev/scratch/v2x-5g.cc
+   71  cd ~/ns-3-dev
+   72  ./ns3 run scratch/v2x-5g
+   73  nano ~/ns-3-dev/scratch/v2x-5g.cc
+   74  cd ~/ns-3-dev
+   75  ./ns3 run scratch/v2x-5g
+   76  NS_LOG="UdpEchoClientApplication=level_info|prefix_time:UdpEchoServerApplication=level_info|prefix_time" ./ns3 run scratch/v2x-5g
+   77  cd ~/ns-3-dev
+   78  cp contrib/nr/examples/cttc-nr-demo.cc scratch/v2x-5g-nr.cc
+   79  ./ns3 run scratch/v2x-5g-nr
+   80  nano scratch/v2x-5g-nr.cc
+   81  ./ns3 run "scratch/v2x-5g-nr --gNbNum=1 --ueNumPergNb=10"
+   82  ./ns3 run "scratch/v2x-5g-nr --gNbNum=1 --ueNumPergNb=20"
+   83  cd ~
+   84  mkdir -p v2x-5g-sumo
+   85  cd v2x-5g-sumo
+   86  sudo apt update
+   87  sudo apt install -y sumo sumo-tools
+   88  netgenerate --grid --grid.number=3 --output-file=city.net.xml
+   89  python3 /usr/share/sumo/tools/randomTrips.py -n city.net.xml -r routes.rou.xml -e 100
+   90  sumo-gui -n city.net.xml -r routes.rou.xml
+   91  cd ~/v2x-5g-sumo
+   92  python3 /usr/share/sumo/tools/randomTrips.py -n city.net.xml -r routes.rou.xml -e 100
+   93  sumo-gui -n city.net.xml -r routes.rou.xml
+   94  -r routes.rou.xml
+   95  cd ~/v2x-5g-sumo
+   96  python3 /usr/share/sumo/tools/randomTrips.py -n city.net.xml -r routes.rou.xml -e 100
+   97  sumo-gui -n city.net.xml -r routes.rou.xml
+   98  ls
+   99  sumo-gui -n city.net.xml -r routes.rou.xml --delay 100
+  100  cd ~/ns-3-dev/contrib
+  101  git clone https://github.com/vodafone-chair/ns3-sumo-coupling.git
+  102  cd ~/ns-3-dev
+  103  ./ns3 configure --enable-examples --enable-tests
+  104  ./ns3 build
+  105  find contrib/ns3-sumo-coupling -name "*.cc"
+  106  ./ns3 run contrib/ns3-sumo-coupling/traci/model/traci-client.cc
+  107  ./ns3 run ns3-sumo-coupling/traci-applications/examples/ns3-sumo-coupling-simple.cc
+  108  cd ~/ns-3-dev
+  109  ./ns3 show targets | grep -i sumo
+  110  ./ns3 show targets | grep -i traci
+  111  ls contrib/ns3-sumo-coupling
+  112  find contrib/ns3-sumo-coupling -name "*.cc"
+  113  ./ns3 configure --enable-examples --enable-tests
+  114  ./ns3 build
+  115  cd ~/ns-3-dev
+  116  ./ns3 run NOM_DU_PROGRAMME
+  117  ./ns3 run contrib/ns3-sumo-coupling/traci-applications/examples/ns3-sumo-coupling-simple.cc
+  118  ./ns3 run /ns3-sumo-coupling/traci-applications/examples/ns3-sumo-coupling-simple.cc
+  119  cd ~/ns-3-dev
+  120  ./ns3 show targets | grep -i sumo
+  121  cd ~/ns-3-dev
+  122  ls contrib
+  123  find contrib/ns3-sumo-coupling -maxdepth 4 -type f -name "*.cc"
+  124  ./ns3 configure --enable-examples --enable-tests
+  125  ./ns3 build
+  126  ./ns3 show targets | grep -i sumo
+  127  ./ns3 show targets | grep -i traci
+  128  cd ~/ns-3-dev
+  129  find contrib/ns3-sumo-coupling -maxdepth 5 -type f -name "*.cc"
+  130  find contrib/ns3-sumo-coupling -name "CMakeLists.txt"
+  131  cd ~/v2x-5g-sumo
+  132  sumo -n city.net.xml -r routes.rou.xml --fcd-output sumoTrace.xml
+  133  ls
+  134  python3 /usr/share/sumo/tools/traceExporter.py --fcd-input sumoTrace.xml --ns2mobility-output mobility.tcl
+  135  ls
+  136  cp mobility.tcl ~/ns-3-dev/
+  137  cd ~/ns-3-dev
+  138  cp contrib/nr/examples/cttc-nr-demo.cc scratch/v2x-5g-sumo.cc
+  139  nano scratch/v2x-5g-sumo.cc
+  140  ./ns3 run scratch/v2x-5g-sumo
+  141  ls ~/v2x-5g-sumo
+  142  nano ~/ns-3-dev/scratch/v2x-5g-sumo.cc
+  143  cp ~/v2x-5g-sumo/mobility.tcl ~/ns-3-dev/
+  144  cd ~/ns-3-dev
+  145  ./ns3 run scratch/v2x-5g-sumo
+  146  history > historique.txt
+  147  history 
+  148  history > historique.txt

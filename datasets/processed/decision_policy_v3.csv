@@ -1,0 +1,8 @@
+PolicyRule,Decision,PolicyReason,ObservationCount
+R04,HANDOVER_NOW,La QoS est critique et le risque de handover est élevé. La dégradation ne peut plus être traitée par une simple surveillance.,20
+R05,REDUCE_TRAFFIC_LOAD,La congestion est critique tandis que le risque de handover reste limité. La surcharge de trafic est la cause dominante ; la charge doit être réduite ou redistribuée.,1
+R06B,REDUCE_TRAFFIC_LOAD,La congestion critique demeure la cause dominante de la dégradation. Une réduction de charge est prioritaire avant le déclenchement d'un handover.,10
+R07,REDUCE_TRAFFIC_LOAD,"La QoS est dégradée en présence d'une congestion élevée, mais le risque de handover n'est pas dominant. Une action sur la charge réseau est recommandée.",7
+R08,PREPARE_HANDOVER,"Le risque de handover est élevé. La cellule cible, les ressources radio et la continuité de session doivent être préparées avant toute dégradation critique.",91
+R11,MONITOR_NETWORK,"Une dégradation QoS est observée, mais aucune condition critique de congestion ou de mobilité n'est détectée. Une surveillance renforcée est recommandée.",1
+R12,MONITOR_NETWORK,"Les métriques indiquent une situation intermédiaire. Aucune action immédiate n'est nécessaire, mais une surveillance continue est recommandée.",60

@@ -1,0 +1,146 @@
+{
+  "input_file": "/home/ayoub/v2x-llm-project/external_validation/ngsim/processed/ngsim_windows.csv",
+  "output_file": "/home/ayoub/v2x-llm-project/external_validation/ngsim/processed/ngsim_windows_adaptive_ml.csv",
+  "observation_count": 190,
+  "ml_features": [
+    "gNbNum",
+    "ueNumPerGnb",
+    "totalUE",
+    "bsDistance",
+    "ueSpeed",
+    "lambdaULL",
+    "lambdaBe"
+  ],
+  "parameter_distributions": {
+    "gNbNum": {
+      "3": {
+        "count": 135,
+        "rate": 0.7105263157894737
+      },
+      "4": {
+        "count": 38,
+        "rate": 0.2
+      },
+      "2": {
+        "count": 17,
+        "rate": 0.08947368421052632
+      }
+    },
+    "bsDistance": {
+      "200.0": {
+        "count": 138,
+        "rate": 0.7263157894736842
+      },
+      "100.0": {
+        "count": 36,
+        "rate": 0.18947368421052632
+      },
+      "300.0": {
+        "count": 16,
+        "rate": 0.08421052631578947
+      }
+    },
+    "lambdaULL": {
+      "2000.0": {
+        "count": 145,
+        "rate": 0.7631578947368421
+      },
+      "4000.0": {
+        "count": 33,
+        "rate": 0.1736842105263158
+      },
+      "1000.0": {
+        "count": 12,
+        "rate": 0.06315789473684211
+      }
+    },
+    "lambdaBe": {
+      "2000.0": {
+        "count": 143,
+        "rate": 0.7526315789473684
+      },
+      "4000.0": {
+        "count": 35,
+        "rate": 0.18421052631578946
+      },
+      "1000.0": {
+        "count": 12,
+        "rate": 0.06315789473684211
+      }
+    },
+    "adaptive_scenario_class": {
+      "HIGH_LOAD": {
+        "count": 97,
+        "rate": 0.5105263157894737
+      },
+      "MODERATE_LOAD": {
+        "count": 60,
+        "rate": 0.3157894736842105
+      },
+      "CRITICAL_LOAD": {
+        "count": 20,
+        "rate": 0.10526315789473684
+      },
+      "LOW_LOAD": {
+        "count": 13,
+        "rate": 0.06842105263157895
+      }
+    }
+  },
+  "numeric_statistics": {
+    "totalUE": {
+      "min": 5.0,
+      "q25": 33.0,
+      "median": 35.0,
+      "mean": 35.56842105263158,
+      "q75": 38.75,
+      "max": 60.0,
+      "std": 11.443824012682168
+    },
+    "ueNumPerGnb": {
+      "min": 3.0,
+      "q25": 11.0,
+      "median": 12.0,
+      "mean": 11.43157894736842,
+      "q75": 13.0,
+      "max": 15.0,
+      "std": 2.544974952121377
+    },
+    "ueSpeed": {
+      "min": 5.719406916344917,
+      "q25": 11.199875249753251,
+      "median": 12.276205474828618,
+      "mean": 11.840989316048137,
+      "q75": 13.144205009868298,
+      "max": 16.543902315789474,
+      "std": 2.310498040261254
+    },
+    "mobility_pressure": {
+      "min": 0.04993845704229653,
+      "q25": 0.462137476647186,
+      "median": 0.534563145164989,
+      "mean": 0.5272950328558549,
+      "q75": 0.613051912529174,
+      "max": 0.8413406817557019,
+      "std": 0.1407142373091001
+    },
+    "radio_load_pressure": {
+      "min": 0.0,
+      "q25": 0.4679990590133163,
+      "median": 0.5344553505493534,
+      "mean": 0.5406649264557448,
+      "q75": 0.6357256802128961,
+      "max": 0.8753135627302683,
+      "std": 0.175027112977699
+    }
+  },
+  "mapping_rules": {
+    "gNbNum": "Fonction de la densité et du débit, discrétisée en 2, 3 ou 4.",
+    "bsDistance": "Fonction de la densité et de la pression de mobilité, discrétisée en 300, 200 ou 100 m.",
+    "totalUE": "Compression quantile de la densité NGSIM vers [5,60].",
+    "ueSpeed": "Vitesse moyenne NGSIM bornée au domaine [5,30] m/s.",
+    "lambdaULL": "Fonction multicritère discrétisée sur {1000,2000,4000}.",
+    "lambdaBe": "Fonction multicritère discrétisée sur {1000,2000,4000}."
+  },
+  "methodological_warning": "Les paramètres radio sont reconstruits à partir de la mobilité réelle. Ils ne sont pas observés directement dans NGSIM."
+}

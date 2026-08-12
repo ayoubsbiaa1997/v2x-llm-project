@@ -1,0 +1,21 @@
+Scenario,reference_policy,reference_reason
+ngsim_us101_w0053,HANDOVER_NOW,Risque de handover élevé associé à une QoS critique.
+ngsim_us101_w0156,PREPARE_HANDOVER,Le risque de handover est élevé sans urgence immédiate.
+ngsim_us101_w0180,HANDOVER_NOW,Risque de handover élevé associé à une QoS critique.
+ngsim_us101_w0065,HANDOVER_NOW,Risque de handover élevé associé à une QoS critique.
+ngsim_us101_w0099,HANDOVER_NOW,Risque de handover élevé associé à une QoS critique.
+ngsim_us101_w0051,HANDOVER_NOW,Risque de handover élevé associé à une QoS critique.
+ngsim_us101_w0184,MONITOR_NETWORK,Au moins un indicateur est dégradé et nécessite une surveillance.
+ngsim_us101_w0108,HANDOVER_NOW,Risque de handover élevé associé à une QoS critique.
+ngsim_us101_w0105,HANDOVER_NOW,Risque de handover élevé associé à une QoS critique.
+ngsim_us101_w0157,PREPARE_HANDOVER,Le risque de handover est élevé sans urgence immédiate.
+ngsim_us101_w0187,MONITOR_NETWORK,Au moins un indicateur est dégradé et nécessite une surveillance.
+ngsim_us101_w0164,PREPARE_HANDOVER,Le risque de handover est élevé sans urgence immédiate.
+ngsim_us101_w0005,MONITOR_NETWORK,Au moins un indicateur est dégradé et nécessite une surveillance.
+ngsim_us101_w0183,MONITOR_NETWORK,Au moins un indicateur est dégradé et nécessite une surveillance.
+ngsim_us101_w0017,HANDOVER_NOW,Risque de handover élevé associé à une QoS critique.
+ngsim_us101_w0173,PREPARE_HANDOVER,Le risque de handover est élevé sans urgence immédiate.
+ngsim_us101_w0011,HANDOVER_NOW,Risque de handover élevé associé à une QoS critique.
+ngsim_us101_w0171,PREPARE_HANDOVER,Le risque de handover est élevé sans urgence immédiate.
+ngsim_us101_w0046,HANDOVER_NOW,Risque de handover élevé associé à une QoS critique.
+ngsim_us101_w0185,MONITOR_NETWORK,Au moins un indicateur est dégradé et nécessite une surveillance.

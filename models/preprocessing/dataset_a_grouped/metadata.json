@@ -1,0 +1,44 @@
+{
+    "source_dataset": "datasets/processed/mobility/temporal_v2x_synchronized_dataset_v4.csv",
+    "feature_columns": [
+        "throughput_mbps",
+        "delay_ms",
+        "jitter_ms",
+        "packet_loss",
+        "pdr",
+        "congestion_index",
+        "mean_speed",
+        "max_speed",
+        "min_speed",
+        "speed_std",
+        "vehicle_density",
+        "stopped_ratio",
+        "lane_changes",
+        "mobility_instability_index"
+    ],
+    "target_column": "decision",
+    "group_column": "scenario_source",
+    "test_scenarios": [
+        "qos_D100_STABLE",
+        "qos_D250_MEDIUM",
+        "qos_D400_HIGH"
+    ],
+    "train_scenarios": [
+        "qos_D150_STABLE",
+        "qos_D200_MEDIUM",
+        "qos_D300_MEDIUM",
+        "qos_D350_HIGH",
+        "qos_D450_HIGH",
+        "qos_D50_STABLE"
+    ],
+    "n_samples_total": 1071,
+    "n_samples_train": 714,
+    "n_samples_test": 357,
+    "n_features": 14,
+    "label_mapping": {
+        "HO_NOW": 0,
+        "KEEP_CONNECTION": 1,
+        "LOAD_BALANCING": 2
+    },
+    "group_overlap": []
+}

@@ -1,0 +1,16 @@
+\begin{table}[!htbp]
+\centering
+\caption{Comparaison globale des modèles de langage sur 190 scénarios V2X.}
+\label{tab:llm_final_comparison}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lrrrrrrr}
+\toprule
+\textbf{Modèle} & \textbf{Accuracy} & \textbf{Balanced Acc.} & \textbf{Précision macro} & \textbf{Rappel macro} & \textbf{Macro-F1} & \textbf{JSON valide} & \textbf{Temps moyen (s)} \\
+\midrule
+Llama 3.2 1B & 0.3474 & 0.2500 & 0.0695 & 0.2000 & 0.1031 & 1.0000 & 19.72 \\
+Qwen 2.5 3B & 0.3737 & 0.3889 & 0.1134 & 0.3111 & 0.1621 & 1.0000 & 39.37 \\
+DeepSeek-R1 8B & 0.3947 & 0.3284 & 0.3938 & 0.2627 & 0.1976 & 1.0000 & 101.78 \\
+\bottomrule
+\end{tabular}%
+}
+\end{table}

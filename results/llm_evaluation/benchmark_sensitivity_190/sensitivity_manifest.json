@@ -1,0 +1,55 @@
+{
+  "input_file": "/home/ayoub/v2x-llm-project/results/llm_evaluation/final_benchmark_190/llm_final_comparison.csv",
+  "profiles": {
+    "Performance": {
+      "Accuracy": 0.2,
+      "MacroF1": 0.45,
+      "MacroPrecision": 0.1,
+      "MacroRecall": 0.15,
+      "JSONValidRate": 0.05,
+      "LatencyScore": 0.05
+    },
+    "Equilibre": {
+      "Accuracy": 0.25,
+      "MacroF1": 0.3,
+      "MacroPrecision": 0.1,
+      "MacroRecall": 0.1,
+      "JSONValidRate": 0.05,
+      "LatencyScore": 0.2
+    },
+    "Temps_reel": {
+      "Accuracy": 0.15,
+      "MacroF1": 0.2,
+      "MacroPrecision": 0.1,
+      "MacroRecall": 0.1,
+      "JSONValidRate": 0.05,
+      "LatencyScore": 0.4
+    },
+    "Ultra_temps_reel": {
+      "Accuracy": 0.1,
+      "MacroF1": 0.1,
+      "MacroPrecision": 0.05,
+      "MacroRecall": 0.05,
+      "JSONValidRate": 0.05,
+      "LatencyScore": 0.65
+    },
+    "Recherche": {
+      "Accuracy": 0.15,
+      "MacroF1": 0.5,
+      "MacroPrecision": 0.1,
+      "MacroRecall": 0.15,
+      "JSONValidRate": 0.05,
+      "LatencyScore": 0.05
+    }
+  },
+  "latency_min": 0.0,
+  "latency_max": 0.8,
+  "latency_step": 0.01,
+  "continuous_base_weights_without_latency": {
+    "Accuracy": 0.25,
+    "MacroF1": 0.4,
+    "MacroPrecision": 0.1,
+    "MacroRecall": 0.15,
+    "JSONValidRate": 0.1
+  }
+}

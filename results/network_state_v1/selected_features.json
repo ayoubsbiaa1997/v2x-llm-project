@@ -1,0 +1,81 @@
+{
+  "input_file": "/home/ayoub/v2x-llm-project/datasets/processed/final_dataset_v3.csv",
+  "observation_count": 190,
+  "selected_features": [
+    "gNbNum",
+    "ueNumPerGnb",
+    "totalUE",
+    "bsDistance",
+    "ueSpeed",
+    "lambdaULL",
+    "lambdaBe"
+  ],
+  "numeric_features": [
+    "gNbNum",
+    "ueNumPerGnb",
+    "totalUE",
+    "bsDistance",
+    "ueSpeed",
+    "lambdaULL",
+    "lambdaBe"
+  ],
+  "categorical_features": [],
+  "removed_constant_features": [
+    "scenarioLength",
+    "packetULL",
+    "packetBE"
+  ],
+  "forbidden_features": [
+    "Congestion",
+    "CongestionLevel",
+    "CongestionScore",
+    "Decision",
+    "Delay",
+    "Explanation",
+    "HOAttempts",
+    "HODelay",
+    "HOFailure",
+    "HOFailureRate",
+    "HORisk",
+    "HORiskScore",
+    "HOSuccess",
+    "HOSuccessRate",
+    "Jitter",
+    "NetworkSeverityScore",
+    "PDR",
+    "PacketLoss",
+    "PolicyReason",
+    "PolicyRule",
+    "QoSLevel",
+    "QoSScore",
+    "Throughput"
+  ],
+  "targets": [
+    "QoSScore",
+    "CongestionScore",
+    "HORiskScore"
+  ],
+  "best_models": {
+    "QoSScore": {
+      "model_name": "HistGradientBoosting",
+      "model_file": "/home/ayoub/v2x-llm-project/models/network_state_v1/QoSScore_HistGradientBoosting.joblib",
+      "cv_mae": 0.0785399101046885,
+      "cv_rmse": 0.10261939846907822,
+      "cv_r2": 0.7092157678521407
+    },
+    "CongestionScore": {
+      "model_name": "HistGradientBoosting",
+      "model_file": "/home/ayoub/v2x-llm-project/models/network_state_v1/CongestionScore_HistGradientBoosting.joblib",
+      "cv_mae": 0.1080706642211734,
+      "cv_rmse": 0.14220054726746761,
+      "cv_r2": 0.570214176518443
+    },
+    "HORiskScore": {
+      "model_name": "ExtraTrees",
+      "model_file": "/home/ayoub/v2x-llm-project/models/network_state_v1/HORiskScore_ExtraTrees.joblib",
+      "cv_mae": 0.018120781625115497,
+      "cv_rmse": 0.029679571564195695,
+      "cv_r2": 0.8830581790186821
+    }
+  }
+}

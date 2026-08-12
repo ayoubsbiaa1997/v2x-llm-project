@@ -1,0 +1,4 @@
+{
+  "decision": "HANDOVER_NOW",
+  "explanation": "The network is experiencing high congestion (CongestionSc\u001b[13D\u001b[K\n(CongestionScore: 0.568) and a degraded QoSScore (0.570), alongside a high \u001b[K\nmobility congestion index (0.783). Immediate handover to another cell is ne\u001b[2D\u001b[K\nnecessary to prevent further degradation of service, especially given the c\u001b[1D\u001b[K\ncritical load scenario."
+}

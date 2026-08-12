@@ -1,0 +1,52 @@
+[0/2] Re-checking globbed directories...
+ninja: no work to do.
+[0/2] Re-checking globbed directories...
+ninja: no work to do.
+HANDOVER_START 0.300001 IMSI=2 FROM=2 RNTI=1 TO=1
+HANDOVER_START 0.300001 IMSI=4 FROM=2 RNTI=13 TO=1
+HANDOVER_START 0.300002 IMSI=6 FROM=2 RNTI=23 TO=1
+HANDOVER_START 0.300002 IMSI=14 FROM=2 RNTI=41 TO=1
+HANDOVER_START 0.300002 IMSI=3 FROM=2 RNTI=2 TO=1
+HANDOVER_START 0.300002 IMSI=5 FROM=2 RNTI=14 TO=1
+HANDOVER_START 0.300002 IMSI=7 FROM=2 RNTI=24 TO=1
+HANDOVER_START 0.300002 IMSI=9 FROM=2 RNTI=31 TO=1
+HANDOVER_START 0.300002 IMSI=11 FROM=2 RNTI=32 TO=1
+HANDOVER_START 0.300003 IMSI=13 FROM=2 RNTI=37 TO=1
+HANDOVER_START 0.300003 IMSI=15 FROM=2 RNTI=44 TO=1
+HANDOVER_START 0.300003 IMSI=17 FROM=2 RNTI=45 TO=1
+HANDOVER_SUCCESS 0.300254 IMSI=2 CELL=1 RNTI=7 DELAY_MS=0.253
+HANDOVER_SUCCESS 0.301 IMSI=4 CELL=1 RNTI=8 DELAY_MS=0.816
+HANDOVER_SUCCESS 0.301 IMSI=6 CELL=1 RNTI=9 DELAY_MS=0.815
+HANDOVER_SUCCESS 0.301 IMSI=14 CELL=1 RNTI=10 DELAY_MS=1.378
+HANDOVER_SUCCESS 0.301 IMSI=3 CELL=1 RNTI=11 DELAY_MS=1.378
+HANDOVER_SUCCESS 0.302 IMSI=5 CELL=1 RNTI=12 DELAY_MS=1.940
+HANDOVER_SUCCESS 0.302 IMSI=7 CELL=1 RNTI=13 DELAY_MS=1.940
+HANDOVER_SUCCESS 0.303 IMSI=9 CELL=1 RNTI=14 DELAY_MS=2.502
+HANDOVER_SUCCESS 0.303 IMSI=11 CELL=1 RNTI=15 DELAY_MS=2.502
+HANDOVER_SUCCESS 0.303 IMSI=13 CELL=1 RNTI=16 DELAY_MS=3.064
+HANDOVER_SUCCESS 0.303 IMSI=15 CELL=1 RNTI=17 DELAY_MS=3.064
+HANDOVER_SUCCESS 0.304 IMSI=17 CELL=1 RNTI=18 DELAY_MS=3.627
+HANDOVER_START 1.924 IMSI=6 FROM=1 RNTI=9 TO=2
+HANDOVER_START 1.924 IMSI=12 FROM=1 RNTI=5 TO=2
+HANDOVER_START 1.924 IMSI=14 FROM=1 RNTI=10 TO=2
+HANDOVER_START 1.924 IMSI=9 FROM=1 RNTI=14 TO=2
+HANDOVER_START 1.924 IMSI=15 FROM=1 RNTI=17 TO=2
+HANDOVER_SUCCESS 1.924 IMSI=6 CELL=2 RNTI=52 DELAY_MS=0.253
+HANDOVER_SUCCESS 1.924 IMSI=12 CELL=2 RNTI=53 DELAY_MS=0.253
+HANDOVER_SUCCESS 1.925 IMSI=14 CELL=2 RNTI=54 DELAY_MS=0.815
+HANDOVER_SUCCESS 1.925 IMSI=9 CELL=2 RNTI=55 DELAY_MS=0.815
+HANDOVER_SUCCESS 1.925 IMSI=15 CELL=2 RNTI=56 DELAY_MS=1.378
+msg="method unexpected in state CONNECTED_NORMALLY", +5.616254463s 7 file=/home/ayoub/ns-3-dev/contrib/nr/model/nr-gnb-rrc.cc, line=1178
+NS_FATAL, terminating
+   0# ns3::NrUeManager::RecvRrcConnectionRequest(ns3::NrRrcSap::RrcConnectionRequest) at /home/ayoub/ns-3-dev/contrib/nr/model/nr-gnb-rrc.cc:1178
+   1# ns3::NrGnbRrc::DoRecvRrcConnectionRequest(unsigned short, ns3::NrRrcSap::RrcConnectionRequest) at /home/ayoub/ns-3-dev/contrib/nr/model/nr-gnb-rrc.cc:2677
+   2# ns3::DefaultSimulatorImpl::ProcessOneEvent() at /home/ayoub/ns-3-dev/src/core/model/default-simulator-impl.cc:131
+   3# ns3::DefaultSimulatorImpl::Run() at /home/ayoub/ns-3-dev/src/core/model/default-simulator-impl.cc:184
+   4# main at /home/ayoub/ns-3-dev/scratch/v2x-5g-handover-stable.cc:781
+   5#      at :0
+   6# __libc_start_main at :0
+   7# _start at :0
+   8# 
+
+terminate called without an active exception
+Command 'build/scratch/ns3-dev-v2x-5g-handover-stable-default --gNbNum=2 --ueNumPergNb=8 --bsDistance=200 --scenarioLength=300 --enableUeMobility=true --ueSpeed=30 --lambdaULL=9000 --lambdaBe=9000 --simTime=6s --doubleOperationalBand=false --simTag=exp_0064_g2_u8_d200_v30_L3' died with <Signals.SIGABRT: 6>.

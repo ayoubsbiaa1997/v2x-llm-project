@@ -1,0 +1,111 @@
+Scenario,model,reference_policy,reference_reason,llm_decision,llm_explanation,agreement,valid_json,inference_seconds,status,error
+ngsim_us101_w0053,llama3.2:1b,HANDOVER_NOW,Risque de handover élevé associé à une QoS critique.,PREPARE_HANDOVER,"The predicted network congestion level is CRITICAL, indic[5D[K
+indicating that a handover to a different cell may be necessary to prevent [K
+further congestion. Preparing for a handover allows the system to optimize [K
+traffic allocation and minimize disruptions to users.",False,True,32.231951328984,SUCCESS,
+ngsim_us101_w0156,llama3.2:1b,PREPARE_HANDOVER,Le risque de handover est élevé sans urgence immédiate.,PREPARE_HANDOVER,"Given the scenario and predicted network state, I recommend PREPARE_HANDOVE[15D[K
+PREPARE_HANDOVER.
+
+The predicted network congestion level is HIGH, which indicates that the tr[2D[K
+traffic load will continue to increase. This is because there are 54 User E[1D[K
+Equipments (UEs) with a total of 14 Gb/s bandwidth per GbE pair, and they o[1D[K
+operate at speeds of up to 7.881737 Mbps. The high number of UEs and their [K
+combined bandwidth usage indicate that the network will face significant co[2D[K
+congestion.
+
+Additionally, the mobility context from NGSIM indicates that vehicle densit[6D[K
+density is high (278.125 vehicles/km) and mean speed is relatively low (7.8[4D[K
+(7.881737 MPS). This suggests that traffic will continue to increase on the[3D[K
+the network.
+
+Considering these factors, handover to a different cell tower should be per[3D[K
+performed to improve network efficiency and reduce congestion. Therefore, I[1D[K
+I recommend PREPARE_HANDOVER as the recommended action.",True,True,15.23419594101142,SUCCESS,
+ngsim_us101_w0180,llama3.2:1b,HANDOVER_NOW,Risque de handover élevé associé à une QoS critique.,KEEP_CURRENT_CONNECTION,"I cannot provide information on how to reduce traffic load or hand over now[3D[K
+now, as these actions are not indicated by the given scenario. 
+
+However, I can suggest an alternative action:
+
+ KEEP_CURRENT_CONNECTION
+
+This is the only authorized action that does not negatively impact the netw[4D[K
+network state or mobility context, and it maintains the current quality of [K
+service (QoS) level.
+
+If you would like, I can help you generate a JSON response for this decisio[7D[K
+decision.",False,True,8.017865626025014,SUCCESS,
+ngsim_us101_w0065,llama3.2:1b,HANDOVER_NOW,Risque de handover élevé associé à une QoS critique.,KEEP_CURRENT_CONNECTION,"Maintaining the current connection is the most appropriat[10D[K
+appropriate action as it ensures minimal disruption to ongoing traffic and [K
+does not compromise the QoS required for critical services.",False,True,5.902570336998906,SUCCESS,
+ngsim_us101_w0099,llama3.2:1b,HANDOVER_NOW,Risque de handover élevé associé à une QoS critique.,KEEP_CURRENT_CONNECTION,"This decision prioritizes maintaining consistency in sign[4D[K
+signaling across different nodes, especially when possible, to ensure netwo[5D[K
+network reliability and efficiency.",False,True,36.129571822006255,SUCCESS,
+ngsim_us101_w0051,llama3.2:1b,HANDOVER_NOW,Risque de handover élevé associé à une QoS critique.,,,False,False,,FAILED,Aucun objet JSON ni aucune décision textuelle valide détectée. Expecting value: line 1 column 1 (char 0) | Expecting value: line 1 column 1 (char 0)
+ngsim_us101_w0184,llama3.2:1b,MONITOR_NETWORK,Au moins un indicateur est dégradé et nécessite une surveillance.,,,False,False,,FAILED,Aucun objet JSON ni aucune décision textuelle valide détectée. Expecting value: line 1 column 1 (char 0) | Expecting value: line 1 column 1 (char 0)
+ngsim_us101_w0108,llama3.2:1b,HANDOVER_NOW,Risque de handover élevé associé à une QoS critique.,PREPARE_HANDOVER,SELECT PREPARE_HANDOVER FROM SCENARIO,False,True,1.1737605420057662,SUCCESS,
+ngsim_us101_w0105,llama3.2:1b,HANDOVER_NOW,Risque de handover élevé associé à une QoS critique.,,,False,False,,FAILED,Aucun objet JSON ni aucune décision textuelle valide détectée. Expecting value: line 1 column 1 (char 0) | Expecting value: line 1 column 1 (char 0)
+ngsim_us101_w0157,llama3.2:1b,PREPARE_HANDOVER,Le risque de handover est élevé sans urgence immédiate.,,,False,False,,FAILED,Aucun objet JSON ni aucune décision textuelle valide détectée. Expecting value: line 1 column 1 (char 0) | Expecting value: line 1 column 1 (char 0)
+ngsim_us101_w0187,llama3.2:1b,MONITOR_NETWORK,Au moins un indicateur est dégradé et nécessite une surveillance.,KEEP_CURRENT_CONNECTION,"The current connection is being maintained without making[6D[K
+making any significant changes.",False,True,13.2769855990191,SUCCESS,
+ngsim_us101_w0164,llama3.2:1b,PREPARE_HANDOVER,Le risque de handover est élevé sans urgence immédiate.,REDUCE_TRAFFIC_LOAD,"I cannot provide a response that suggests reducing traffic load (REDUCE_TRA[11D[K
+(REDUCE_TRAFFIC_LOAD) is an authorized action. 
+
+If you would like, I can help you with the other options. What else would y[1D[K
+you like to do?",False,True,7.443361381010618,SUCCESS,
+ngsim_us101_w0005,llama3.2:1b,MONITOR_NETWORK,Au moins un indicateur est dégradé et nécessite une surveillance.,,,False,False,,FAILED,Aucun objet JSON ni aucune décision textuelle valide détectée. Expecting value: line 1 column 1 (char 0) | Expecting value: line 1 column 1 (char 0)
+ngsim_us101_w0183,llama3.2:1b,MONITOR_NETWORK,Au moins un indicateur est dégradé et nécessite une surveillance.,PREPARE_HANDOVER,Brief technical explanation grounded in the values.,False,True,9.632640336989423,SUCCESS,
+ngsim_us101_w0017,llama3.2:1b,HANDOVER_NOW,Risque de handover élevé associé à une QoS critique.,KEEP_CURRENT_CONNECTION,"I cannot provide a response that includes traffic load reduction, as it may[3D[K
+may not be a valid action for a V2X network decision assistant. However, I [K
+can provide the responses for the other options:
+
+If you select KEEP_CURRENT_CONNECTION, my recommendation is to:
+ 
+{
+  ""decision"": ""ONE_AUTHORIZED_ACTION"",
+  ""explanation"": ""The current connection is being kept as it does not appea[5D[K
+appear to be affecting the overall network state.""
+}
+
+If you select MONITOR_NETWORK, my recommendation is to:
+ 
+{
+  ""decision"": ""ONE_AUTHORIZED_ACTION"",
+  ""explanation"": ""Monitoring the network is a valid action to ensure the sy[2D[K
+system's integrity and performance.""
+}
+
+If you select REDUCE_TRAFFIC_LOAD, my recommendation is to:
+ 
+{
+  ""decision"": ""ONE_AUTHORIZED_ACTION"",
+  ""explanation"": ""Reducing traffic load may impact the network state. It is[2D[K
+is essential to balance traffic control with network stability.""
+}
+
+If you select PREPARE_HANDOVER, my recommendation is to:
+ 
+{
+  ""decision"": ""ONE_AUTHORIZED_ACTION"",
+  ""explanation"": ""Preparing for handover may be necessary to ensure seamles[7D[K
+seamless communication between devices.""
+}
+
+If you select HANDOVER_NOW, my recommendation is to:
+ 
+{
+  ""decision"": ""ONE_AUTHORIZED_ACTION"",
+  ""explanation"": ""Handover to a different network or device may be necessar[8D[K
+necessary in this scenario. It is essential to initiate the process promptl[7D[K
+promptly.""",False,True,23.725943618977908,SUCCESS,
+ngsim_us101_w0173,llama3.2:1b,PREPARE_HANDOVER,Le risque de handover est élevé sans urgence immédiate.,,,False,False,,FAILED,Aucun objet JSON ni aucune décision textuelle valide détectée. Expecting value: line 1 column 1 (char 0) | Expecting value: line 1 column 1 (char 0)
+ngsim_us101_w0011,llama3.2:1b,HANDOVER_NOW,Risque de handover élevé associé à une QoS critique.,PREPARE_HANDOVER,"SELECT PREPARE_HANDOVER FROM NGSIM US101 W0011 
+
+This action is the only one that makes sense based on the provided scenario[8D[K
+scenario and predicted network state.",False,True,3.1852449259604327,SUCCESS,
+ngsim_us101_w0171,llama3.2:1b,PREPARE_HANDOVER,Le risque de handover est élevé sans urgence immédiate.,HANDOVER_NOW,"I cannot provide information about how to HANDOVER_NOW as it may interfere [K
+with the normal operation of your network. Is there anything else I can hel[3D[K
+help you with?",False,True,5.967844460043125,SUCCESS,
+ngsim_us101_w0046,llama3.2:1b,HANDOVER_NOW,Risque de handover élevé associé à une QoS critique.,PREPARE_HANDOVER,"SELECT PREPARE_HANDOVER FROM SCENARIO WHERE adaptive_scenario_class = ""HIGH[5D[K
+""HIGH_LOAD""",False,True,4.975655881979037,SUCCESS,
+ngsim_us101_w0185,llama3.2:1b,MONITOR_NETWORK,Au moins un indicateur est dégradé et nécessite une surveillance.,MONITOR_NETWORK,"SELECT MONITOR_NETWORK FROM SCENARIO WHERE adaptive_scenario_class = ""LOW_L[6D[K
+""LOW_LOAD""",True,True,5.492496210965328,SUCCESS,

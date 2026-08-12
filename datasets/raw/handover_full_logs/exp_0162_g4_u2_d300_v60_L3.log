@@ -1,0 +1,87 @@
+[0/2] Re-checking globbed directories...
+ninja: no work to do.
+[0/2] Re-checking globbed directories...
+ninja: no work to do.
+HANDOVER_START 0.300001 IMSI=6 FROM=4 RNTI=1 TO=1
+HANDOVER_START 0.300001 IMSI=10 FROM=3 RNTI=2 TO=1
+HANDOVER_START 0.300001 IMSI=9 FROM=2 RNTI=4 TO=1
+HANDOVER_START 0.300001 IMSI=7 FROM=4 RNTI=2 TO=1
+HANDOVER_START 0.300001 IMSI=5 FROM=3 RNTI=1 TO=1
+HANDOVER_START 0.300002 IMSI=11 FROM=4 RNTI=4 TO=1
+HANDOVER_SUCCESS 0.300254 IMSI=10 CELL=1 RNTI=2 DELAY_MS=0.253
+HANDOVER_SUCCESS 0.300 IMSI=6 CELL=1 RNTI=1 DELAY_MS=0.253
+HANDOVER_SUCCESS 0.300 IMSI=9 CELL=1 RNTI=3 DELAY_MS=0.316
+HANDOVER_SUCCESS 0.301 IMSI=5 CELL=1 RNTI=5 DELAY_MS=0.816
+HANDOVER_SUCCESS 0.301 IMSI=7 CELL=1 RNTI=4 DELAY_MS=0.816
+HANDOVER_SUCCESS 0.301 IMSI=11 CELL=1 RNTI=6 DELAY_MS=1.378
+HANDOVER_START 0.700 IMSI=4 FROM=2 RNTI=1 TO=3
+HANDOVER_START 0.700 IMSI=6 FROM=1 RNTI=1 TO=3
+HANDOVER_START 0.700 IMSI=9 FROM=1 RNTI=3 TO=4
+HANDOVER_START 0.700 IMSI=8 FROM=2 RNTI=2 TO=3
+HANDOVER_START 0.700 IMSI=10 FROM=1 RNTI=2 TO=3
+HANDOVER_START 0.700 IMSI=5 FROM=1 RNTI=5 TO=3
+HANDOVER_START 0.700 IMSI=7 FROM=1 RNTI=4 TO=3
+HANDOVER_START 0.700 IMSI=11 FROM=1 RNTI=6 TO=3
+HANDOVER_SUCCESS 0.700 IMSI=6 CELL=3 RNTI=4 DELAY_MS=0.253
+HANDOVER_SUCCESS 0.700 IMSI=4 CELL=3 RNTI=3 DELAY_MS=0.253
+HANDOVER_SUCCESS 0.700 IMSI=9 CELL=4 RNTI=5 DELAY_MS=0.253
+HANDOVER_SUCCESS 0.701 IMSI=8 CELL=3 RNTI=5 DELAY_MS=0.816
+HANDOVER_SUCCESS 0.701 IMSI=10 CELL=3 RNTI=6 DELAY_MS=1.378
+HANDOVER_SUCCESS 0.701 IMSI=5 CELL=3 RNTI=7 DELAY_MS=1.378
+HANDOVER_SUCCESS 0.702 IMSI=7 CELL=3 RNTI=8 DELAY_MS=1.940
+HANDOVER_SUCCESS 0.702 IMSI=11 CELL=3 RNTI=9 DELAY_MS=1.940
+HANDOVER_START 0.900 IMSI=9 FROM=4 RNTI=5 TO=3
+HANDOVER_SUCCESS 0.900 IMSI=9 CELL=3 RNTI=10 DELAY_MS=0.253
+HANDOVER_START 2.124 IMSI=4 FROM=3 RNTI=3 TO=1
+HANDOVER_START 2.124 IMSI=6 FROM=3 RNTI=4 TO=1
+HANDOVER_START 2.124 IMSI=8 FROM=3 RNTI=5 TO=1
+HANDOVER_START 2.124 IMSI=10 FROM=3 RNTI=6 TO=1
+HANDOVER_START 2.124 IMSI=5 FROM=3 RNTI=7 TO=1
+HANDOVER_START 2.124 IMSI=7 FROM=3 RNTI=8 TO=1
+HANDOVER_START 2.124 IMSI=9 FROM=3 RNTI=10 TO=1
+HANDOVER_START 2.124 IMSI=11 FROM=3 RNTI=9 TO=1
+HANDOVER_SUCCESS 2.124 IMSI=4 CELL=1 RNTI=7 DELAY_MS=0.253
+HANDOVER_SUCCESS 2.124 IMSI=6 CELL=1 RNTI=8 DELAY_MS=0.253
+HANDOVER_SUCCESS 2.125 IMSI=8 CELL=1 RNTI=9 DELAY_MS=0.815
+HANDOVER_SUCCESS 2.125 IMSI=10 CELL=1 RNTI=10 DELAY_MS=0.815
+HANDOVER_SUCCESS 2.125 IMSI=5 CELL=1 RNTI=11 DELAY_MS=1.378
+HANDOVER_SUCCESS 2.126 IMSI=7 CELL=1 RNTI=12 DELAY_MS=1.940
+HANDOVER_SUCCESS 2.126 IMSI=9 CELL=1 RNTI=13 DELAY_MS=1.940
+HANDOVER_SUCCESS 2.127 IMSI=11 CELL=1 RNTI=14 DELAY_MS=2.502
+HANDOVER_START 3.324 IMSI=4 FROM=1 RNTI=7 TO=2
+HANDOVER_START 3.324 IMSI=6 FROM=1 RNTI=8 TO=2
+HANDOVER_START 3.324 IMSI=8 FROM=1 RNTI=9 TO=2
+HANDOVER_START 3.324 IMSI=10 FROM=1 RNTI=10 TO=2
+HANDOVER_START 3.324 IMSI=7 FROM=1 RNTI=12 TO=2
+HANDOVER_START 3.324 IMSI=9 FROM=1 RNTI=13 TO=2
+HANDOVER_START 3.324 IMSI=11 FROM=1 RNTI=14 TO=2
+HANDOVER_SUCCESS 3.324 IMSI=4 CELL=2 RNTI=5 DELAY_MS=0.253
+HANDOVER_SUCCESS 3.324 IMSI=6 CELL=2 RNTI=6 DELAY_MS=0.253
+HANDOVER_SUCCESS 3.325 IMSI=8 CELL=2 RNTI=7 DELAY_MS=0.815
+HANDOVER_SUCCESS 3.325 IMSI=10 CELL=2 RNTI=8 DELAY_MS=0.815
+HANDOVER_SUCCESS 3.325 IMSI=7 CELL=2 RNTI=9 DELAY_MS=1.378
+HANDOVER_SUCCESS 3.325 IMSI=9 CELL=2 RNTI=10 DELAY_MS=1.378
+HANDOVER_SUCCESS 3.326 IMSI=11 CELL=2 RNTI=11 DELAY_MS=1.940
+HANDOVER_START 3.500 IMSI=4 FROM=2 RNTI=5 TO=3
+HANDOVER_START 3.500 IMSI=9 FROM=2 RNTI=10 TO=4
+HANDOVER_START 3.500 IMSI=6 FROM=2 RNTI=6 TO=3
+HANDOVER_START 3.500 IMSI=8 FROM=2 RNTI=7 TO=3
+HANDOVER_START 3.500 IMSI=10 FROM=2 RNTI=8 TO=3
+HANDOVER_START 3.500 IMSI=7 FROM=2 RNTI=9 TO=3
+HANDOVER_START 3.500 IMSI=11 FROM=2 RNTI=11 TO=3
+msg="Cannot RX SRS while TX.", +3.500116068s 2 file=/home/ayoub/ns-3-dev/contrib/nr/model/nr-spectrum-phy.cc, line=1433
+NS_FATAL, terminating
+   0# ns3::NrSpectrumPhy::StartRxSrs(ns3::Ptr<ns3::NrSpectrumSignalParametersUlCtrlFrame> const&) at /home/ayoub/ns-3-dev/contrib/nr/model/nr-spectrum-phy.cc:1433
+   1# ns3::NrSpectrumPhy::StartRx(ns3::Ptr<ns3::SpectrumSignalParameters>) at /home/ayoub/ns-3-dev/contrib/nr/model/nr-spectrum-phy.cc:776
+   2# ns3::MultiModelSpectrumChannel::StartRx(ns3::Ptr<ns3::SpectrumValue>, double, ns3::Ptr<ns3::SpectrumSignalParameters>, ns3::Ptr<ns3::SpectrumPhy>, std::map<unsigned int, ns3::Ptr<ns3::SpectrumValue>, std::less<unsigned int>, std::allocator<std::pair<unsigned int const, ns3::Ptr<ns3::SpectrumValue> > > > const&) at /home/ayoub/ns-3-dev/src/spectrum/model/multi-model-spectrum-channel.cc:503
+   3# void std::__invoke_impl<void, void (ns3::MultiModelSpectrumChannel::*&)(ns3::Ptr<ns3::SpectrumValue>, double, ns3::Ptr<ns3::SpectrumSignalParameters>, ns3::Ptr<ns3::SpectrumPhy>, std::map<unsigned int, ns3::Ptr<ns3::SpectrumValue>, std::less<unsigned int>, std::allocator<std::pair<unsigned int const, ns3::Ptr<ns3::SpectrumValue> > > > const&), ns3::MultiModelSpectrumChannel*&, ns3::Ptr<ns3::SpectrumValue>&, double&, ns3::Ptr<ns3::SpectrumSignalParameters>&, ns3::Ptr<ns3::SpectrumPhy>&, std::map<unsigned int, ns3::Ptr<ns3::SpectrumValue>, std::less<unsigned int>, std::allocator<std::pair<unsigned int const, ns3::Ptr<ns3::SpectrumValue> > > >&>(std::__invoke_memfun_deref, void (ns3::MultiModelSpectrumChannel::*&)(ns3::Ptr<ns3::SpectrumValue>, double, ns3::Ptr<ns3::SpectrumSignalParameters>, ns3::Ptr<ns3::SpectrumPhy>, std::map<unsigned int, ns3::Ptr<ns3::SpectrumValue>, std::less<unsigned int>, std::allocator<std::pair<unsigned int const, ns3::Ptr<ns3::SpectrumValue> > > > const&), ns3::MultiModelSpectrumChannel*&, ns3::Ptr<ns3::SpectrumValue>&, double&, ns3::Ptr<ns3::SpectrumSignalParameters>&, ns3::Ptr<ns3::SpectrumPhy>&, std::map<unsigned int, ns3::Ptr<ns3::SpectrumValue>, std::less<unsigned int>, std::allocator<std::pair<unsigned int const, ns3::Ptr<ns3::SpectrumValue> > > >&) at /usr/include/c++/13/bits/invoke.h:74
+   4# ns3::DefaultSimulatorImpl::ProcessOneEvent() at /home/ayoub/ns-3-dev/src/core/model/default-simulator-impl.cc:131
+   5# ns3::DefaultSimulatorImpl::Run() at /home/ayoub/ns-3-dev/src/core/model/default-simulator-impl.cc:184
+   6# main at /home/ayoub/ns-3-dev/scratch/v2x-5g-handover-stable.cc:781
+   7#      at :0
+   8# __libc_start_main at :0
+   9# _start at :0
+  10# 
+
+terminate called without an active exception
+Command 'build/scratch/ns3-dev-v2x-5g-handover-stable-default --gNbNum=4 --ueNumPergNb=2 --bsDistance=300 --scenarioLength=300 --enableUeMobility=true --ueSpeed=60 --lambdaULL=9000 --lambdaBe=9000 --simTime=6s --doubleOperationalBand=false --simTag=exp_0162_g4_u2_d300_v60_L3' died with <Signals.SIGABRT: 6>.

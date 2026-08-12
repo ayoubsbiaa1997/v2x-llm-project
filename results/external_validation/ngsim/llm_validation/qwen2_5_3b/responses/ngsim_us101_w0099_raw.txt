@@ -1,0 +1,8 @@
+{
+  "decision": "REDUCE_TRAFFIC_LOAD",
+  "explanation": "Given the HIGH_LOAD adaptive scenario class, a high conge[5D[K
+congestion score of 0.883 and a mobility congestion index (MCI) of 0.683 in[2D[K
+indicating critical network conditions, reducing traffic load is selected a[1D[K
+as the most appropriate action to ensure stable network performance and imp[3D[K
+improve QoS."
+}

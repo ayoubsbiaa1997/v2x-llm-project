@@ -1,0 +1,4 @@
+{
+  "decision": "PREPARE_HANDOVER",
+  "explanation": "SELECT PREPARE_HANDOVER FROM SCENARIO"
+}

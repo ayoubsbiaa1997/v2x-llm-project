@@ -1,0 +1,7 @@
+{
+  "final_benchmark_dir": "/home/ayoub/v2x-llm-project/results/llm_evaluation/final_benchmark_190",
+  "statistics_dir": "/home/ayoub/v2x-llm-project/results/llm_evaluation/benchmark_statistics_190",
+  "sensitivity_dir": "/home/ayoub/v2x-llm-project/results/llm_evaluation/benchmark_sensitivity_190",
+  "output_dir": "/home/ayoub/v2x-llm-project/results/llm_evaluation/benchmark_visualization_190",
+  "figure_count": 10
+}

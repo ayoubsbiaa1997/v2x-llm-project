@@ -1,0 +1,50 @@
+RAPPORT DE CONSTRUCTION DU DATASET
+==================================================
+Nombre d'observations : 190
+Nombre de colonnes : 32
+
+Distribution QoSLevel :
+QoSLevel
+CRITICAL      164
+DEGRADED       17
+ACCEPTABLE      6
+GOOD            3
+
+Distribution CongestionLevel :
+CongestionLevel
+CRITICAL    121
+HIGH         38
+MODERATE     28
+LOW           3
+
+Distribution HORisk :
+HORisk
+HIGH        124
+MEDIUM       39
+CRITICAL     19
+LOW           8
+
+Distribution Decision :
+Decision
+REDUCE_TRAFFIC_LOAD        113
+HANDOVER_NOW                30
+MONITOR_NETWORK             23
+PREPARE_HANDOVER            21
+KEEP_CURRENT_CONNECTION      3
+
+Statistiques numériques principales :
+       Throughput        Delay      Jitter  PacketLoss         PDR  Congestion  HORiskScore     HODelay
+count  190.000000   190.000000  190.000000  190.000000  190.000000  190.000000   190.000000  190.000000
+mean    13.164693   388.516137    2.444571   75.107639   24.892361    0.796704     0.600557    1.227206
+std     13.750445   385.225777    6.940209   24.114148   24.114149    0.173375     0.152112    0.558463
+min      0.155672     0.262414    0.021847    0.008928    0.425029    0.218239     0.088100    0.253180
+25%      4.657312    65.469250    0.084737   69.544350    7.695968    0.710285     0.501750    0.774169
+50%      9.105170   278.476000    0.258937   84.079850   15.920150    0.864473     0.652650    1.307440
+75%     16.895075   577.520000    1.312760   92.304050   30.455650    0.924783     0.716000    1.691690
+max     92.154500  1666.120000   65.652800   99.575000   99.991100    0.997838     0.851100    2.104270
+
+AVERTISSEMENT SCIENTIFIQUE
+--------------------------------------------------
+Les classes dérivées et les décisions sont fondées sur des règles heuristiques explicites. Elles constituent des pseudo-labels et non des décisions validées par un opérateur réseau réel.
+Les seuils devront être analysés et éventuellement recalibrés après la génération de la campagne expérimentale complète.
+Le risque de handover est estimé à partir de métriques indirectes. Il ne remplace pas une classe d'échec de handover réellement observée.

@@ -1,0 +1,65 @@
+[0/2] Re-checking globbed directories...
+ninja: no work to do.
+[0/2] Re-checking globbed directories...
+ninja: no work to do.
+HANDOVER_START 0.300001 IMSI=6 FROM=4 RNTI=2 TO=1
+HANDOVER_START 0.300001 IMSI=10 FROM=3 RNTI=4 TO=4
+HANDOVER_START 0.300001 IMSI=9 FROM=2 RNTI=1 TO=3
+HANDOVER_START 0.300001 IMSI=5 FROM=4 RNTI=1 TO=1
+HANDOVER_START 0.300002 IMSI=7 FROM=4 RNTI=5 TO=1
+HANDOVER_START 0.300002 IMSI=11 FROM=4 RNTI=6 TO=1
+HANDOVER_SUCCESS 0.300254 IMSI=6 CELL=1 RNTI=1 DELAY_MS=0.253
+HANDOVER_SUCCESS 0.300 IMSI=5 CELL=1 RNTI=2 DELAY_MS=0.253
+HANDOVER_SUCCESS 0.300 IMSI=9 CELL=3 RNTI=5 DELAY_MS=0.253
+HANDOVER_SUCCESS 0.300 IMSI=10 CELL=4 RNTI=7 DELAY_MS=0.253
+HANDOVER_SUCCESS 0.301 IMSI=7 CELL=1 RNTI=3 DELAY_MS=0.815
+HANDOVER_SUCCESS 0.301 IMSI=11 CELL=1 RNTI=4 DELAY_MS=0.815
+HANDOVER_START 0.700 IMSI=4 FROM=3 RNTI=1 TO=2
+HANDOVER_START 0.700 IMSI=10 FROM=4 RNTI=7 TO=2
+HANDOVER_START 0.700 IMSI=8 FROM=3 RNTI=2 TO=2
+HANDOVER_START 0.700 IMSI=9 FROM=3 RNTI=5 TO=2
+HANDOVER_SUCCESS 0.700 IMSI=4 CELL=2 RNTI=2 DELAY_MS=0.253
+HANDOVER_SUCCESS 0.700 IMSI=10 CELL=2 RNTI=3 DELAY_MS=0.253
+HANDOVER_SUCCESS 0.701 IMSI=9 CELL=2 RNTI=5 DELAY_MS=0.815
+HANDOVER_SUCCESS 0.701 IMSI=8 CELL=2 RNTI=4 DELAY_MS=0.816
+HANDOVER_START 0.900 IMSI=4 FROM=2 RNTI=2 TO=1
+HANDOVER_START 0.900 IMSI=8 FROM=2 RNTI=4 TO=1
+HANDOVER_START 0.900 IMSI=10 FROM=2 RNTI=3 TO=1
+HANDOVER_START 0.900 IMSI=9 FROM=2 RNTI=5 TO=1
+HANDOVER_SUCCESS 0.900 IMSI=4 CELL=1 RNTI=5 DELAY_MS=0.253
+HANDOVER_SUCCESS 0.900 IMSI=8 CELL=1 RNTI=6 DELAY_MS=0.253
+HANDOVER_SUCCESS 0.900 IMSI=9 CELL=1 RNTI=8 DELAY_MS=0.315
+HANDOVER_SUCCESS 0.901 IMSI=10 CELL=1 RNTI=7 DELAY_MS=0.815
+HANDOVER_START 2.124 IMSI=4 FROM=1 RNTI=5 TO=3
+HANDOVER_START 2.124 IMSI=6 FROM=1 RNTI=1 TO=2
+HANDOVER_START 2.124 IMSI=10 FROM=1 RNTI=7 TO=4
+HANDOVER_START 2.124 IMSI=5 FROM=1 RNTI=2 TO=3
+HANDOVER_SUCCESS 2.124 IMSI=6 CELL=2 RNTI=6 DELAY_MS=0.253
+HANDOVER_SUCCESS 2.124 IMSI=4 CELL=3 RNTI=6 DELAY_MS=0.253
+HANDOVER_SUCCESS 2.124 IMSI=5 CELL=3 RNTI=7 DELAY_MS=0.253
+HANDOVER_SUCCESS 2.124 IMSI=10 CELL=4 RNTI=10 DELAY_MS=0.253
+NS_ASSERT failed, cond="m_dcBit == DATA_PDU", +2.397425891s 8 file=/home/ayoub/ns-3-dev/contrib/nr/model/nr-pdcp-header.cc, line=103
+NS_FATAL, terminating
+   0# ns3::NrPdcpHeader::Deserialize(ns3::Buffer::Iterator) at /home/ayoub/ns-3-dev/contrib/nr/model/nr-pdcp-header.cc:103
+   1# ns3::Packet::RemoveHeader(ns3::Header&) at /home/ayoub/ns-3-dev/src/network/model/packet.cc:285
+   2# ns3::NrPdcp::DoReceivePdu(ns3::Ptr<ns3::Packet>) at /home/ayoub/ns-3-dev/contrib/nr/model/nr-pdcp.cc:208
+   3# ns3::NrPdcpSpecificNrRlcSapUser::ReceivePdcpPdu(ns3::Ptr<ns3::Packet>) at /home/ayoub/ns-3-dev/contrib/nr/model/nr-pdcp.cc:52
+   4# ns3::NrRlcUm::ReassembleAndDeliver(ns3::Ptr<ns3::Packet>) at /home/ayoub/ns-3-dev/contrib/nr/model/nr-rlc-um.cc:837
+   5# ns3::NrRlcUm::ReassembleSnInterval(ns3::nr::SequenceNumber10, ns3::nr::SequenceNumber10) at /home/ayoub/ns-3-dev/contrib/nr/model/nr-rlc-um.cc:1180
+   6# ns3::NrRlcUm::DoReceivePdu(ns3::NrMacSapUser::ReceivePduParameters) at /home/ayoub/ns-3-dev/contrib/nr/model/nr-rlc-um.cc:577
+   7# ns3::NrRlcSpecificNrMacSapUser::ReceivePdu(ns3::NrMacSapUser::ReceivePduParameters) at /home/ayoub/ns-3-dev/contrib/nr/model/nr-rlc.cc:67
+   8# ns3::NrSimpleUeComponentCarrierManager::DoReceivePdu(ns3::NrMacSapUser::ReceivePduParameters) at /home/ayoub/ns-3-dev/contrib/nr/model/nr-simple-ue-component-carrier-manager.cc:239
+   9# ns3::NrSimpleUeCcmMacSapUser::ReceivePdu(ns3::NrMacSapUser::ReceivePduParameters) at /home/ayoub/ns-3-dev/contrib/nr/model/nr-simple-ue-component-carrier-manager.cc:104
+  10# ns3::NrUeMac::DoReceivePhyPdu(ns3::Ptr<ns3::Packet>) at /home/ayoub/ns-3-dev/contrib/nr/model/nr-ue-mac.cc:695
+  11# ns3::MacUeMemberPhySapUser::ReceivePhyPdu(ns3::Ptr<ns3::Packet>) at /home/ayoub/ns-3-dev/contrib/nr/model/nr-ue-mac.cc:188
+  12# void std::__invoke_impl<void, void (ns3::NrUePhySapUser::*&)(ns3::Ptr<ns3::Packet>), ns3::NrUePhySapUser*&, ns3::Ptr<ns3::Packet>&>(std::__invoke_memfun_deref, void (ns3::NrUePhySapUser::*&)(ns3::Ptr<ns3::Packet>), ns3::NrUePhySapUser*&, ns3::Ptr<ns3::Packet>&) at /usr/include/c++/13/bits/invoke.h:74
+  13# ns3::DefaultSimulatorImpl::ProcessOneEvent() at /home/ayoub/ns-3-dev/src/core/model/default-simulator-impl.cc:131
+  14# ns3::DefaultSimulatorImpl::Run() at /home/ayoub/ns-3-dev/src/core/model/default-simulator-impl.cc:184
+  15# main at /home/ayoub/ns-3-dev/scratch/v2x-5g-handover-stable.cc:781
+  16#      at :0
+  17# __libc_start_main at :0
+  18# _start at :0
+  19# 
+
+terminate called without an active exception
+Command 'build/scratch/ns3-dev-v2x-5g-handover-stable-default --gNbNum=4 --ueNumPergNb=2 --bsDistance=100 --scenarioLength=300 --enableUeMobility=true --ueSpeed=60 --lambdaULL=9000 --lambdaBe=9000 --simTime=6s --doubleOperationalBand=false --simTag=exp_0150_g4_u2_d100_v60_L3' died with <Signals.SIGABRT: 6>.

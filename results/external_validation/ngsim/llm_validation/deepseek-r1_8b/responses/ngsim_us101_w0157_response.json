@@ -1,0 +1,4 @@
+{
+  "decision": "PREPARE_HANDOVER",
+  "explanation": "The network congestion and QoS degradation are high, sugg\u001b[4D\u001b[K\nsuggesting that users might soon experience poor service. The predicted veh\u001b[3D\u001b[K\nvehicle density indicates persistent traffic conditions. Preparing for hand\u001b[4D\u001b[K\nhandover is necessary to mitigate potential issues when the current gNBs be\u001b[2D\u001b[K\nbecome overloaded."
+}

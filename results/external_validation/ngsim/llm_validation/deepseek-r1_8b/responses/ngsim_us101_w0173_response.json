@@ -1,0 +1,4 @@
+{
+  "decision": "PREPARE_HANDOVER",
+  "explanation": "Network congestion is already high (CongestionLevel: HIGH\u001b[4D\u001b[K\nHIGH) with a score of 0.568, while the road traffic density and speed sugge\u001b[5D\u001b[K\nsuggest potential for increased load or risk. Preparing handover allows pro\u001b[3D\u001b[K\nproactive management before conditions deteriorate further."
+}

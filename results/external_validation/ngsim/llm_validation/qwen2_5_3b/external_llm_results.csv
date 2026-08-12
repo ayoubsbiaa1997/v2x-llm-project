@@ -1,0 +1,93 @@
+Scenario,model,reference_policy,reference_reason,llm_decision,llm_explanation,agreement,valid_json,inference_seconds,status,error
+ngsim_us101_w0053,qwen2.5:3b,HANDOVER_NOW,Risque de handover élevé associé à une QoS critique.,REDUCE_TRAFFIC_LOAD,"Given the HIGH congestion level and the current network s[1D[K
+state with a CRITICAL QoS score, reducing traffic load is the most effectiv[8D[K
+effective action to maintain acceptable levels of service quality without c[1D[K
+causing more severe congestion issues. The number of UEs (37) is above the [K
+typical capacity for such scenarios, indicating that additional UEs are con[3D[K
+contributing to overall network stress.",False,True,14.523159917036535,SUCCESS,
+ngsim_us101_w0156,qwen2.5:3b,PREPARE_HANDOVER,Le risque de handover est élevé sans urgence immédiate.,REDUCE_TRAFFIC_LOAD,"Given the high congestion score (0.568290) and mobility c[1D[K
+congestion index (0.7269347), reducing traffic load is the most appropriate[11D[K
+appropriate action to improve network performance and user experience in th[2D[K
+this critical scenario.",False,True,8.984416115970816,SUCCESS,
+ngsim_us101_w0180,qwen2.5:3b,HANDOVER_NOW,Risque de handover élevé associé à une QoS critique.,REDUCE_TRAFFIC_LOAD,"Given the HIGH HORiskLevel and CRITICAL QoSLevel, reducin[7D[K
+reducing traffic load is the most appropriate action to maintain service qu[2D[K
+quality while managing congestion effectively. The current network state in[2D[K
+indicates a need for improved performance without compromising existing con[3D[K
+connections.",False,True,8.658438023994677,SUCCESS,
+ngsim_us101_w0065,qwen2.5:3b,HANDOVER_NOW,Risque de handover élevé associé à une QoS critique.,REDUCE_TRAFFIC_LOAD,"Given the HIGH HORiskLevel and CRITICAL CongestionLevel, [K
+reducing traffic load through network decisions can help mitigate congestio[9D[K
+congestion. The scenario has a moderate level of load but with high risk of[2D[K
+of congestion, warranting immediate action to reduce traffic load.",False,True,8.673305550997611,SUCCESS,
+ngsim_us101_w0099,qwen2.5:3b,HANDOVER_NOW,Risque de handover élevé associé à une QoS critique.,REDUCE_TRAFFIC_LOAD,"Given the HIGH_LOAD adaptive scenario class, a high conge[5D[K
+congestion score of 0.883 and a mobility congestion index (MCI) of 0.683 in[2D[K
+indicating critical network conditions, reducing traffic load is selected a[1D[K
+as the most appropriate action to ensure stable network performance and imp[3D[K
+improve QoS.",False,True,10.093532356026117,SUCCESS,
+ngsim_us101_w0051,qwen2.5:3b,HANDOVER_NOW,Risque de handover élevé associé à une QoS critique.,REDUCE_TRAFFIC_LOAD,"Given the HIGH LOAD scenario and critical QoSScore (0.844[6D[K
+(0.844) with a congestion score of 0.883, reducing traffic load is the most[4D[K
+most appropriate action to maintain optimal service quality and prevent net[3D[K
+network overload.",False,True,8.560082592011895,SUCCESS,
+ngsim_us101_w0184,qwen2.5:3b,MONITOR_NETWORK,Au moins un indicateur est dégradé et nécessite une surveillance.,REDUCE_TRAFFIC_LOAD,"The current network state shows a LOW congestion level (C[2D[K
+(CongestionScore: 0.124774) and a GOOD Quality of Service (QoSScore: 0.2133[6D[K
+0.213384), indicating that reducing traffic load is the most appropriate ac[2D[K
+action to maintain these levels while also addressing the MEDIUM risk in te[2D[K
+terms of HORiskLevel.",False,True,12.097580782021396,SUCCESS,
+ngsim_us101_w0108,qwen2.5:3b,HANDOVER_NOW,Risque de handover élevé associé à une QoS critique.,REDUCE_TRAFFIC_LOAD,"Given the HIGH HORiskLevel and CRITICAL CongestionLevel, [K
+reducing traffic load is the most appropriate action to prevent further con[3D[K
+congestion and mitigate risk. The scenario indicates a high vehicle density[7D[K
+density (203.125 vehicles per km) with a mean speed of 13.24 mps, which con[3D[K
+contributes to mobility congestion.",False,True,11.263675117050298,SUCCESS,
+ngsim_us101_w0105,qwen2.5:3b,HANDOVER_NOW,Risque de handover élevé associé à une QoS critique.,REDUCE_TRAFFIC_LOAD,"Given the critical QoSScore and CongestionScore, reducing[8D[K
+reducing traffic load helps improve overall network performance and stabili[7D[K
+stability. In this scenario, congestion levels are high, and network resour[6D[K
+resources need to be optimized to maintain acceptable Quality of Service (Q[2D[K
+(QoS).",False,True,9.287946016993374,SUCCESS,
+ngsim_us101_w0157,qwen2.5:3b,PREPARE_HANDOVER,Le risque de handover est élevé sans urgence immédiate.,REDUCE_TRAFFIC_LOAD,"Given the HIGH congestion level and a QoSScore of 0.57051[7D[K
+0.570513 indicating degraded Quality of Service, reducing traffic load by s[1D[K
+shifting some UE to other available GNBs or keeping existing connections st[2D[K
+stable while ensuring minimal disruptions can help improve network performa[8D[K
+performance.",False,True,20.31171577196801,SUCCESS,
+ngsim_us101_w0187,qwen2.5:3b,MONITOR_NETWORK,Au moins un indicateur est dégradé et nécessite une surveillance.,MONITOR_NETWORK,"Given the LOW_LOAD adaptive scenario and a QoSScore of 0.[2D[K
+0.093820, which indicates good Quality of Service, along with a CONGESTIONL[11D[K
+CONGESTIONLEVEL of LOW and a MOBILITY_CONGESTION_INDEX of 0.279048485097222[17D[K
+0.2790484850972229 also indicating low congestion in the real mobility cont[4D[K
+context from NGSIM, there is no immediate need to take action other than mo[2D[K
+monitoring the network state for potential changes that might affect servic[6D[K
+service quality and overall system efficiency.",True,True,26.441993045969863,SUCCESS,
+ngsim_us101_w0164,qwen2.5:3b,PREPARE_HANDOVER,Le risque de handover est élevé sans urgence immédiate.,REDUCE_TRAFFIC_LOAD,"Given the DEGRADED QoSScore (0.570513) and HIGH congestio[9D[K
+congestion level, reducing traffic load by shifting some users to different[9D[K
+different networks or adjusting their speeds can help improve overall netwo[5D[K
+network performance without requiring immediate handover of all users.",False,True,19.133247891964857,SUCCESS,
+ngsim_us101_w0005,qwen2.5:3b,MONITOR_NETWORK,Au moins un indicateur est dégradé et nécessite une surveillance.,REDUCE_TRAFFIC_LOAD,"Given the LOW congestion level (CongestionLevel: LOW) and[3D[K
+and acceptable QoS, reducing traffic load can help maintain optimal network[7D[K
+network performance without overloading resources. This is a reasonable act[3D[K
+action to take in this scenario.",False,True,18.1298795210314,SUCCESS,
+ngsim_us101_w0183,qwen2.5:3b,MONITOR_NETWORK,Au moins un indicateur est dégradé et nécessite une surveillance.,REDUCE_TRAFFIC_LOAD,"Given the moderate congestion level and acceptable QoS, r[1D[K
+reducing traffic load is the most appropriate action to maintain network ef[2D[K
+efficiency and minimize delays without compromising service quality signifi[7D[K
+significantly.",False,True,18.446594363020267,SUCCESS,
+ngsim_us101_w0017,qwen2.5:3b,HANDOVER_NOW,Risque de handover élevé associé à une QoS critique.,REDUCE_TRAFFIC_LOAD,"Given the high congestion score (0.883) and critical QoS [K
+level, reducing traffic load is the most effective action to improve networ[6D[K
+network performance and ensure stable communication quality for all users i[1D[K
+in scenario ngsim_us101_w0017 with HIGH LOAD adaptive class.",False,True,21.80216797802132,SUCCESS,
+ngsim_us101_w0173,qwen2.5:3b,PREPARE_HANDOVER,Le risque de handover est élevé sans urgence immédiate.,REDUCE_TRAFFIC_LOAD,"Given the high congestion score (0.568290) and mobility c[1D[K
+congestion index (0.771028), reducing traffic load is chosen to alleviate n[1D[K
+network congestion, ensuring a stable QoS for users in scenario ngsim_us101[11D[K
+ngsim_us101_w0173.",False,True,21.560583831043918,SUCCESS,
+ngsim_us101_w0011,qwen2.5:3b,HANDOVER_NOW,Risque de handover élevé associé à une QoS critique.,REDUCE_TRAFFIC_LOAD,"Given the high congestion level (CongestionScore: 0.883) [K
+and the need to maintain a critical QoS, reducing traffic load is chosen as[2D[K
+as the most effective action to alleviate network congestion and improve ov[2D[K
+overall performance.",False,True,19.257661553972863,SUCCESS,
+ngsim_us101_w0171,qwen2.5:3b,PREPARE_HANDOVER,Le risque de handover est élevé sans urgence immédiate.,REDUCE_TRAFFIC_LOAD,"Given the HIGH congestion level and DEGRADED Quality of S[1D[K
+Service (QoS), reducing traffic load is a prioritized action to alleviate n[1D[K
+network strain and improve service quality. The current scenario suggests t[1D[K
+that adjusting UE speeds or reassigning resources could help in managing th[2D[K
+this load effectively.",False,True,19.77430251496844,SUCCESS,
+ngsim_us101_w0046,qwen2.5:3b,HANDOVER_NOW,Risque de handover élevé associé à une QoS critique.,REDUCE_TRAFFIC_LOAD,"Given the HIGH LOAD scenario and a QoSScore of 0.844, red[3D[K
+reducing traffic load is the most appropriate action to maintain acceptable[10D[K
+acceptable Quality of Service (QoS) levels under critical congestion condit[6D[K
+conditions.",False,True,18.377989641972817,SUCCESS,
+ngsim_us101_w0185,qwen2.5:3b,MONITOR_NETWORK,Au moins un indicateur est dégradé et nécessite une surveillance.,REDUCE_TRAFFIC_LOAD,"Given the scenario of LOW LOAD and a low HORiskLevel (MED[4D[K
+(MEDIUM), reducing traffic load is the most suitable action to maintain opt[3D[K
+optimal network conditions without overloading the system, as indicated by [K
+the congestion level being LOW.",False,True,19.94848360301694,SUCCESS,

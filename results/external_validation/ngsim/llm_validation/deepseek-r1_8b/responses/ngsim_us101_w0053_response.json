@@ -1,0 +1,4 @@
+{
+  "decision": "HANDOVER_NOW",
+  "explanation": "Network congestion is critical, indicating immediate risk\u001b[4D\u001b[K\nrisk of service degradation for all connected vehicles. The high handover r\u001b[1D\u001b[K\nrisk level combined with vehicle density suggests that maintaining existing\u001b[8D\u001b[K\nexisting connections would likely lead to packet loss or dropped services i\u001b[1D\u001b[K\nif handover does not occur promptly."
+}

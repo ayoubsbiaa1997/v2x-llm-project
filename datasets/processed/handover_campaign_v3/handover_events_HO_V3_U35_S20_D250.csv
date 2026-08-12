@@ -1,0 +1,3 @@
+time_s,event,failure_type,imsi,source_cell,target_cell,rnti,handover_delay_ms
+0.500001,START,NONE,13,3,2,277,NA
+0.500254,SUCCESS,NONE,13,NA,2,593,0

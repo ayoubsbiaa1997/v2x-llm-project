@@ -1,0 +1,4 @@
+{
+  "decision": "PREPARE_HANDOVER",
+  "explanation": "The network load is low, but there's a medium handover ri\u001b[2D\u001b[K\nrisk score despite good QoS. Given two gNBs with moderate UE connections an\u001b[2D\u001b[K\nand proximity (300m), preparing for potential handovers addresses the predi\u001b[5D\u001b[K\npredicted instability without triggering immediate congestion."
+}

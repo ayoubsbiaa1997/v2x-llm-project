@@ -1,0 +1,117 @@
+{
+  "model": "llama3.2:1b",
+  "requested": 20,
+  "successful": 14,
+  "failed": 6,
+  "valid_json_rate": 0.7,
+  "agreement_rate": 0.14285714285714285,
+  "balanced_agreement": 0.2222222222222222,
+  "macro_precision": 0.23333333333333334,
+  "macro_recall": 0.13333333333333333,
+  "macro_f1": 0.14444444444444443,
+  "active_macro_f1": 0.24074074074074073,
+  "weighted_f1": 0.15476190476190474,
+  "mean_inference_seconds": 12.313577715141166,
+  "median_inference_seconds": 7.730613503517816,
+  "p95_inference_seconds": 33.59611850154179,
+  "active_reference_labels": [
+    "MONITOR_NETWORK",
+    "PREPARE_HANDOVER",
+    "HANDOVER_NOW"
+  ],
+  "reference_distribution": {
+    "HANDOVER_NOW": 8,
+    "PREPARE_HANDOVER": 3,
+    "MONITOR_NETWORK": 3
+  },
+  "llm_distribution": {
+    "PREPARE_HANDOVER": 6,
+    "KEEP_CURRENT_CONNECTION": 5,
+    "REDUCE_TRAFFIC_LOAD": 1,
+    "HANDOVER_NOW": 1,
+    "MONITOR_NETWORK": 1
+  },
+  "classification_report": {
+    "KEEP_CURRENT_CONNECTION": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 0.0
+    },
+    "MONITOR_NETWORK": {
+      "precision": 1.0,
+      "recall": 0.3333333333333333,
+      "f1-score": 0.5,
+      "support": 3.0
+    },
+    "REDUCE_TRAFFIC_LOAD": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 0.0
+    },
+    "PREPARE_HANDOVER": {
+      "precision": 0.16666666666666666,
+      "recall": 0.3333333333333333,
+      "f1-score": 0.2222222222222222,
+      "support": 3.0
+    },
+    "HANDOVER_NOW": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 8.0
+    },
+    "accuracy": 0.14285714285714285,
+    "macro avg": {
+      "precision": 0.23333333333333334,
+      "recall": 0.13333333333333333,
+      "f1-score": 0.14444444444444443,
+      "support": 14.0
+    },
+    "weighted avg": {
+      "precision": 0.25,
+      "recall": 0.14285714285714285,
+      "f1-score": 0.15476190476190474,
+      "support": 14.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      1,
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      1,
+      1,
+      1
+    ],
+    [
+      4,
+      0,
+      0,
+      4,
+      0
+    ]
+  ],
+  "methodological_note": "Les métriques mesurent l'accord avec une politique dérivée des états ML transférés, et non une accuracy radio externe."
+}

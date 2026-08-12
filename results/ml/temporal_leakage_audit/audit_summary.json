@@ -1,0 +1,10 @@
+{
+    "dataset": "datasets/processed/mobility/temporal_v2x_synchronized_dataset_v4.csv",
+    "n_samples": 1071,
+    "n_scenarios": 9,
+    "total_transitions": 1,
+    "total_degradations": 1,
+    "total_recoveries": 0,
+    "maximum_scenario_dominant_ratio": 1.0,
+    "minimum_scenario_dominant_ratio": 0.7899159663865546
+}

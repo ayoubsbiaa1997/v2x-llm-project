@@ -1,0 +1,4 @@
+{
+  "decision": "PREPARE_HANDOVER",
+  "explanation": "SELECT PREPARE_HANDOVER FROM NGSIM US101 W0011 \n\nThis action is the only one that makes sense based on the provided scenario\u001b[8D\u001b[K\nscenario and predicted network state."
+}

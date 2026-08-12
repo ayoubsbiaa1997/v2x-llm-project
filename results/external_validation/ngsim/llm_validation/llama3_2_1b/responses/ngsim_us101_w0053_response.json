@@ -1,0 +1,4 @@
+{
+  "decision": "PREPARE_HANDOVER",
+  "explanation": "The predicted network congestion level is CRITICAL, indic\u001b[5D\u001b[K\nindicating that a handover to a different cell may be necessary to prevent \u001b[K\nfurther congestion. Preparing for a handover allows the system to optimize \u001b[K\ntraffic allocation and minimize disruptions to users."
+}

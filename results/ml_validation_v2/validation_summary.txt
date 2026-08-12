@@ -1,0 +1,36 @@
+VALIDATION SCIENTIFIQUE DU PIPELINE ML V2X
+========================================================================
+
+Observations OOF : 190
+Variables d'entrée : 7
+Validation fondée exclusivement sur les prédictions OOF.
+
+MÉTRIQUES DE RÉGRESSION
+------------------------------------------------------------------------
+QoSScore | MAE=0.077186 | RMSE=0.100309 | R²=0.741222 | MedAE=0.068280
+CongestionScore | MAE=0.106472 | RMSE=0.138536 | R²=0.616318 | MedAE=0.082579
+HORiskScore | MAE=0.017800 | RMSE=0.028892 | R²=0.898963 | MedAE=0.010689
+
+MÉTRIQUES APRÈS DISCRÉTISATION
+------------------------------------------------------------------------
+QoSScore | Accuracy=0.731579 | BalancedAccuracy=0.673908 | MacroF1=0.713054
+CongestionScore | Accuracy=0.636842 | BalancedAccuracy=0.585032 | MacroF1=0.608301
+HORiskScore | Accuracy=0.936842 | BalancedAccuracy=0.937957 | MacroF1=0.466268
+
+STATISTIQUES DES ERREURS
+------------------------------------------------------------------------
+QoSScore | Moyenne=0.077186 | Médiane=0.068280 | P95=0.214331 | Max=0.338940
+CongestionScore | Moyenne=0.106472 | Médiane=0.082579 | P95=0.272895 | Max=0.448535
+HORiskScore | Moyenne=0.017800 | Médiane=0.010689 | P95=0.062261 | Max=0.139485
+
+INTERPRÉTATION
+------------------------------------------------------------------------
+Meilleure cible de régression : HORiskScore (R²=0.8990).
+Cible de régression la plus difficile : CongestionScore (R²=0.6163).
+Meilleure discrimination qualitative : QoSScore (Macro-F1=0.7131).
+
+PRÉCAUTIONS MÉTHODOLOGIQUES
+------------------------------------------------------------------------
+Les résultats reposent sur 190 observations simulées et sur des scores/pseudo-labels construits à partir de règles explicites.
+Les matrices de confusion évaluent la cohérence après discrétisation des scores continus et ne remplacent pas les métriques de régression.
+La performance de HORiskScore doit être interprétée avec prudence en raison de l'absence d'échecs réels de handover dans les observations valides.

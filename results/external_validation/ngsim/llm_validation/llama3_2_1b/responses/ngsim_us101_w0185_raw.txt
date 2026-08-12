@@ -1,0 +1,2 @@
+SELECT MONITOR_NETWORK FROM SCENARIO WHERE adaptive_scenario_class = "LOW_L[6D[K
+"LOW_LOAD"

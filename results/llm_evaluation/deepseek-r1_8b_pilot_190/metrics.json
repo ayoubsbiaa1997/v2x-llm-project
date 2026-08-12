@@ -1,0 +1,14 @@
+{
+  "model": "deepseek-r1:8b",
+  "requested": 190,
+  "selected": 190,
+  "successful": 190,
+  "failed": 0,
+  "valid_json_rate": 1.0,
+  "accuracy": 0.39473684210526316,
+  "macro_precision": 0.39382113821138215,
+  "macro_recall": 0.2627485380116959,
+  "macro_f1": 0.19760312151616502,
+  "mean_inference_seconds": 101.78289631578947,
+  "median_inference_seconds": 100.25945
+}

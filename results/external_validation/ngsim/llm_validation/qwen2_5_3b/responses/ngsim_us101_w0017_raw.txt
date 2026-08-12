@@ -1,0 +1,7 @@
+{
+  "decision": "REDUCE_TRAFFIC_LOAD",
+  "explanation": "Given the high congestion score (0.883) and critical QoS [K
+level, reducing traffic load is the most effective action to improve networ[6D[K
+network performance and ensure stable communication quality for all users i[1D[K
+in scenario ngsim_us101_w0017 with HIGH LOAD adaptive class."
+}

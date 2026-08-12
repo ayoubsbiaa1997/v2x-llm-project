@@ -1,0 +1,4 @@
+{
+  "decision": "REDUCE_TRAFFIC_LOAD",
+  "explanation": "Based on predicted network congestion level (CRITICAL) wi\u001b[2D\u001b[K\nwith a score of 0.883 and high load conditions, reducing traffic load is ne\u001b[2D\u001b[K\nnecessary to prevent further degradation in cell performance."
+}

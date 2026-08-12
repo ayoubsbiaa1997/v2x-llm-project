@@ -1,0 +1,8 @@
+{
+  "decision": "REDUCE_TRAFFIC_LOAD",
+  "explanation": "Given the HIGH congestion level and a QoSScore of 0.57051[7D[K
+0.570513 indicating degraded Quality of Service, reducing traffic load by s[1D[K
+shifting some UE to other available GNBs or keeping existing connections st[2D[K
+stable while ensuring minimal disruptions can help improve network performa[8D[K
+performance."
+}

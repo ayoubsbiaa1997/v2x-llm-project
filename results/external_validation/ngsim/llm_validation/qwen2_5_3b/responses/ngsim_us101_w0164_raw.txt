@@ -1,0 +1,7 @@
+{
+  "decision": "REDUCE_TRAFFIC_LOAD",
+  "explanation": "Given the DEGRADED QoSScore (0.570513) and HIGH congestio[9D[K
+congestion level, reducing traffic load by shifting some users to different[9D[K
+different networks or adjusting their speeds can help improve overall netwo[5D[K
+network performance without requiring immediate handover of all users."
+}

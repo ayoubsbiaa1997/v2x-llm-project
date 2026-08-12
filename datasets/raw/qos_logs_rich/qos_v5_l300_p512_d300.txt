@@ -1,0 +1,53 @@
+[0/2] Re-checking globbed directories...
+ninja: no work to do.
+[0/2] Re-checking globbed directories...
+ninja: no work to do.
+Flow 1 (1.0.0.2:49153 -> 7.0.0.2:1234) proto UDP
+  Tx Packets: 181
+  Tx Bytes:   97740
+  TxOffered:  1.303200 Mbps
+  Rx Bytes:   97200
+  Throughput: 1.296000 Mbps
+  Mean delay:  0.350623 ms
+  Mean jitter:  0.026678 ms
+  Rx Packets: 180
+Flow 2 (1.0.0.2:49154 -> 7.0.0.3:1234) proto UDP
+  Tx Packets: 181
+  Tx Bytes:   97740
+  TxOffered:  1.303200 Mbps
+  Rx Bytes:   97200
+  Throughput: 1.296000 Mbps
+  Mean delay:  0.346159 ms
+  Mean jitter:  0.026678 ms
+  Rx Packets: 180
+Flow 3 (1.0.0.2:49155 -> 7.0.0.4:1234) proto UDP
+  Tx Packets: 181
+  Tx Bytes:   97740
+  TxOffered:  1.303200 Mbps
+  Rx Bytes:   97200
+  Throughput: 1.296000 Mbps
+  Mean delay:  0.340207 ms
+  Mean jitter:  0.029630 ms
+  Rx Packets: 180
+Flow 4 (1.0.0.2:49156 -> 7.0.0.5:1235) proto UDP
+  Tx Packets: 181
+  Tx Bytes:   97740
+  TxOffered:  1.303200 Mbps
+  Rx Bytes:   97200
+  Throughput: 1.296000 Mbps
+  Mean delay:  0.864115 ms
+  Mean jitter:  0.118320 ms
+  Rx Packets: 180
+Flow 5 (1.0.0.2:49157 -> 7.0.0.6:1235) proto UDP
+  Tx Packets: 181
+  Tx Bytes:   97740
+  TxOffered:  1.303200 Mbps
+  Rx Bytes:   97200
+  Throughput: 1.296000 Mbps
+  Mean delay:  0.828501 ms
+  Mean jitter:  0.118419 ms
+  Rx Packets: 180
+
+
+  Mean flow throughput: 1.296000
+  Mean flow delay: 0.545921

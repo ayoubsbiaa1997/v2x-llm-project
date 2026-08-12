@@ -1,0 +1,4 @@
+{
+  "decision": "HANDOVER_NOW",
+  "explanation": "High network congestion and degraded QoS conditions, coup\u001b[4D\u001b[K\ncoupled with a dense highway scenario indicated by NGSIM data (vehicle_dens\u001b[13D\u001b[K\n(vehicle_density_per_km:278.125), necessitate immediate handover to relieve\u001b[7D\u001b[K\nrelieve the gNB from critical load."
+}

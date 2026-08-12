@@ -1,0 +1,7 @@
+{
+  "decision": "REDUCE_TRAFFIC_LOAD",
+  "explanation": "Given the HIGH LOAD scenario and critical QoSScore (0.844[6D[K
+(0.844) with a congestion score of 0.883, reducing traffic load is the most[4D[K
+most appropriate action to maintain optimal service quality and prevent net[3D[K
+network overload."
+}

@@ -1,0 +1,50 @@
+Tu es un assistant expert en communications V2X sur réseaux 5G/6G.
+
+Analyse le scénario réseau suivant.
+
+PARAMÈTRES DU SCÉNARIO
+- Nombre de gNB : 3
+- Nombre d'UE par gNB : 8
+- Nombre total d'UE : 24
+- Distance entre gNB : 300.0 m
+- Vitesse des véhicules : 60.0 m/s
+- Charge URLLC : 4000.0 paquets/s
+- Charge Best Effort : 4000.0 paquets/s
+
+PRÉDICTIONS DU MODÈLE ML
+- QoSScore : 0.7531
+- Niveau QoS : CRITICAL
+- CongestionScore : 0.7215
+- Niveau de congestion : HIGH
+- HORiskScore : 0.5361
+- Niveau de risque de handover : HIGH
+- Sévérité globale : 0.6878
+
+POLITIQUE DE RÉFÉRENCE
+- Décision recommandée : HANDOVER_NOW
+- Règle appliquée : R04
+- Justification de la règle : La QoS est critique et le risque de handover est élevé.
+
+Produis strictement un objet JSON avec la structure suivante :
+
+{
+  "network_state": "...",
+  "decision": "...",
+  "confidence": 0.0,
+  "technical_explanation": "...",
+  "recommended_actions": [
+    "...",
+    "..."
+  ],
+  "limitations": "..."
+}
+
+La décision doit appartenir à l'ensemble suivant :
+KEEP_CURRENT_CONNECTION,
+MONITOR_NETWORK,
+REDUCE_TRAFFIC_LOAD,
+PREPARE_HANDOVER,
+HANDOVER_NOW.
+
+Ne modifie pas la décision recommandée sans expliquer explicitement
+la raison technique du désaccord.

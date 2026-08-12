@@ -1,0 +1,8 @@
+{
+  "decision": "REDUCE_TRAFFIC_LOAD",
+  "explanation": "Given the critical QoSScore and CongestionScore, reducing[8D[K
+reducing traffic load helps improve overall network performance and stabili[7D[K
+stability. In this scenario, congestion levels are high, and network resour[6D[K
+resources need to be optimized to maintain acceptable Quality of Service (Q[2D[K
+(QoS)."
+}

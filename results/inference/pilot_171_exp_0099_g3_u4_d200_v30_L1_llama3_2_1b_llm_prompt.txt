@@ -1,0 +1,44 @@
+Tu es un expert en communications V2X sur réseaux 5G/6G.
+
+Tu dois analyser l'état prédit du réseau et prendre une décision autonome.
+
+PARAMÈTRES DU SCÉNARIO
+- Nombre de gNB : 3
+- Nombre d'UE par gNB : 4
+- Nombre total d'UE : 12
+- Distance entre gNB : 200.0 m
+- Vitesse des véhicules : 30.0 m/s
+- Charge URLLC : 3000.0 paquets/s
+- Charge Best Effort : 3000.0 paquets/s
+
+ÉTAT PRÉDIT PAR LES MODÈLES ML
+- QoSScore : 0.3883
+- Niveau QoS : ACCEPTABLE
+- CongestionScore : 0.4582
+- Niveau de congestion : MODERATE
+- HORiskScore : 0.3692
+- Niveau de risque de handover : MEDIUM
+- Sévérité globale : 0.4080
+
+Choisis exactement une décision parmi :
+- KEEP_CURRENT_CONNECTION
+- MONITOR_NETWORK
+- REDUCE_TRAFFIC_LOAD
+- PREPARE_HANDOVER
+- HANDOVER_NOW
+
+Produis uniquement un objet JSON valide avec exactement ces champs :
+
+{
+  "decision": "UNE_DECISION_AUTORISEE",
+  "confidence": 0.0,
+  "reasoning": "Justification technique concise.",
+  "dominant_factor": "QOS",
+  "recommended_follow_up": "Action de suivi concise.",
+  "limitations": "Limites de l'analyse."
+}
+
+Le champ dominant_factor doit être exactement l'une des valeurs suivantes :
+QOS, CONGESTION, HANDOVER_RISK ou BALANCED.
+
+N'ajoute aucun texte avant ou après le JSON.

@@ -1,0 +1,8 @@
+{
+  "decision": "REDUCE_TRAFFIC_LOAD",
+  "explanation": "Given the HIGH HORiskLevel and CRITICAL CongestionLevel, [K
+reducing traffic load is the most appropriate action to prevent further con[3D[K
+congestion and mitigate risk. The scenario indicates a high vehicle density[7D[K
+density (203.125 vehicles per km) with a mean speed of 13.24 mps, which con[3D[K
+contributes to mobility congestion."
+}

@@ -1,0 +1,28 @@
+{
+  "common_scenario_count": 12,
+  "common_scenarios": [
+    "ngsim_us101_w0011",
+    "ngsim_us101_w0017",
+    "ngsim_us101_w0046",
+    "ngsim_us101_w0053",
+    "ngsim_us101_w0099",
+    "ngsim_us101_w0108",
+    "ngsim_us101_w0156",
+    "ngsim_us101_w0164",
+    "ngsim_us101_w0171",
+    "ngsim_us101_w0180",
+    "ngsim_us101_w0183",
+    "ngsim_us101_w0187"
+  ],
+  "reference_distribution": {
+    "KEEP_CURRENT_CONNECTION": 0,
+    "MONITOR_NETWORK": 2,
+    "REDUCE_TRAFFIC_LOAD": 0,
+    "PREPARE_HANDOVER": 3,
+    "HANDOVER_NOW": 7
+  },
+  "best_agreement_model": "DeepSeek-R1 8B",
+  "best_active_macro_f1_model": "Qwen 2.5 3B",
+  "fastest_model": "Llama 3.2 1B",
+  "methodological_note": "Les résultats portent sur l'intersection des scénarios ayant produit une réponse exploitable pour les trois modèles. Ils mesurent l'accord avec une politique transférée issue des états ML, et non une performance radio externe supervisée."
+}

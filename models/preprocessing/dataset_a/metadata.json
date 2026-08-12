@@ -1,0 +1,35 @@
+{
+    "source_dataset": "datasets/processed/mobility/temporal_v2x_synchronized_dataset_v4.csv",
+    "target_column": "decision",
+    "feature_columns": [
+        "throughput_mbps",
+        "delay_ms",
+        "jitter_ms",
+        "packet_loss",
+        "pdr",
+        "congestion_index",
+        "mean_speed",
+        "max_speed",
+        "min_speed",
+        "speed_std",
+        "vehicle_density",
+        "stopped_ratio",
+        "lane_changes",
+        "mobility_instability_index"
+    ],
+    "n_features": 14,
+    "n_samples_total": 1071,
+    "n_samples_train": 856,
+    "n_samples_test": 215,
+    "test_size": 0.2,
+    "random_state": 42,
+    "label_mapping": {
+        "HO_NOW": 0,
+        "KEEP_CONNECTION": 1,
+        "LOAD_BALANCING": 2
+    },
+    "excluded_columns": [
+        "time_s",
+        "scenario_source"
+    ]
+}

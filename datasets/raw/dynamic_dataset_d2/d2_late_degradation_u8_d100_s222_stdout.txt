@@ -1,0 +1,84 @@
+[0/2] Re-checking globbed directories...
+ninja: no work to do.
+[0/2] Re-checking globbed directories...
+ninja: no work to do.
+QOS_TEMPORAL_FILE=/home/ayoub/v2x-llm-project/datasets/raw/dynamic_dataset_d2/d2_late_degradation_u8_d100_s222_qos_temporal.csv
+TRAFFIC_PHASE time=7 phase=MEDIUM lambdaBe=450
+TRAFFIC_PHASE time=13 phase=HIGH lambdaBe=1550
+TRAFFIC_PHASE time=17 phase=RECOVERY lambdaBe=100
+Flow 1 (1.0.0.2:49153 -> 7.0.0.2:1234) proto UDP
+  Tx Packets: 1960
+  Tx Bytes:   305760
+  TxOffered:  0.124800 Mbps
+  Rx Bytes:   0
+  Throughput:  0 Mbps
+  Mean delay:  0 ms
+  Mean jitter: 0 ms
+  Rx Packets: 0
+Flow 2 (1.0.0.2:49154 -> 7.0.0.3:1234) proto UDP
+  Tx Packets: 1960
+  Tx Bytes:   305760
+  TxOffered:  0.124800 Mbps
+  Rx Bytes:   0
+  Throughput:  0 Mbps
+  Mean delay:  0 ms
+  Mean jitter: 0 ms
+  Rx Packets: 0
+Flow 3 (1.0.0.2:49155 -> 7.0.0.4:1234) proto UDP
+  Tx Packets: 1960
+  Tx Bytes:   305760
+  TxOffered:  0.124800 Mbps
+  Rx Bytes:   0
+  Throughput:  0 Mbps
+  Mean delay:  0 ms
+  Mean jitter: 0 ms
+  Rx Packets: 0
+Flow 4 (1.0.0.2:49156 -> 7.0.0.5:1234) proto UDP
+  Tx Packets: 1960
+  Tx Bytes:   305760
+  TxOffered:  0.124800 Mbps
+  Rx Bytes:   0
+  Throughput:  0 Mbps
+  Mean delay:  0 ms
+  Mean jitter: 0 ms
+  Rx Packets: 0
+Flow 5 (1.0.0.2:49157 -> 7.0.0.6:1235) proto UDP
+  Tx Packets: 9528
+  Tx Bytes:   11700384
+  TxOffered:  4.775667 Mbps
+  Rx Bytes:   11700384
+  Throughput: 4.775667 Mbps
+  Mean delay:  0.971747 ms
+  Mean jitter:  0.097232 ms
+  Rx Packets: 9528
+Flow 6 (1.0.0.2:49158 -> 7.0.0.7:1235) proto UDP
+  Tx Packets: 9528
+  Tx Bytes:   11700384
+  TxOffered:  4.775667 Mbps
+  Rx Bytes:   11700384
+  Throughput: 4.775667 Mbps
+  Mean delay:  0.914628 ms
+  Mean jitter:  0.093847 ms
+  Rx Packets: 9528
+Flow 7 (1.0.0.2:49159 -> 7.0.0.8:1235) proto UDP
+  Tx Packets: 9528
+  Tx Bytes:   11700384
+  TxOffered:  4.775667 Mbps
+  Rx Bytes:   11700384
+  Throughput: 4.775667 Mbps
+  Mean delay:  0.861057 ms
+  Mean jitter:  0.093847 ms
+  Rx Packets: 9528
+Flow 8 (1.0.0.2:49160 -> 7.0.0.9:1235) proto UDP
+  Tx Packets: 9528
+  Tx Bytes:   11700384
+  TxOffered:  4.775667 Mbps
+  Rx Bytes:   11700384
+  Throughput: 4.775667 Mbps
+  Mean delay:  0.815840 ms
+  Mean jitter:  0.102307 ms
+  Rx Packets: 9528
+
+
+  Mean flow throughput: 2.387833
+  Mean flow delay: 0.445409

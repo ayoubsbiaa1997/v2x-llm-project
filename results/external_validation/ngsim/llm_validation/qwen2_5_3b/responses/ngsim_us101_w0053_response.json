@@ -1,0 +1,4 @@
+{
+  "decision": "REDUCE_TRAFFIC_LOAD",
+  "explanation": "Given the HIGH congestion level and the current network s\u001b[1D\u001b[K\nstate with a CRITICAL QoS score, reducing traffic load is the most effectiv\u001b[8D\u001b[K\neffective action to maintain acceptable levels of service quality without c\u001b[1D\u001b[K\ncausing more severe congestion issues. The number of UEs (37) is above the \u001b[K\ntypical capacity for such scenarios, indicating that additional UEs are con\u001b[3D\u001b[K\ncontributing to overall network stress."
+}

@@ -1,0 +1,148 @@
+Flow 1 (1.0.0.2:49153 -> 7.0.0.2:1234) proto UDP
+  Tx Packets: 1960
+  Tx Bytes:   305760
+  TxOffered:  0.124800 Mbps
+  Rx Bytes:   0
+  Throughput:  0 Mbps
+  Mean delay:  0 ms
+  Mean jitter: 0 ms
+  Rx Packets: 0
+Flow 2 (1.0.0.2:49154 -> 7.0.0.3:1234) proto UDP
+  Tx Packets: 1960
+  Tx Bytes:   305760
+  TxOffered:  0.124800 Mbps
+  Rx Bytes:   0
+  Throughput:  0 Mbps
+  Mean delay:  0 ms
+  Mean jitter: 0 ms
+  Rx Packets: 0
+Flow 3 (1.0.0.2:49155 -> 7.0.0.4:1234) proto UDP
+  Tx Packets: 1960
+  Tx Bytes:   305760
+  TxOffered:  0.124800 Mbps
+  Rx Bytes:   0
+  Throughput:  0 Mbps
+  Mean delay:  0 ms
+  Mean jitter: 0 ms
+  Rx Packets: 0
+Flow 4 (1.0.0.2:49156 -> 7.0.0.5:1234) proto UDP
+  Tx Packets: 1960
+  Tx Bytes:   305760
+  TxOffered:  0.124800 Mbps
+  Rx Bytes:   0
+  Throughput:  0 Mbps
+  Mean delay:  0 ms
+  Mean jitter: 0 ms
+  Rx Packets: 0
+Flow 5 (1.0.0.2:49157 -> 7.0.0.6:1234) proto UDP
+  Tx Packets: 1960
+  Tx Bytes:   305760
+  TxOffered:  0.124800 Mbps
+  Rx Bytes:   0
+  Throughput:  0 Mbps
+  Mean delay:  0 ms
+  Mean jitter: 0 ms
+  Rx Packets: 0
+Flow 6 (1.0.0.2:49158 -> 7.0.0.7:1234) proto UDP
+  Tx Packets: 1960
+  Tx Bytes:   305760
+  TxOffered:  0.124800 Mbps
+  Rx Bytes:   0
+  Throughput:  0 Mbps
+  Mean delay:  0 ms
+  Mean jitter: 0 ms
+  Rx Packets: 0
+Flow 7 (1.0.0.2:49159 -> 7.0.0.8:1234) proto UDP
+  Tx Packets: 1960
+  Tx Bytes:   305760
+  TxOffered:  0.124800 Mbps
+  Rx Bytes:   0
+  Throughput:  0 Mbps
+  Mean delay:  0 ms
+  Mean jitter: 0 ms
+  Rx Packets: 0
+Flow 8 (1.0.0.2:49160 -> 7.0.0.9:1234) proto UDP
+  Tx Packets: 1960
+  Tx Bytes:   305760
+  TxOffered:  0.124800 Mbps
+  Rx Bytes:   0
+  Throughput:  0 Mbps
+  Mean delay:  0 ms
+  Mean jitter: 0 ms
+  Rx Packets: 0
+Flow 9 (1.0.0.2:49161 -> 7.0.0.10:1235) proto UDP
+  Tx Packets: 3781
+  Tx Bytes:   4643068
+  TxOffered:  1.895130 Mbps
+  Rx Bytes:   4643068
+  Throughput: 1.895130 Mbps
+  Mean delay:  1.213784 ms
+  Mean jitter:  0.089996 ms
+  Rx Packets: 3781
+Flow 10 (1.0.0.2:49162 -> 7.0.0.11:1235) proto UDP
+  Tx Packets: 3781
+  Tx Bytes:   4643068
+  TxOffered:  1.895130 Mbps
+  Rx Bytes:   4643068
+  Throughput: 1.895130 Mbps
+  Mean delay:  1.193565 ms
+  Mean jitter:  0.089996 ms
+  Rx Packets: 3781
+Flow 11 (1.0.0.2:49163 -> 7.0.0.12:1235) proto UDP
+  Tx Packets: 3781
+  Tx Bytes:   4643068
+  TxOffered:  1.895130 Mbps
+  Rx Bytes:   4643068
+  Throughput: 1.895130 Mbps
+  Mean delay:  1.231641 ms
+  Mean jitter:  0.089996 ms
+  Rx Packets: 3781
+Flow 12 (1.0.0.2:49164 -> 7.0.0.13:1235) proto UDP
+  Tx Packets: 3781
+  Tx Bytes:   4643068
+  TxOffered:  1.895130 Mbps
+  Rx Bytes:   4643068
+  Throughput: 1.895130 Mbps
+  Mean delay:  1.249498 ms
+  Mean jitter:  0.089996 ms
+  Rx Packets: 3781
+Flow 13 (1.0.0.2:49165 -> 7.0.0.14:1235) proto UDP
+  Tx Packets: 3781
+  Tx Bytes:   4643068
+  TxOffered:  1.895130 Mbps
+  Rx Bytes:   4643068
+  Throughput: 1.895130 Mbps
+  Mean delay:  1.175708 ms
+  Mean jitter:  0.089996 ms
+  Rx Packets: 3781
+Flow 14 (1.0.0.2:49166 -> 7.0.0.15:1235) proto UDP
+  Tx Packets: 3781
+  Tx Bytes:   4643068
+  TxOffered:  1.895130 Mbps
+  Rx Bytes:   4643068
+  Throughput: 1.895130 Mbps
+  Mean delay:  1.139994 ms
+  Mean jitter:  0.089996 ms
+  Rx Packets: 3781
+Flow 15 (1.0.0.2:49167 -> 7.0.0.16:1235) proto UDP
+  Tx Packets: 3781
+  Tx Bytes:   4643068
+  TxOffered:  1.895130 Mbps
+  Rx Bytes:   4643068
+  Throughput: 1.895130 Mbps
+  Mean delay:  1.160010 ms
+  Mean jitter:  0.136393 ms
+  Rx Packets: 3781
+Flow 16 (1.0.0.2:49168 -> 7.0.0.17:1235) proto UDP
+  Tx Packets: 3781
+  Tx Bytes:   4643068
+  TxOffered:  1.895130 Mbps
+  Rx Bytes:   4643068
+  Throughput: 1.895130 Mbps
+  Mean delay:  1.105877 ms
+  Mean jitter:  0.108257 ms
+  Rx Packets: 3781
+
+
+  Mean flow throughput: 0.947565
+  Mean flow delay: 0.591880

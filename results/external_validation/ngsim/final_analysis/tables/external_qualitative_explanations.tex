@@ -1,0 +1,13 @@
+\begin{table}[!htbp]
+\caption{Analyse qualitative des explications des LLM.}
+\label{tab:external_qualitative_explanations}
+\begin{tabular}{lrrlrrrr}
+\toprule
+Model & SuccessfulExplanations & AverageExplanationWords & TopTerms & QoSMentionRate & CongestionMentionRate & HandoverMentionRate & RiskMentionRate \\
+\midrule
+Llama 3.2 1B & 14 & 45.3571 & you(11), traffic(9), select(9), decision(8), may(7), prepare\_handover(6), explanation(6), congestion(5), handover(5), state(5) & 0.1429 & 0.5000 & 0.5714 & 0.0000 \\
+Qwen 2.5 3B & 20 & 42.2500 & congestion(28), load(26), reducing(20), traffic(20), high(18), quality(13), service(12), level(11), critical(11), qos(10) & 0.8000 & 1.0000 & 0.3000 & 0.2500 \\
+DeepSeek-R1 8B & 17 & 35.8235 & high(20), congestion(19), handover(15), critical(12), immediate(11), density(11), qos(9), load(9), risk(8), degradation(8) & 0.6471 & 0.9412 & 0.8235 & 0.4118 \\
+\bottomrule
+\end{tabular}
+\end{table}

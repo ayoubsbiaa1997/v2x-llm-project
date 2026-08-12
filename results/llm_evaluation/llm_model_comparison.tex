@@ -1,0 +1,13 @@
+\begin{table}
+\caption{Comparaison des performances et du temps d'inférence des modèles LLM pour la prise de décision V2X.}
+\label{tab:llm_model_comparison}
+\begin{tabular}{llllllll}
+\toprule
+Model & Accuracy & Macro Precision & Macro Recall & Macro F1 & JSON Valid Rate & Mean Time (s) & Median Time (s) \\
+\midrule
+Llama 3.2 1B & 0.300 & 0.060 & 0.200 & 0.092 & 1.000 & 12.361 & 12.378 \\
+Qwen 2.5 3B & 0.400 & 0.150 & 0.333 & 0.206 & 1.000 & 33.897 & 34.876 \\
+DeepSeek-R1 8B & 0.400 & 0.236 & 0.317 & 0.244 & 1.000 & 90.559 & 89.751 \\
+\bottomrule
+\end{tabular}
+\end{table}

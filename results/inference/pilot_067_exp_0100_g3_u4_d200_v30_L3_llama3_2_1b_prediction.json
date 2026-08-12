@@ -1,0 +1,31 @@
+{
+  "scenario": {
+    "scenarioName": "pilot_067_exp_0100_g3_u4_d200_v30_L3_llama3_2_1b",
+    "gNbNum": 3,
+    "ueNumPerGnb": 4,
+    "totalUE": 12,
+    "bsDistance": 200.0,
+    "scenarioLength": 600.0,
+    "ueSpeed": 30.0,
+    "lambdaULL": 9000.0,
+    "lambdaBe": 9000.0,
+    "packetULL": 128.0,
+    "packetBE": 1024.0
+  },
+  "analysis": {
+    "scores": {
+      "QoSScore": 0.566136,
+      "CongestionScore": 0.586262,
+      "HORiskScore": 0.369211,
+      "NetworkSeverityScore": 0.523949
+    },
+    "levels": {
+      "QoSLevel": "DEGRADED",
+      "CongestionLevel": "HIGH",
+      "HORisk": "MEDIUM"
+    },
+    "decision": "REDUCE_TRAFFIC_LOAD",
+    "policyRule": "R07",
+    "policyReason": "La QoS est dégradée par une congestion élevée, sans risque de mobilité dominant."
+  }
+}

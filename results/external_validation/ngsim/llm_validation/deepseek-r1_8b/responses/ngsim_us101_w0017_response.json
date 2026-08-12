@@ -1,0 +1,4 @@
+{
+  "decision": "HANDOVER_NOW",
+  "explanation": "The predicted network state indicates critical QoS and co\u001b[2D\u001b[K\ncongestion levels, while the mobility context shows a moderate-to-high phys\u001b[4D\u001b[K\nphysical road congestion index. Triggering an immediate handover is necessa\u001b[7D\u001b[K\nnecessary to mitigate potential service degradation due to high UE density.\u001b[8D\u001b[K\ndensity."
+}

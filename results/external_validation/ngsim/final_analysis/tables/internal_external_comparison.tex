@@ -1,0 +1,13 @@
+\begin{table}[!htbp]
+\caption{Comparaison des benchmarks interne et externe.}
+\label{tab:internal_external_comparison}
+\begin{tabular}{lrrrrrrrrrr}
+\toprule
+Model & InternalAgreement & InternalMacroF1 & InternalMeanInferenceSeconds & ExternalAgreement & ExternalMacroF1 & ExternalActiveMacroF1 & ExternalMeanInferenceSeconds & AgreementDelta & MacroF1Delta & LatencyRatioExternalInternal \\
+\midrule
+Llama 3.2 1B & 0.3474 & 0.1031 & 19.7160 & 0.0833 & 0.0444 & 0.0741 & 13.4163 & -0.2640 & -0.0587 & 0.6805 \\
+Qwen 2.5 3B & 0.3737 & 0.1621 & 39.3658 & 0.0833 & 0.1333 & 0.2222 & 16.3964 & -0.2904 & -0.0287 & 0.4165 \\
+DeepSeek-R1 8B & 0.3947 & 0.1976 & 101.7829 & 0.4167 & 0.1333 & 0.2222 & 201.7767 & 0.0219 & -0.0643 & 1.9824 \\
+\bottomrule
+\end{tabular}
+\end{table}

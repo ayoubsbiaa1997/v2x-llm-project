@@ -1,0 +1,4 @@
+{
+  "decision": "REDUCE_TRAFFIC_LOAD",
+  "explanation": "Given the high congestion level (CongestionScore: 0.883) \u001b[K\nand the need to maintain a critical QoS, reducing traffic load is chosen as\u001b[2D\u001b[K\nas the most effective action to alleviate network congestion and improve ov\u001b[2D\u001b[K\noverall performance."
+}

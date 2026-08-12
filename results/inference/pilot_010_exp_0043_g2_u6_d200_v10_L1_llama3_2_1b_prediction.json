@@ -1,0 +1,31 @@
+{
+  "scenario": {
+    "scenarioName": "pilot_010_exp_0043_g2_u6_d200_v10_L1_llama3_2_1b",
+    "gNbNum": 2,
+    "ueNumPerGnb": 6,
+    "totalUE": 12,
+    "bsDistance": 200.0,
+    "scenarioLength": 600.0,
+    "ueSpeed": 10.0,
+    "lambdaULL": 3000.0,
+    "lambdaBe": 3000.0,
+    "packetULL": 128.0,
+    "packetBE": 1024.0
+  },
+  "analysis": {
+    "scores": {
+      "QoSScore": 0.291719,
+      "CongestionScore": 0.2198,
+      "HORiskScore": 0.442368,
+      "NetworkSeverityScore": 0.304209
+    },
+    "levels": {
+      "QoSLevel": "ACCEPTABLE",
+      "CongestionLevel": "LOW",
+      "HORisk": "MEDIUM"
+    },
+    "decision": "MONITOR_NETWORK",
+    "policyRule": "R12",
+    "policyReason": "L'état du réseau est intermédiaire et nécessite une surveillance continue."
+  }
+}

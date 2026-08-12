@@ -1,0 +1,6 @@
+[0/2] Re-checking globbed directories...
+ninja: no work to do.
+[0/2] Re-checking globbed directories...
+ninja: no work to do.
+HANDOVER_START 0.500001 IMSI=13 FROM=3 RNTI=277 TO=2
+HANDOVER_SUCCESS 0.500254 IMSI=13 CELL=2 RNTI=593 DELAY_MS=0

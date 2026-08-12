@@ -1,0 +1,4 @@
+SELECT PREPARE_HANDOVER FROM NGSIM US101 W0011 
+
+This action is the only one that makes sense based on the provided scenario[8D[K
+scenario and predicted network state.

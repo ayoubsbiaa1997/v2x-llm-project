@@ -1,0 +1,18 @@
+{
+  "prediction_file": "/home/ayoub/v2x-llm-project/results/inference/test_high_load_prediction.json",
+  "llm_file": "/home/ayoub/v2x-llm-project/results/inference/test_high_load_llm_prompt_llm_response.json",
+  "expert": {
+    "decision": "HANDOVER_NOW",
+    "json_path": "$.analysis.decision"
+  },
+  "llm": {
+    "decision": "MONITOR_NETWORK",
+    "json_path": "$.llm_decision.decision",
+    "confidence": 0.75,
+    "reasoning": "La QoS est critique et le risque de handover est élevé."
+  },
+  "comparison": {
+    "exact_agreement": false,
+    "relation": "DISAGREEMENT"
+  }
+}

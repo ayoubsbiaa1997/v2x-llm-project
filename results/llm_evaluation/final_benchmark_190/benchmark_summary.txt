@@ -1,0 +1,27 @@
+BENCHMARK FINAL DES LLM V2X
+========================================================================
+
+Référence principale : predicted_state_policy_decision
+Scénarios par modèle : 190
+
+         Model  Accuracy  BalancedAccuracy  MacroF1  MeanInferenceSeconds
+  Llama 3.2 1B  0.347368          0.250000 0.103125             19.715953
+   Qwen 2.5 3B  0.373684          0.388889 0.162078             39.365763
+DeepSeek-R1 8B  0.394737          0.328436 0.197603            101.782896
+
+Meilleur Macro-F1 : DeepSeek-R1 8B (0.1976)
+Modèle le plus rapide : Llama 3.2 1B (19.72 s)
+Premier au classement multicritère : DeepSeek-R1 8B (0.8065)
+
+Poids du score multicritère :
+{
+  "accuracy": 0.25,
+  "macro_f1": 0.35,
+  "macro_precision": 0.1,
+  "macro_recall": 0.1,
+  "json_valid_rate": 0.05,
+  "latency_score": 0.15
+}
+
+Remarque : le classement dépend des poids choisis. Une analyse de sensibilité
+doit accompagner toute sélection définitive du modèle.

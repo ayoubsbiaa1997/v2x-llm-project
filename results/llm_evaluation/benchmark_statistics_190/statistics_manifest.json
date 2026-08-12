@@ -1,0 +1,18 @@
+{
+  "reference": "predicted_state_policy_decision",
+  "scenario_count": 190,
+  "bootstrap_iterations": 2000,
+  "permutation_iterations": 10000,
+  "seed": 42,
+  "models": {
+    "Llama 3.2 1B": "/home/ayoub/v2x-llm-project/results/llm_evaluation/llama3_2_1b_pilot_190",
+    "Qwen 2.5 3B": "/home/ayoub/v2x-llm-project/results/llm_evaluation/qwen2_5_3b_pilot_190",
+    "DeepSeek-R1 8B": "/home/ayoub/v2x-llm-project/results/llm_evaluation/deepseek-r1_8b_pilot_190"
+  },
+  "active_classes": [
+    "MONITOR_NETWORK",
+    "REDUCE_TRAFFIC_LOAD",
+    "PREPARE_HANDOVER",
+    "HANDOVER_NOW"
+  ]
+}

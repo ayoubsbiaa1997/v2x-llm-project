@@ -1,0 +1,17 @@
+Given the scenario and predicted network state, I recommend using the follo[5D[K
+following action:
+
+PREPARE_HANDOVER
+
+The recommended action is to prepare for handover, as indicated by the HIGH[4D[K
+HIGH_RISK_score of 0.472463, which suggests that there may be a need to adj[3D[K
+adjust the user experience to manage the risk of congestion or mobility iss[3D[K
+issues while maintaining QoS levels.
+
+Since this recommendation aligns with the predicted network state and scena[5D[K
+scenario, I would return:
+
+{
+  "decision": "PREPARE_HANDOVER",
+  "explanation": "Brief technical explanation grounded in the values."
+}

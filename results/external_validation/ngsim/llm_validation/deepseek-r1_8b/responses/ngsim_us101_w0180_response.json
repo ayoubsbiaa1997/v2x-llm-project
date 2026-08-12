@@ -1,0 +1,4 @@
+{
+  "decision": "HANDOVER_NOW",
+  "explanation": "Network congestion and QoS levels are critically high (0.\u001b[3D\u001b[K\n(0.786/0.799), indicating immediate degradation despite moderate user densi\u001b[5D\u001b[K\ndensity per gNB, necessitating an urgent handover to maintain service quali\u001b[5D\u001b[K\nquality."
+}

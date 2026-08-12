@@ -1,0 +1,10 @@
+Based on the provided scenario and predicted network state, I recommend:
+
+```
+{
+  "decision": "KEEP_CURRENT_CONNECTION",
+  "explanation": "Maintaining the current connection is the most appropriat[10D[K
+appropriate action as it ensures minimal disruption to ongoing traffic and [K
+does not compromise the QoS required for critical services."
+}
+```

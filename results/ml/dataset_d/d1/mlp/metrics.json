@@ -1,0 +1,71 @@
+{
+    "protocol": "D1",
+    "model": "mlp",
+    "train_runs": [
+        "dyn_u12_d100_s101",
+        "dyn_u12_d100_s303",
+        "dyn_u12_d100_s404",
+        "dyn_u12_d200_s101",
+        "dyn_u12_d200_s202",
+        "dyn_u12_d200_s404",
+        "dyn_u12_d300_s101",
+        "dyn_u12_d300_s202",
+        "dyn_u12_d300_s303",
+        "dyn_u16_d100_s101",
+        "dyn_u16_d100_s202",
+        "dyn_u16_d100_s404",
+        "dyn_u16_d200_s101",
+        "dyn_u16_d200_s202",
+        "dyn_u16_d200_s303",
+        "dyn_u16_d300_s202",
+        "dyn_u16_d300_s303",
+        "dyn_u16_d300_s404",
+        "dyn_u8_d100_s202",
+        "dyn_u8_d100_s303",
+        "dyn_u8_d100_s404",
+        "dyn_u8_d200_s101",
+        "dyn_u8_d200_s303",
+        "dyn_u8_d200_s404",
+        "dyn_u8_d300_s101",
+        "dyn_u8_d300_s202",
+        "dyn_u8_d300_s404"
+    ],
+    "test_runs": [
+        "dyn_u12_d100_s202",
+        "dyn_u12_d200_s303",
+        "dyn_u12_d300_s404",
+        "dyn_u16_d100_s303",
+        "dyn_u16_d200_s404",
+        "dyn_u16_d300_s101",
+        "dyn_u8_d100_s101",
+        "dyn_u8_d200_s202",
+        "dyn_u8_d300_s303"
+    ],
+    "n_train_samples": 540,
+    "n_test_samples": 180,
+    "n_features": 30,
+    "scaling": true,
+    "accuracy": 0.9277777777777778,
+    "balanced_accuracy": 0.9188454114756974,
+    "precision_positive": 0.8043478260869565,
+    "recall_positive": 0.9024390243902439,
+    "f1_positive": 0.8505747126436781,
+    "precision_macro": 0.8872485399091499,
+    "recall_macro": 0.9188454114756974,
+    "f1_macro": 0.9014778325123152,
+    "mcc": 0.8054744540743944,
+    "roc_auc": 0.9701702052991753,
+    "average_precision": 0.9032102801024937,
+    "training_time_s": 0.15061642599175684,
+    "prediction_time_s": 0.00031908000528346747,
+    "confusion_matrix": [
+        [
+            130,
+            9
+        ],
+        [
+            4,
+            37
+        ]
+    ]
+}

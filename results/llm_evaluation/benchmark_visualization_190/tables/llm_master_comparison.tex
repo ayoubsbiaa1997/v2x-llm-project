@@ -1,0 +1,16 @@
+\begin{table}[!htbp]
+\centering
+\caption{Synthèse finale des performances des modèles de langage.}
+\label{tab:llm_visualization_master}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lrrrrrr}
+\toprule
+\textbf{Modèle} & \textbf{Accuracy} & \textbf{Balanced Acc.} & \textbf{Macro-F1} & \textbf{Macro-F1 actif} & \textbf{Temps moyen (s)} & \textbf{P95 (s)} \\
+\midrule
+Llama 3.2 1B & 0.3474 & 0.2500 & 0.1031 & 0.1289 & 19.72 & 23.94 \\
+Qwen 2.5 3B & 0.3737 & 0.3889 & 0.1621 & 0.2026 & 39.37 & 48.26 \\
+DeepSeek-R1 8B & 0.3947 & 0.3284 & 0.1976 & 0.2470 & 101.78 & 120.46 \\
+\bottomrule
+\end{tabular}%
+}
+\end{table}

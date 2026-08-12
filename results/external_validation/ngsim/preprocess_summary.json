@@ -1,0 +1,43 @@
+{
+  "input_file": "/home/ayoub/v2x-llm-project/external_validation/ngsim/raw/trajectories-0750am-0805am.txt",
+  "raw_observation_count": 1180598,
+  "unique_vehicle_count": 2169,
+  "window_seconds": 5.0,
+  "step_seconds": 5.0,
+  "road_length_m": 640.0,
+  "window_count": 190,
+  "scenario_parameters": {
+    "gNbNum": 3,
+    "bsDistance": 200.0,
+    "lambdaULL_reference": 1000.0,
+    "lambdaBE_reference": 2000.0,
+    "max_totalUE": 120
+  },
+  "ranges": {
+    "vehicle_count": [
+      12,
+      201
+    ],
+    "mean_speed_mps": [
+      5.719406916344917,
+      16.543902315789474
+    ],
+    "mobility_congestion_index": [
+      0.1966244269785603,
+      0.785840038614229
+    ],
+    "lambdaULL": [
+      848.3122134892802,
+      1142.9200193071144
+    ],
+    "lambdaBe": [
+      1794.9366404678403,
+      2678.7600579213436
+    ]
+  },
+  "outputs": {
+    "descriptive_windows": "/home/ayoub/v2x-llm-project/external_validation/ngsim/processed/ngsim_windows.csv",
+    "ml_compatible_windows": "/home/ayoub/v2x-llm-project/external_validation/ngsim/processed/ngsim_windows_ml_compatible.csv"
+  },
+  "methodological_warning": "NGSIM ne contient pas de mesures radio. gNbNum, bsDistance, lambdaULL et lambdaBe sont des variables de scénario/proxies pour une analyse de transférabilité."
+}

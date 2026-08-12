@@ -1,0 +1,56 @@
+[0/2] Re-checking globbed directories...
+ninja: no work to do.
+[0/2] Re-checking globbed directories...
+ninja: no work to do.
+DEBUG: CSV files opened
+DEBUG: HandoverStart connected = 0
+DEBUG: HandoverEndOk connected = 0
+Flow 1 (1.0.0.2:49153 -> 7.0.0.2:1234) proto UDP
+  Tx Packets: 6000
+  Tx Bytes:   768000
+  TxOffered:  10.240000 Mbps
+  Rx Bytes:   767616
+  Throughput: 10.234880 Mbps
+  Mean delay:  0.293950 ms
+  Mean jitter:  0.030038 ms
+  Rx Packets: 5997
+Flow 2 (1.0.0.2:49154 -> 7.0.0.3:1234) proto UDP
+  Tx Packets: 6000
+  Tx Bytes:   768000
+  TxOffered:  10.240000 Mbps
+  Rx Bytes:   767744
+  Throughput: 10.236587 Mbps
+  Mean delay:  0.285020 ms
+  Mean jitter:  0.030036 ms
+  Rx Packets: 5998
+Flow 3 (1.0.0.2:49155 -> 7.0.0.4:1234) proto UDP
+  Tx Packets: 6000
+  Tx Bytes:   768000
+  TxOffered:  10.240000 Mbps
+  Rx Bytes:   767744
+  Throughput: 10.236587 Mbps
+  Mean delay:  0.276087 ms
+  Mean jitter:  0.030034 ms
+  Rx Packets: 5998
+Flow 4 (1.0.0.2:49156 -> 7.0.0.5:1235) proto UDP
+  Tx Packets: 6000
+  Tx Bytes:   7680000
+  TxOffered:  102.400000 Mbps
+  Rx Bytes:   7091200
+  Throughput: 94.549333 Mbps
+  Mean delay:  24.236491 ms
+  Mean jitter:  0.121543 ms
+  Rx Packets: 5540
+Flow 5 (1.0.0.2:49157 -> 7.0.0.6:1235) proto UDP
+  Tx Packets: 6000
+  Tx Bytes:   7680000
+  TxOffered:  102.400000 Mbps
+  Rx Bytes:   7093760
+  Throughput: 94.583467 Mbps
+  Mean delay:  24.157022 ms
+  Mean jitter:  0.121545 ms
+  Rx Packets: 5542
+
+
+  Mean flow throughput: 43.968171
+  Mean flow delay: 9.849714

@@ -1,0 +1,7 @@
+{
+  "decision": "REDUCE_TRAFFIC_LOAD",
+  "explanation": "Given the high congestion score (0.568290) and mobility c[1D[K
+congestion index (0.771028), reducing traffic load is chosen to alleviate n[1D[K
+network congestion, ensuring a stable QoS for users in scenario ngsim_us101[11D[K
+ngsim_us101_w0173."
+}

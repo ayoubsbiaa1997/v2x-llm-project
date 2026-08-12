@@ -1,0 +1,4 @@
+{
+  "decision": "HANDOVER_NOW",
+  "explanation": "Network congestion is critical (CongestionScore: 0.88) an\u001b[2D\u001b[K\nand QoS is also critical (QoSScore: 0.84), indicating immediate need for re\u001b[2D\u001b[K\nresource relief despite moderate load conditions."
+}

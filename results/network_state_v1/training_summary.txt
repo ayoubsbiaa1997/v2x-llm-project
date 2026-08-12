@@ -1,0 +1,35 @@
+ENTRAÎNEMENT DES MODÈLES D'ÉTAT RÉSEAU V2X
+========================================================================
+
+Observations : 190
+Variables utilisées : gNbNum, ueNumPerGnb, totalUE, bsDistance, ueSpeed, lambdaULL, lambdaBe
+Variables constantes supprimées : scenarioLength, packetULL, packetBE
+Variables numériques : gNbNum, ueNumPerGnb, totalUE, bsDistance, ueSpeed, lambdaULL, lambdaBe
+Variables catégorielles : aucune
+
+Validation : RepeatedKFold, 5 folds × 5 répétitions.
+
+Cible : QoSScore
+  Meilleur modèle : HistGradientBoosting
+  MAE CV : 0.078540
+  RMSE CV : 0.102619
+  R² CV : 0.709216
+
+Cible : CongestionScore
+  Meilleur modèle : HistGradientBoosting
+  MAE CV : 0.108071
+  RMSE CV : 0.142201
+  R² CV : 0.570214
+
+Cible : HORiskScore
+  Meilleur modèle : ExtraTrees
+  MAE CV : 0.018121
+  RMSE CV : 0.029680
+  R² CV : 0.883058
+
+PRÉCAUTIONS MÉTHODOLOGIQUES
+------------------------------------------------------------------------
+Les métriques mesurées après simulation, les niveaux qualitatifs et les décisions ont été exclus des entrées.
+Cette exclusion limite les risques de fuite de données et évite d'entraîner un modèle qui reproduirait directement la politique de pseudo-étiquetage V3.
+Les résultats restent exploratoires, car le dataset ne contient que 190 observations issues de simulations.
+Le risque de handover est particulièrement limité par l'absence d'échec de handover dans les observations valides.

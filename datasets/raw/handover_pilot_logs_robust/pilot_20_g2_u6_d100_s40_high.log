@@ -1,0 +1,162 @@
+[0/2] Re-checking globbed directories...
+ninja: no work to do.
+[0/2] Re-checking globbed directories...
+ninja: no work to do.
+HANDOVER_START 0.300001 IMSI=2 FROM=2 RNTI=1 TO=1
+HANDOVER_START 0.300001 IMSI=4 FROM=2 RNTI=11 TO=1
+HANDOVER_START 0.300002 IMSI=6 FROM=2 RNTI=19 TO=1
+HANDOVER_START 0.300002 IMSI=12 FROM=2 RNTI=29 TO=1
+HANDOVER_START 0.300002 IMSI=3 FROM=2 RNTI=2 TO=1
+HANDOVER_START 0.300002 IMSI=5 FROM=2 RNTI=12 TO=1
+HANDOVER_START 0.300002 IMSI=7 FROM=2 RNTI=20 TO=1
+HANDOVER_START 0.300002 IMSI=9 FROM=2 RNTI=25 TO=1
+HANDOVER_START 0.300002 IMSI=11 FROM=2 RNTI=26 TO=1
+HANDOVER_START 0.300003 IMSI=13 FROM=2 RNTI=30 TO=1
+HANDOVER_SUCCESS 0.300254 IMSI=2 CELL=1 RNTI=3 DELAY_MS=0.253
+HANDOVER_SUCCESS 0.301 IMSI=4 CELL=1 RNTI=4 DELAY_MS=0.816
+HANDOVER_SUCCESS 0.301 IMSI=6 CELL=1 RNTI=5 DELAY_MS=0.815
+HANDOVER_SUCCESS 0.301 IMSI=12 CELL=1 RNTI=6 DELAY_MS=1.378
+HANDOVER_SUCCESS 0.301 IMSI=3 CELL=1 RNTI=7 DELAY_MS=1.378
+HANDOVER_SUCCESS 0.302 IMSI=5 CELL=1 RNTI=8 DELAY_MS=1.940
+HANDOVER_SUCCESS 0.302 IMSI=7 CELL=1 RNTI=9 DELAY_MS=1.940
+HANDOVER_SUCCESS 0.303 IMSI=9 CELL=1 RNTI=10 DELAY_MS=2.502
+HANDOVER_SUCCESS 0.303 IMSI=11 CELL=1 RNTI=11 DELAY_MS=2.502
+HANDOVER_SUCCESS 0.303 IMSI=13 CELL=1 RNTI=12 DELAY_MS=3.064
+HANDOVER_START 0.500 IMSI=8 FROM=1 RNTI=1 TO=2
+HANDOVER_START 0.500 IMSI=10 FROM=1 RNTI=2 TO=2
+HANDOVER_START 0.500 IMSI=12 FROM=1 RNTI=6 TO=2
+HANDOVER_START 0.500 IMSI=11 FROM=1 RNTI=11 TO=2
+HANDOVER_SUCCESS 0.500 IMSI=8 CELL=2 RNTI=31 DELAY_MS=0.253
+HANDOVER_SUCCESS 0.500 IMSI=10 CELL=2 RNTI=32 DELAY_MS=0.253
+HANDOVER_SUCCESS 0.501 IMSI=12 CELL=2 RNTI=33 DELAY_MS=0.815
+HANDOVER_SUCCESS 0.501 IMSI=11 CELL=2 RNTI=34 DELAY_MS=0.815
+Flow 1 (1.0.0.2:49153 -> 7.0.0.2:1234) proto UDP
+  Tx Packets: 56000
+  Tx Bytes:   7168000
+  TxOffered:  10.240000 Mbps
+  Rx Bytes:   0
+  Throughput:  0 Mbps
+  Mean delay:  0 ms
+  Mean jitter: 0 ms
+  Rx Packets: 0
+Flow 2 (1.0.0.2:49154 -> 7.0.0.3:1234) proto UDP
+  Tx Packets: 56000
+  Tx Bytes:   7168000
+  TxOffered:  10.240000 Mbps
+  Rx Bytes:   0
+  Throughput:  0 Mbps
+  Mean delay:  0 ms
+  Mean jitter: 0 ms
+  Rx Packets: 0
+Flow 3 (1.0.0.2:49155 -> 7.0.0.4:1234) proto UDP
+  Tx Packets: 56000
+  Tx Bytes:   7168000
+  TxOffered:  10.240000 Mbps
+  Rx Bytes:   0
+  Throughput:  0 Mbps
+  Mean delay:  0 ms
+  Mean jitter: 0 ms
+  Rx Packets: 0
+Flow 4 (1.0.0.2:49156 -> 7.0.0.5:1234) proto UDP
+  Tx Packets: 56000
+  Tx Bytes:   7168000
+  TxOffered:  10.240000 Mbps
+  Rx Bytes:   6888448
+  Throughput: 9.840640 Mbps
+  Mean delay:  1.524390 ms
+  Mean jitter:  0.043672 ms
+  Rx Packets: 53816
+Flow 5 (1.0.0.2:49157 -> 7.0.0.6:1234) proto UDP
+  Tx Packets: 56000
+  Tx Bytes:   7168000
+  TxOffered:  10.240000 Mbps
+  Rx Bytes:   7039232
+  Throughput: 10.056046 Mbps
+  Mean delay:  0.806247 ms
+  Mean jitter:  0.041887 ms
+  Rx Packets: 54994
+Flow 6 (1.0.0.2:49158 -> 7.0.0.7:1234) proto UDP
+  Tx Packets: 56000
+  Tx Bytes:   7168000
+  TxOffered:  10.240000 Mbps
+  Rx Bytes:   7038464
+  Throughput: 10.054949 Mbps
+  Mean delay:  0.302862 ms
+  Mean jitter:  0.032351 ms
+  Rx Packets: 54988
+Flow 7 (1.0.0.2:49159 -> 7.0.0.8:1235) proto UDP
+  Tx Packets: 56000
+  Tx Bytes:   71680000
+  TxOffered:  102.400000 Mbps
+  Rx Bytes:   6400
+  Throughput: 0.009143 Mbps
+  Mean delay:  1904.293746 ms
+  Mean jitter:  43.342858 ms
+  Rx Packets: 5
+Flow 8 (1.0.0.2:49160 -> 7.0.0.9:1235) proto UDP
+  Tx Packets: 56000
+  Tx Bytes:   71680000
+  TxOffered:  102.400000 Mbps
+  Rx Bytes:   0
+  Throughput:  0 Mbps
+  Mean delay:  0 ms
+  Mean jitter: 0 ms
+  Rx Packets: 0
+Flow 9 (1.0.0.2:49161 -> 7.0.0.10:1235) proto UDP
+  Tx Packets: 56000
+  Tx Bytes:   71680000
+  TxOffered:  102.400000 Mbps
+  Rx Bytes:   0
+  Throughput:  0 Mbps
+  Mean delay:  0 ms
+  Mean jitter: 0 ms
+  Rx Packets: 0
+Flow 10 (1.0.0.2:49162 -> 7.0.0.11:1235) proto UDP
+  Tx Packets: 56000
+  Tx Bytes:   71680000
+  TxOffered:  102.400000 Mbps
+  Rx Bytes:   0
+  Throughput:  0 Mbps
+  Mean delay:  0 ms
+  Mean jitter: 0 ms
+  Rx Packets: 0
+Flow 11 (1.0.0.2:49163 -> 7.0.0.12:1235) proto UDP
+  Tx Packets: 56000
+  Tx Bytes:   71680000
+  TxOffered:  102.400000 Mbps
+  Rx Bytes:   46909440
+  Throughput: 67.013486 Mbps
+  Mean delay:  1087.209003 ms
+  Mean jitter:  0.067262 ms
+  Rx Packets: 36648
+Flow 12 (1.0.0.2:49164 -> 7.0.0.13:1235) proto UDP
+  Tx Packets: 56000
+  Tx Bytes:   71680000
+  TxOffered:  102.400000 Mbps
+  Rx Bytes:   0
+  Throughput:  0 Mbps
+  Mean delay:  0 ms
+  Mean jitter: 0 ms
+  Rx Packets: 0
+
+
+  Mean flow throughput: 19.394853
+  Mean flow delay: 598.827250
+  Mean flow jitter: 8.705606
+  Tx Packets Total: 672000
+  Rx Packets Total: 200451
+  Lost Packets Total: 471549
+  Packet loss: 70.170982
+  PDR: 29.829018
+  Congestion index: 0.813539
+  Handover attempts: 14
+  Handover success: 14
+  Handover failures: 0
+  Handover failure events: 0
+  Failure Max RACH: 0
+  Failure No Preamble: 0
+  Failure Joining: 0
+  Failure Leaving: 0
+  Handover success rate: 100.000000
+  Handover failure rate: 0.000000
+  Mean handover delay: 1.337530

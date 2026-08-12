@@ -1,0 +1,105 @@
+AUDIT DU DATASET D2
+======================================================================
+
+Fichier analysé : /home/ayoub/v2x-llm-project/datasets/processed/dynamic_d2/dynamic_qos_merged_d2.csv
+Nombre de lignes : 1872
+Nombre de colonnes : 27
+Nombre de runs uniques : 48
+Nombre de profils : 6
+
+RÉPARTITION PAR PROFIL
+----------------------------------------------------------------------
+                    observation_count  unique_runs  mean_samples_per_run
+profile                                                                 
+STABLE_CONTROL                    312            8                  39.0
+MEDIUM_CONTROL                    312            8                  39.0
+EARLY_DEGRADATION                 312            8                  39.0
+LATE_DEGRADATION                  312            8                  39.0
+ABRUPT_DEGRADATION                312            8                  39.0
+PERSISTENT_HIGH                   312            8                  39.0
+
+VALEURS MANQUANTES
+----------------------------------------------------------------------
+Empty DataFrame
+Columns: [column, missing_count, missing_percent]
+Index: []
+
+CONTRÔLES DE COHÉRENCE
+----------------------------------------------------------------------
+Lignes dupliquées run_id/time_s : 0
+Lignes avec valeurs physiques invalides : 28
+Lignes avec erreurs de calcul QoS : 28
+Nombre de valeurs aberrantes IQR : 342
+
+PLAGES OBSERVÉES
+----------------------------------------------------------------------
+throughput_mbps: min=1.964800, moyenne=23.667527, max=90.380800
+delay_ms: min=0.775000, moyenne=1.073997, max=1.300000
+jitter_ms: min=0.000000, moyenne=0.039291, max=0.129355
+packet_loss: min=0.000000, moyenne=0.008680, max=0.793651
+pdr: min=99.206349, moyenne=99.991320, max=100.000000
+congestion_index: min=0.010333, moyenne=0.016065, max=0.036046
+
+VARIABILITÉ TEMPORELLE
+----------------------------------------------------------------------
+Runs dont le throughput est constant : 8 / 48
+Runs dont l’indice de congestion est constant : 0 / 48
+
+SÉQUENCES DE PHASES
+----------------------------------------------------------------------
+                             run_id            profile                       phase_sequence          lambda_sequence
+d2_abrupt_degradation_u16_d100_s111 ABRUPT_DEGRADATION STABLE -> MEDIUM -> HIGH -> RECOVERY        50 -> 1000 -> 100
+d2_abrupt_degradation_u16_d100_s222 ABRUPT_DEGRADATION STABLE -> MEDIUM -> HIGH -> RECOVERY        50 -> 1150 -> 100
+d2_abrupt_degradation_u16_d300_s111 ABRUPT_DEGRADATION STABLE -> MEDIUM -> HIGH -> RECOVERY        50 -> 1000 -> 100
+d2_abrupt_degradation_u16_d300_s222 ABRUPT_DEGRADATION STABLE -> MEDIUM -> HIGH -> RECOVERY        50 -> 1150 -> 100
+ d2_abrupt_degradation_u8_d100_s111 ABRUPT_DEGRADATION STABLE -> MEDIUM -> HIGH -> RECOVERY        50 -> 1400 -> 100
+ d2_abrupt_degradation_u8_d100_s222 ABRUPT_DEGRADATION STABLE -> MEDIUM -> HIGH -> RECOVERY        50 -> 1550 -> 100
+ d2_abrupt_degradation_u8_d300_s111 ABRUPT_DEGRADATION STABLE -> MEDIUM -> HIGH -> RECOVERY        50 -> 1400 -> 100
+ d2_abrupt_degradation_u8_d300_s222 ABRUPT_DEGRADATION STABLE -> MEDIUM -> HIGH -> RECOVERY        50 -> 1550 -> 100
+ d2_early_degradation_u16_d100_s111  EARLY_DEGRADATION STABLE -> MEDIUM -> HIGH -> RECOVERY 50 -> 300 -> 1000 -> 100
+ d2_early_degradation_u16_d100_s222  EARLY_DEGRADATION STABLE -> MEDIUM -> HIGH -> RECOVERY 50 -> 350 -> 1150 -> 100
+ d2_early_degradation_u16_d300_s111  EARLY_DEGRADATION STABLE -> MEDIUM -> HIGH -> RECOVERY 50 -> 300 -> 1000 -> 100
+ d2_early_degradation_u16_d300_s222  EARLY_DEGRADATION STABLE -> MEDIUM -> HIGH -> RECOVERY 50 -> 350 -> 1150 -> 100
+  d2_early_degradation_u8_d100_s111  EARLY_DEGRADATION STABLE -> MEDIUM -> HIGH -> RECOVERY 50 -> 400 -> 1400 -> 100
+  d2_early_degradation_u8_d100_s222  EARLY_DEGRADATION STABLE -> MEDIUM -> HIGH -> RECOVERY 50 -> 450 -> 1550 -> 100
+  d2_early_degradation_u8_d300_s111  EARLY_DEGRADATION STABLE -> MEDIUM -> HIGH -> RECOVERY 50 -> 400 -> 1400 -> 100
+  d2_early_degradation_u8_d300_s222  EARLY_DEGRADATION STABLE -> MEDIUM -> HIGH -> RECOVERY 50 -> 450 -> 1550 -> 100
+  d2_late_degradation_u16_d100_s111   LATE_DEGRADATION STABLE -> MEDIUM -> HIGH -> RECOVERY 50 -> 300 -> 1000 -> 100
+  d2_late_degradation_u16_d100_s222   LATE_DEGRADATION STABLE -> MEDIUM -> HIGH -> RECOVERY 50 -> 350 -> 1150 -> 100
+  d2_late_degradation_u16_d300_s111   LATE_DEGRADATION STABLE -> MEDIUM -> HIGH -> RECOVERY 50 -> 300 -> 1000 -> 100
+  d2_late_degradation_u16_d300_s222   LATE_DEGRADATION STABLE -> MEDIUM -> HIGH -> RECOVERY 50 -> 350 -> 1150 -> 100
+   d2_late_degradation_u8_d100_s111   LATE_DEGRADATION STABLE -> MEDIUM -> HIGH -> RECOVERY 50 -> 400 -> 1400 -> 100
+   d2_late_degradation_u8_d100_s222   LATE_DEGRADATION STABLE -> MEDIUM -> HIGH -> RECOVERY 50 -> 450 -> 1550 -> 100
+   d2_late_degradation_u8_d300_s111   LATE_DEGRADATION STABLE -> MEDIUM -> HIGH -> RECOVERY 50 -> 400 -> 1400 -> 100
+   d2_late_degradation_u8_d300_s222   LATE_DEGRADATION STABLE -> MEDIUM -> HIGH -> RECOVERY 50 -> 450 -> 1550 -> 100
+    d2_medium_control_u16_d100_s111     MEDIUM_CONTROL STABLE -> MEDIUM -> HIGH -> RECOVERY         50 -> 300 -> 100
+    d2_medium_control_u16_d100_s222     MEDIUM_CONTROL STABLE -> MEDIUM -> HIGH -> RECOVERY         50 -> 350 -> 100
+    d2_medium_control_u16_d300_s111     MEDIUM_CONTROL STABLE -> MEDIUM -> HIGH -> RECOVERY         50 -> 300 -> 100
+    d2_medium_control_u16_d300_s222     MEDIUM_CONTROL STABLE -> MEDIUM -> HIGH -> RECOVERY         50 -> 350 -> 100
+     d2_medium_control_u8_d100_s111     MEDIUM_CONTROL STABLE -> MEDIUM -> HIGH -> RECOVERY         50 -> 400 -> 100
+     d2_medium_control_u8_d100_s222     MEDIUM_CONTROL STABLE -> MEDIUM -> HIGH -> RECOVERY         50 -> 450 -> 100
+     d2_medium_control_u8_d300_s111     MEDIUM_CONTROL STABLE -> MEDIUM -> HIGH -> RECOVERY         50 -> 400 -> 100
+     d2_medium_control_u8_d300_s222     MEDIUM_CONTROL STABLE -> MEDIUM -> HIGH -> RECOVERY         50 -> 450 -> 100
+   d2_persistent_high_u16_d100_s111    PERSISTENT_HIGH STABLE -> MEDIUM -> HIGH -> RECOVERY        50 -> 300 -> 1000
+   d2_persistent_high_u16_d100_s222    PERSISTENT_HIGH STABLE -> MEDIUM -> HIGH -> RECOVERY        50 -> 350 -> 1150
+   d2_persistent_high_u16_d300_s111    PERSISTENT_HIGH STABLE -> MEDIUM -> HIGH -> RECOVERY        50 -> 300 -> 1000
+   d2_persistent_high_u16_d300_s222    PERSISTENT_HIGH STABLE -> MEDIUM -> HIGH -> RECOVERY        50 -> 350 -> 1150
+    d2_persistent_high_u8_d100_s111    PERSISTENT_HIGH STABLE -> MEDIUM -> HIGH -> RECOVERY        50 -> 400 -> 1400
+    d2_persistent_high_u8_d100_s222    PERSISTENT_HIGH STABLE -> MEDIUM -> HIGH -> RECOVERY        50 -> 450 -> 1550
+    d2_persistent_high_u8_d300_s111    PERSISTENT_HIGH STABLE -> MEDIUM -> HIGH -> RECOVERY        50 -> 400 -> 1400
+    d2_persistent_high_u8_d300_s222    PERSISTENT_HIGH STABLE -> MEDIUM -> HIGH -> RECOVERY        50 -> 450 -> 1550
+    d2_stable_control_u16_d100_s111     STABLE_CONTROL STABLE -> MEDIUM -> HIGH -> RECOVERY                       50
+    d2_stable_control_u16_d100_s222     STABLE_CONTROL STABLE -> MEDIUM -> HIGH -> RECOVERY                       50
+    d2_stable_control_u16_d300_s111     STABLE_CONTROL STABLE -> MEDIUM -> HIGH -> RECOVERY                       50
+    d2_stable_control_u16_d300_s222     STABLE_CONTROL STABLE -> MEDIUM -> HIGH -> RECOVERY                       50
+     d2_stable_control_u8_d100_s111     STABLE_CONTROL STABLE -> MEDIUM -> HIGH -> RECOVERY                       50
+     d2_stable_control_u8_d100_s222     STABLE_CONTROL STABLE -> MEDIUM -> HIGH -> RECOVERY                       50
+     d2_stable_control_u8_d300_s111     STABLE_CONTROL STABLE -> MEDIUM -> HIGH -> RECOVERY                       50
+     d2_stable_control_u8_d300_s222     STABLE_CONTROL STABLE -> MEDIUM -> HIGH -> RECOVERY                       50
+
+INTERPRÉTATION AUTOMATIQUE
+----------------------------------------------------------------------
+[ATTENTION] Certaines valeurs QoS sont hors des plages physiques attendues.
+[ATTENTION] Des écarts existent entre les métriques et les compteurs par fenêtre.
+[OK] Les 48 runs attendus sont présents.
+[OK] Chaque profil contient les 8 configurations attendues.

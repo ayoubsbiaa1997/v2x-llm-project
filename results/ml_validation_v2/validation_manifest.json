@@ -1,0 +1,41 @@
+{
+  "input_oof_file": "/home/ayoub/v2x-llm-project/results/network_state_v1/out_of_fold_predictions.csv",
+  "configuration_file": "/home/ayoub/v2x-llm-project/results/network_state_v1/selected_features.json",
+  "observation_count": 190,
+  "targets": [
+    "QoSScore",
+    "CongestionScore",
+    "HORiskScore"
+  ],
+  "thresholds": [
+    0.25,
+    0.5,
+    0.75
+  ],
+  "generated_files": [
+    "/home/ayoub/v2x-llm-project/results/ml_validation_v2/classification_report_QoSScore.csv",
+    "/home/ayoub/v2x-llm-project/results/ml_validation_v2/figures/observed_vs_predicted_QoSScore.png",
+    "/home/ayoub/v2x-llm-project/results/ml_validation_v2/figures/residuals_QoSScore.png",
+    "/home/ayoub/v2x-llm-project/results/ml_validation_v2/figures/residual_histogram_QoSScore.png",
+    "/home/ayoub/v2x-llm-project/results/ml_validation_v2/figures/confusion_matrix_QoSScore.png",
+    "/home/ayoub/v2x-llm-project/results/ml_validation_v2/classification_report_CongestionScore.csv",
+    "/home/ayoub/v2x-llm-project/results/ml_validation_v2/figures/observed_vs_predicted_CongestionScore.png",
+    "/home/ayoub/v2x-llm-project/results/ml_validation_v2/figures/residuals_CongestionScore.png",
+    "/home/ayoub/v2x-llm-project/results/ml_validation_v2/figures/residual_histogram_CongestionScore.png",
+    "/home/ayoub/v2x-llm-project/results/ml_validation_v2/figures/confusion_matrix_CongestionScore.png",
+    "/home/ayoub/v2x-llm-project/results/ml_validation_v2/classification_report_HORiskScore.csv",
+    "/home/ayoub/v2x-llm-project/results/ml_validation_v2/figures/observed_vs_predicted_HORiskScore.png",
+    "/home/ayoub/v2x-llm-project/results/ml_validation_v2/figures/residuals_HORiskScore.png",
+    "/home/ayoub/v2x-llm-project/results/ml_validation_v2/figures/residual_histogram_HORiskScore.png",
+    "/home/ayoub/v2x-llm-project/results/ml_validation_v2/figures/confusion_matrix_HORiskScore.png",
+    "/home/ayoub/v2x-llm-project/results/ml_validation_v2/regression_metrics.csv",
+    "/home/ayoub/v2x-llm-project/results/ml_validation_v2/classification_metrics.csv",
+    "/home/ayoub/v2x-llm-project/results/ml_validation_v2/prediction_error_statistics.csv",
+    "/home/ayoub/v2x-llm-project/results/ml_validation_v2/feature_summary.csv",
+    "/home/ayoub/v2x-llm-project/results/ml_validation_v2/figures/absolute_error_distribution.png",
+    "/home/ayoub/v2x-llm-project/results/ml_validation_v2/figures/absolute_error_boxplot.png",
+    "/home/ayoub/v2x-llm-project/results/ml_validation_v2/tables/regression_metrics.tex",
+    "/home/ayoub/v2x-llm-project/results/ml_validation_v2/tables/classification_metrics.tex",
+    "/home/ayoub/v2x-llm-project/results/ml_validation_v2/validation_summary.txt"
+  ]
+}

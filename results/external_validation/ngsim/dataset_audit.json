@@ -1,0 +1,76 @@
+{
+  "input_file": "/home/ayoub/v2x-llm-project/external_validation/ngsim/raw/trajectories-0750am-0805am.txt",
+  "file_size_mb": 159.879,
+  "format": {
+    "separator": "whitespace",
+    "header_present": false,
+    "sampling_frequency_hz": 10,
+    "column_count": 18,
+    "columns": [
+      "Vehicle_ID",
+      "Frame_ID",
+      "Total_Frames",
+      "Global_Time",
+      "Local_X",
+      "Local_Y",
+      "Global_X",
+      "Global_Y",
+      "v_Length",
+      "v_Width",
+      "v_Class",
+      "v_Vel",
+      "v_Acc",
+      "Lane_ID",
+      "Preceding",
+      "Following",
+      "Space_Headway",
+      "Time_Headway"
+    ]
+  },
+  "sample": {
+    "requested_rows": 100000,
+    "loaded_rows": 100000,
+    "duplicate_rows": 0,
+    "missing_values": {}
+  },
+  "temporal_coverage": {
+    "frame_min": 8,
+    "frame_max": 1359,
+    "global_time_min_ms": 1118846979700,
+    "global_time_max_ms": 1118847114800,
+    "duration_seconds_in_sample": 135.1
+  },
+  "vehicles": {
+    "unique_vehicle_count": 225,
+    "vehicle_id_min": 2,
+    "vehicle_id_max": 374,
+    "class_distribution": {
+      "2": 96770,
+      "3": 3230
+    }
+  },
+  "lanes": {
+    "lane_distribution": {
+      "1": 20645,
+      "2": 21060,
+      "3": 18918,
+      "4": 17632,
+      "5": 19161,
+      "6": 1952,
+      "7": 392,
+      "8": 240
+    },
+    "lane_min": 1,
+    "lane_max": 8
+  },
+  "mobility_statistics": {
+    "mean_speed_fps": 45.426453,
+    "mean_speed_mps": 13.845983,
+    "mean_speed_kmh": 49.845538,
+    "speed_std_mps": 3.38246,
+    "mean_acceleration_mps2": 0.140299,
+    "mean_space_headway_ft": 82.95851,
+    "mean_space_headway_m": 25.285754,
+    "mean_time_headway_s": 16.126905
+  }
+}

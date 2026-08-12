@@ -1,0 +1,4 @@
+{
+  "decision": "KEEP_CURRENT_CONNECTION",
+  "explanation": "Both network congestion and QoS levels remain low, indica\u001b[6D\u001b[K\nindicating sufficient capacity for existing connections including five user\u001b[4D\u001b[K\nusers at moderate speeds (16.13 mps) in light traffic conditions with a veh\u001b[3D\u001b[K\nvehicle density of only 53 vehicles per km."
+}

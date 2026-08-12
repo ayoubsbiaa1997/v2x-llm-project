@@ -1,0 +1,22 @@
+{
+  "fixed_file": "/home/ayoub/v2x-llm-project/results/external_validation/ngsim/ml_predictions_ngsim.csv",
+  "adaptive_file": "/home/ayoub/v2x-llm-project/results/external_validation/ngsim/adaptive_ml/ml_predictions_ngsim.csv",
+  "observation_count": 190,
+  "correlations": {
+    "fixed": {
+      "pearson": 0.5227070745581295,
+      "spearman": 0.24799496721097503,
+      "mean_absolute_gap": 0.24952245485674412
+    },
+    "adaptive": {
+      "pearson": 0.5035593601617473,
+      "spearman": -0.09402702631358982,
+      "mean_absolute_gap": 0.22964741037137412
+    }
+  },
+  "interpretation": {
+    "diversity_improved": true,
+    "ood_shift_removed": false,
+    "warning": "Le mapping adaptatif améliore la diversité, mais la concentration persistante sur les classes sévères et la faible corrélation de rang indiquent qu'un décalage de domaine subsiste."
+  }
+}

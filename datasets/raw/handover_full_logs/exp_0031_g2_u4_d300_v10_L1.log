@@ -1,0 +1,126 @@
+[0/2] Re-checking globbed directories...
+ninja: no work to do.
+[0/2] Re-checking globbed directories...
+ninja: no work to do.
+HANDOVER_START 0.300001 IMSI=2 FROM=2 RNTI=1 TO=1
+HANDOVER_START 0.300001 IMSI=4 FROM=2 RNTI=8 TO=1
+HANDOVER_START 0.300002 IMSI=6 FROM=2 RNTI=13 TO=1
+HANDOVER_START 0.300002 IMSI=3 FROM=2 RNTI=2 TO=1
+HANDOVER_START 0.300002 IMSI=5 FROM=2 RNTI=9 TO=1
+HANDOVER_START 0.300002 IMSI=7 FROM=2 RNTI=14 TO=1
+HANDOVER_START 0.300002 IMSI=9 FROM=2 RNTI=16 TO=1
+HANDOVER_SUCCESS 0.300254 IMSI=2 CELL=1 RNTI=2 DELAY_MS=0.253
+HANDOVER_SUCCESS 0.300 IMSI=4 CELL=1 RNTI=3 DELAY_MS=0.253
+HANDOVER_SUCCESS 0.301 IMSI=6 CELL=1 RNTI=4 DELAY_MS=0.815
+HANDOVER_SUCCESS 0.301 IMSI=3 CELL=1 RNTI=5 DELAY_MS=0.815
+HANDOVER_SUCCESS 0.301 IMSI=5 CELL=1 RNTI=6 DELAY_MS=1.378
+HANDOVER_SUCCESS 0.301 IMSI=7 CELL=1 RNTI=7 DELAY_MS=1.378
+HANDOVER_SUCCESS 0.302 IMSI=9 CELL=1 RNTI=8 DELAY_MS=1.940
+HANDOVER_START 1.724 IMSI=2 FROM=1 RNTI=2 TO=2
+HANDOVER_START 1.724 IMSI=4 FROM=1 RNTI=3 TO=2
+HANDOVER_START 1.724 IMSI=6 FROM=1 RNTI=4 TO=2
+HANDOVER_SUCCESS 1.724 IMSI=2 CELL=2 RNTI=17 DELAY_MS=0.253
+HANDOVER_SUCCESS 1.724 IMSI=4 CELL=2 RNTI=18 DELAY_MS=0.253
+HANDOVER_SUCCESS 1.725 IMSI=6 CELL=2 RNTI=19 DELAY_MS=0.815
+HANDOVER_START 2.924 IMSI=2 FROM=2 RNTI=17 TO=1
+HANDOVER_START 2.924 IMSI=4 FROM=2 RNTI=18 TO=1
+HANDOVER_START 2.924 IMSI=6 FROM=2 RNTI=19 TO=1
+HANDOVER_SUCCESS 2.924 IMSI=2 CELL=1 RNTI=9 DELAY_MS=0.253
+HANDOVER_SUCCESS 2.924 IMSI=4 CELL=1 RNTI=10 DELAY_MS=0.253
+HANDOVER_SUCCESS 2.925 IMSI=6 CELL=1 RNTI=11 DELAY_MS=0.815
+HANDOVER_START 4.724 IMSI=4 FROM=1 RNTI=10 TO=2
+HANDOVER_SUCCESS 4.724 IMSI=4 CELL=2 RNTI=22 DELAY_MS=0.253
+Flow 1 (1.0.0.2:49153 -> 7.0.0.2:1234) proto UDP
+  Tx Packets: 16801
+  Tx Bytes:   2150528
+  TxOffered:  3.072183 Mbps
+  Rx Bytes:   976640
+  Throughput: 1.395200 Mbps
+  Mean delay:  0.301512 ms
+  Mean jitter:  0.031660 ms
+  Rx Packets: 7630
+Flow 2 (1.0.0.2:49154 -> 7.0.0.3:1234) proto UDP
+  Tx Packets: 16801
+  Tx Bytes:   2150528
+  TxOffered:  3.072183 Mbps
+  Rx Bytes:   950528
+  Throughput: 1.357897 Mbps
+  Mean delay:  0.281730 ms
+  Mean jitter:  0.030384 ms
+  Rx Packets: 7426
+Flow 3 (1.0.0.2:49155 -> 7.0.0.4:1234) proto UDP
+  Tx Packets: 16801
+  Tx Bytes:   2150528
+  TxOffered:  3.072183 Mbps
+  Rx Bytes:   976384
+  Throughput: 1.394834 Mbps
+  Mean delay:  0.305094 ms
+  Mean jitter:  0.031193 ms
+  Rx Packets: 7628
+Flow 4 (1.0.0.2:49156 -> 7.0.0.5:1234) proto UDP
+  Tx Packets: 16801
+  Tx Bytes:   2150528
+  TxOffered:  3.072183 Mbps
+  Rx Bytes:   0
+  Throughput:  0 Mbps
+  Mean delay:  0 ms
+  Mean jitter: 0 ms
+  Rx Packets: 0
+Flow 5 (1.0.0.2:49157 -> 7.0.0.6:1235) proto UDP
+  Tx Packets: 16801
+  Tx Bytes:   21505280
+  TxOffered:  30.721829 Mbps
+  Rx Bytes:   0
+  Throughput:  0 Mbps
+  Mean delay:  0 ms
+  Mean jitter: 0 ms
+  Rx Packets: 0
+Flow 6 (1.0.0.2:49158 -> 7.0.0.7:1235) proto UDP
+  Tx Packets: 16801
+  Tx Bytes:   21505280
+  TxOffered:  30.721829 Mbps
+  Rx Bytes:   0
+  Throughput:  0 Mbps
+  Mean delay:  0 ms
+  Mean jitter: 0 ms
+  Rx Packets: 0
+Flow 7 (1.0.0.2:49159 -> 7.0.0.8:1235) proto UDP
+  Tx Packets: 16801
+  Tx Bytes:   21505280
+  TxOffered:  30.721829 Mbps
+  Rx Bytes:   0
+  Throughput:  0 Mbps
+  Mean delay:  0 ms
+  Mean jitter: 0 ms
+  Rx Packets: 0
+Flow 8 (1.0.0.2:49160 -> 7.0.0.9:1235) proto UDP
+  Tx Packets: 16801
+  Tx Bytes:   21505280
+  TxOffered:  30.721829 Mbps
+  Rx Bytes:   0
+  Throughput:  0 Mbps
+  Mean delay:  0 ms
+  Mean jitter: 0 ms
+  Rx Packets: 0
+
+
+  Mean flow throughput: 1.382644
+  Mean flow delay: 0.296112
+  Mean flow jitter: 0.031079
+  Tx Packets Total: 134408
+  Rx Packets Total: 22684
+  Lost Packets Total: 111724
+  Packet loss: 83.123028
+  PDR: 16.876972
+  Congestion index: 0.544825
+  Handover attempts: 14
+  Handover success: 14
+  Handover failures: 0
+  Handover failure events: 0
+  Failure Max RACH: 0
+  Failure No Preamble: 0
+  Failure Joining: 0
+  Failure Leaving: 0
+  Handover success rate: 100.000000
+  Handover failure rate: 0.000000
+  Mean handover delay: 0.694930

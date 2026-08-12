@@ -1,0 +1,4 @@
+{
+  "decision": "PREPARE_HANDOVER",
+  "explanation": "High UE density and critical congestion/quality scores co\u001b[2D\u001b[K\ncombined with a HIGH handover risk level suggest imminent cell boundary cro\u001b[3D\u001b[K\ncrossing or network stress. Preparing for handover allows proactive configu\u001b[7D\u001b[K\nconfiguration before the situation escalates."
+}

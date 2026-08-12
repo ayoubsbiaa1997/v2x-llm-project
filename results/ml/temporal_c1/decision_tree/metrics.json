@@ -1,0 +1,43 @@
+{
+    "protocol": "C1",
+    "model": "decision_tree",
+    "test_scenarios": [
+        "qos_D100_STABLE",
+        "qos_D250_MEDIUM",
+        "qos_D400_HIGH"
+    ],
+    "n_train_samples": 684,
+    "n_test_samples": 342,
+    "n_features": 70,
+    "scaling": false,
+    "accuracy": 1.0,
+    "balanced_accuracy": 1.0,
+    "precision_macro": 1.0,
+    "recall_macro": 1.0,
+    "f1_macro": 1.0,
+    "mcc": 1.0,
+    "training_time_s": 0.01593656100158114,
+    "prediction_time_s": 0.003198136000719387,
+    "confusion_matrix": [
+        [
+            114,
+            0,
+            0
+        ],
+        [
+            0,
+            114,
+            0
+        ],
+        [
+            0,
+            0,
+            114
+        ]
+    ],
+    "class_names": [
+        "HO_NOW",
+        "KEEP_CONNECTION",
+        "LOAD_BALANCING"
+    ]
+}

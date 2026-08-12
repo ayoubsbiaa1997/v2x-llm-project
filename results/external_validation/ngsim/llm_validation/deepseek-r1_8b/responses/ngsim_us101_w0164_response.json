@@ -1,0 +1,4 @@
+{
+  "decision": "HANDOVER_NOW",
+  "explanation": "Both the predicted and real data indicate extremely high \u001b[K\ncongestion levels (CongestionLevel: HIGH, Mobility Congestion Index near th\u001b[2D\u001b[K\nthreshold). The high handover risk level (HORiskLevel: HIGH) combined with \u001b[K\nsignificant network degradation (QoSScore Degraded) necessitates immediate \u001b[K\naction to transfer connections for improved reliability."
+}

@@ -1,0 +1,5 @@
+model,accuracy,balanced_accuracy,precision_macro,recall_macro,f1_macro,mcc,training_time_s,prediction_time_s,scaling
+decision_tree,1.0,1.0,1.0,1.0,1.0,1.0,0.01593656100158114,0.003198136000719387,False
+random_forest,1.0,1.0,1.0,1.0,1.0,1.0,0.9461185510008363,0.12219170599564677,False
+xgboost,1.0,1.0,1.0,1.0,1.0,1.0,0.4938753140013432,0.011076239003159571,False
+mlp,1.0,1.0,1.0,1.0,1.0,1.0,0.21662202200241154,0.0034906590008176863,True

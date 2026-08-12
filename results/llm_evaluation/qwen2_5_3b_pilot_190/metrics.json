@@ -1,0 +1,14 @@
+{
+  "model": "qwen2.5:3b",
+  "requested": 190,
+  "selected": 190,
+  "successful": 190,
+  "failed": 0,
+  "valid_json_rate": 1.0,
+  "accuracy": 0.3736842105263158,
+  "macro_precision": 0.11340579710144927,
+  "macro_recall": 0.3111111111111111,
+  "macro_f1": 0.1620779220779221,
+  "mean_inference_seconds": 39.365762631578946,
+  "median_inference_seconds": 40.00635
+}
