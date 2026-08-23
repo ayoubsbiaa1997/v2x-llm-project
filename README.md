@@ -303,6 +303,16 @@ Raw third-party datasets such as NGSIM and LuSTScenario are not included in this
 
 ---
 
+## Reproducibility
+
+The complete experimental workflow, including dataset construction, ML training, LLM evaluation, benchmarking, and NGSIM external validation, is documented in:
+
+➡️ **[REPRODUCIBILITY.md](REPRODUCIBILITY.md)**
+
+This guide provides the main execution sequence, expected inputs and outputs, and important notes required to reproduce the principal experimental results.
+
+---
+
 ## Scientific Limitations
 
 The current study has several limitations:
