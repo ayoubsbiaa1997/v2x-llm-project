@@ -1,89 +1,209 @@
-# Intelligent Decision-Making for V2X Communications Using ML and Large Language Models
+# Intelligent V2X Decision Support using ML and LLMs over 5G/6G Networks
 
 ## Overview
 
-This repository contains the experimental implementation developed for the engineering final-year project:
+This repository contains the implementation, datasets, experimental results, and validation pipeline developed for the research project:
 
-**“Utilisation des Large Language Models pour la prise de décision intelligente dans les communications V2X sur réseau 5G/6G.”**
+**“Large Language Models for Intelligent Decision-Making in V2X Communications over 5G/6G Networks.”**
 
-The project investigates a hybrid intelligent decision-making architecture for V2X communications combining:
+The project investigates a hybrid architecture combining:
 
-- vehicular mobility simulation;
-- 5G V2X network simulation;
-- QoS and handover analysis;
-- machine-learning-based network-state prediction;
-- an expert decision policy;
-- Large Language Models (LLMs);
-- explainable decision generation;
-- external validation using real vehicular mobility data.
+- 5G V2X network simulation using **ns-3 / 5G-LENA**;
+- mobility-aware and traffic-aware network characterization;
+- Machine Learning models for network-state prediction;
+- deterministic expert policies for reference decision-making;
+- Large Language Models (LLMs) for high-level network reasoning;
+- external mobility validation using **NGSIM** real-world vehicle trajectories.
 
-The proposed architecture separates network-state prediction, controlled decision-making, and high-level reasoning.
+The main objective is to study whether predicted V2X network conditions can be transformed into reliable and interpretable high-level network-management decisions.
+
+---
 
 ## Proposed Architecture
 
-The experimental pipeline can be summarized as follows:
+The proposed pipeline follows the sequence:
 
-~~~text
-V2X Simulation / Mobility Data
-            |
-            v
-      Data Processing
-            |
-            v
-   ML State Prediction
-      |      |      |
-      v      v      v
-     QoS  Congestion  HO Risk
-      \      |      /
-             v
-      State Discretization
-             |
-             v
-        Expert Policy
-             |
-             v
-      Prompt Construction
-             |
-             v
-            LLM
-             |
-             v
-   Decision + Explanation
-             |
-             v
-    Consistency Validation
-~~~
+```text
+V2X Scenario
+     |
+     v
+ns-3 / 5G-LENA Simulation
+     |
+     v
+Dataset Construction
+     |
+     v
+ML Network-State Prediction
+     |
+     +--> QoS Score
+     +--> Congestion Score
+     +--> Handover Risk Score
+     |
+     v
+State Discretization
+     |
+     +----------------------+
+     |                      |
+     v                      v
+Expert Policy          Structured LLM Prompt
+     |                      |
+     v                      v
+Reference Decision      LLM Decision + Explanation
+     |                      |
+     +----------+-----------+
+                |
+                v
+        Comparative Evaluation
+```
 
-The machine-learning layer estimates the network state, while the expert policy provides a deterministic reference decision. The LLM operates as a high-level reasoning and explanation layer rather than directly controlling low-level radio procedures.
+The expert-policy decision is kept independent from the LLM prompt in order to avoid direct decision-label leakage.
 
-## Main Technologies
+---
 
-The experimental environment relies on:
+## Main Research Questions
 
-- **ns-3** for discrete-event network simulation;
-- **5G-LENA** for 5G NR modeling;
-- **SUMO** for vehicular mobility;
-- **Python 3.12** for data processing and experimentation;
-- **Scikit-learn** for machine-learning pipelines;
-- **XGBoost** for gradient-boosted models;
-- **PyTorch** for temporal neural models;
-- **SHAP** for model explainability;
-- **NumPy** and **Pandas** for data processing;
-- **Matplotlib** and **Seaborn** for experimental visualization.
+The project investigates four main questions:
 
-External mobility validation is based on the **NGSIM US-101** vehicular trajectory dataset.
+1. Can ML models predict decision-relevant V2X network states from network, traffic, and mobility conditions?
+2. Can LLMs transform predicted V2X states into high-level decisions coherent with an independent expert policy?
+3. How do different LLMs compare in terms of decision quality, robustness, explainability, and inference latency?
+4. Does the pipeline preserve meaningful behavior when exposed to mobility patterns outside the original simulation domain?
+
+---
+
+## Experimental Dataset
+
+The final V2X dataset contains **190 valid observations** generated from heterogeneous ns-3 / 5G-LENA scenarios.
+
+Main scenario variables include:
+
+- number of gNBs;
+- UEs per gNB;
+- total number of UEs;
+- inter-site distance;
+- vehicle speed;
+- ULL traffic load;
+- BE traffic load.
+
+The final ML feature set contains seven scenario-level variables.
+
+Post-simulation QoS and handover measurements are excluded from the ML input features to reduce information leakage.
+
+---
+
+## Network-State Prediction
+
+Three continuous targets are predicted:
+
+- **QoSScore**
+- **CongestionScore**
+- **HORiskScore**
+
+The evaluated regression algorithms include:
+
+- Random Forest;
+- Extra Trees;
+- Histogram-based Gradient Boosting.
+
+Model evaluation uses repeated 5-fold cross-validation and out-of-fold predictions.
+
+### Selected Models
+
+| Target | Selected Model | OOF R² |
+|---|---|---:|
+| QoS | Histogram-based Gradient Boosting | 0.7412 |
+| Congestion | Histogram-based Gradient Boosting | 0.6163 |
+| Handover Risk | Extra Trees | 0.8990 |
+
+The handover-risk result must be interpreted cautiously because the final valid simulation set does not contain handover failures.
+
+---
+
+## LLM Decision Benchmark
+
+Three open-weight LLMs were evaluated under the same zero-shot protocol:
+
+- **Llama 3.2 1B**
+- **Qwen 2.5 3B**
+- **DeepSeek-R1 8B**
+
+All models were executed locally through Ollama.
+
+### Main Results
+
+| Model | Accuracy | Macro-F1 | Mean Latency |
+|---|---:|---:|---:|
+| Llama 3.2 1B | 0.3474 | 0.1031 | 19.72 s |
+| Qwen 2.5 3B | 0.3737 | 0.1621 | 39.37 s |
+| DeepSeek-R1 8B | **0.3947** | **0.1976** | 101.78 s |
+
+All three models produced valid structured outputs for all 190 evaluated scenarios.
+
+The results reveal a clear trade-off between decision performance and inference latency.
+
+---
+
+## External Validation using NGSIM
+
+The pipeline was additionally evaluated using mobility traces derived from the **NGSIM US-101** dataset.
+
+NGSIM is used as an external mobility source and not as a real 5G radio ground truth.
+
+A fixed mapping initially caused strong prediction saturation.
+
+An adaptive mapping strategy reduced the dominant-value concentration for QoS and congestion predictions from:
+
+```text
+97.89% -> 67.89%
+```
+
+This experiment evaluates mobility-domain transferability rather than full real-world 5G V2X validation.
+
+---
 
 ## Repository Structure
 
-~~~text
+```text
 v2x-llm-project/
+│
 ├── datasets/
+│   ├── analysis/
+│   ├── llm/
+│   ├── ml/
+│   ├── mobility/
+│   ├── processed/
+│   └── raw/
+│
 ├── external_validation/
+│   └── ngsim/
+│
 ├── figures/
+│   ├── llm_benchmark/
+│   ├── ml/
+│   ├── ml_comparison/
+│   └── temporal/
+│
 ├── models/
+│   ├── network_state_v1/
+│   ├── preprocessing/
+│   └── trained/
+│
 ├── ns3/
+│   ├── v2x-5g-handover.cc
+│   └── v2x-5g-sumo.cc
+│
 ├── report/
+│   └── latex/
+│
 ├── results/
+│   ├── external_validation/
+│   ├── inference/
+│   ├── llm_evaluation/
+│   ├── ml/
+│   ├── ml_audit_v1/
+│   ├── ml_validation_v2/
+│   └── network_state_v1/
+│
 ├── scripts/
 │   ├── analysis/
 │   ├── dataset/
@@ -93,380 +213,135 @@ v2x-llm-project/
 │   ├── ml/
 │   ├── mobility/
 │   └── simulation/
+│
 ├── src/
 │   └── ml/
+│
 ├── ENVIRONMENT.md
+├── SCIENTIFIC_MANIFEST.md
 ├── requirements.txt
 └── README.md
-~~~
+```
 
-## V2X Simulation
+---
 
-The network experimentation stage is based on ns-3 and 5G-LENA.
+## Important Result Directories
 
-The simulations investigate variations in:
+### Network-State Prediction
 
-- number of vehicles;
-- gNB deployment conditions;
-- vehicle speed;
-- traffic intensity;
-- packet size;
-- network load.
+`results/network_state_v1/`
 
-The main network indicators include:
+Contains:
 
-- throughput;
-- delay;
-- jitter;
-- packet loss;
-- packet delivery ratio;
-- congestion;
-- handover attempts;
-- handover success and failure;
-- handover delay.
+- model metrics;
+- out-of-fold predictions;
+- selected features;
+- training summary.
 
-The principal ns-3 source files are:
+### Final LLM Benchmark
 
-~~~text
-ns3/v2x-5g-sumo.cc
-ns3/v2x-5g-handover.cc
-~~~
+`results/llm_evaluation/final_benchmark_190/`
 
-## Dataset Construction
+Contains:
 
-The main processed dataset is:
+- final model comparison;
+- class-wise metrics;
+- benchmark summary;
+- latency analysis;
+- generated figures.
 
-~~~text
-datasets/processed/final_dataset.csv
-~~~
+### Statistical LLM Evaluation
 
-The decision-oriented enriched version is:
+`results/llm_evaluation/benchmark_statistics_190/`
 
-~~~text
-datasets/processed/final_dataset_v3.csv
-~~~
+### Performance-Latency Sensitivity Analysis
 
-This second dataset incorporates the information required by the decision pipeline, including network-state scores and expert-policy outputs.
+`results/llm_evaluation/benchmark_sensitivity_190/`
 
-## Machine Learning
+### NGSIM External Validation
 
-The ML pipeline predicts three network-state indicators:
+`results/external_validation/ngsim/`
 
-- **QoSScore**
-- **CongestionScore**
-- **HORiskScore**
+---
 
-The corresponding trained models are stored in:
+## Environment
 
-~~~text
-models/network_state_v1/
-~~~
+The project was developed using:
 
-The main ML implementation is located in:
+- Ubuntu / WSL2;
+- Python;
+- ns-3;
+- 5G-LENA;
+- SUMO;
+- scikit-learn;
+- Ollama;
+- Llama 3.2;
+- Qwen 2.5;
+- DeepSeek-R1.
 
-~~~text
-src/ml/
-scripts/ml/
-~~~
+See `ENVIRONMENT.md` and `requirements.txt` for environment and dependency information.
 
-## Mobility and Temporal Modeling
-
-The mobility pipeline uses SUMO-derived vehicular information and temporal windows.
-
-The retained experiments include:
-
-- synchronized QoS/mobility datasets;
-- temporal sequence generation;
-- Random Forest models;
-- LSTM models;
-- GRU models;
-- handover-aware temporal enrichment.
-
-Related scripts are located in:
-
-~~~text
-scripts/mobility/
-scripts/ml/
-~~~
-
-## Handover Analysis
-
-The retained handover branch is based on:
-
-~~~text
-datasets/processed/handover_campaign_v3/
-~~~
-
-The aggregated handover dataset is:
-
-~~~text
-datasets/processed/handover_dataset_v6.csv
-~~~
-
-Associated scripts are available in:
-
-~~~text
-scripts/handover/
-~~~
-
-## Expert Decision Policy
-
-A deterministic expert policy is used as a controlled decision reference.
-
-It maps predicted QoS, congestion and handover-risk conditions to a constrained decision space.
-
-This provides:
-
-- reproducibility;
-- decision consistency;
-- a reference for LLM evaluation;
-- separation between prediction and reasoning.
-
-The LLM therefore does not directly replace lower-layer network control.
-
-## Large Language Model Evaluation
-
-Three LLM families were evaluated:
-
-- **Llama 3.2 1B**
-- **Qwen 2.5 3B**
-- **DeepSeek-R1 8B**
-
-The evaluation considers:
-
-- agreement with the expert policy;
-- robustness;
-- structured-output validity;
-- Macro-F1;
-- explanation quality;
-- inference latency.
-
-Final benchmark results are available in:
-
-~~~text
-results/llm_evaluation/
-~~~
-
-including:
-
-~~~text
-final_benchmark_190/
-benchmark_statistics_190/
-benchmark_sensitivity_190/
-benchmark_visualization_190/
-~~~
-
-The final benchmark contains 190 scenarios.
-
-## External Validation with NGSIM
-
-An external validation stage is included to evaluate the generalization of the proposed decision pipeline beyond the internally generated simulation scenarios.
-
-The validation uses mobility information derived from the NGSIM US-101 trajectory dataset.
-
-The corresponding workflow is located in:
-
-~~~text
-scripts/external_validation/
-external_validation/ngsim/
-results/external_validation/
-~~~
-
-The raw NGSIM trajectory data are not redistributed with this repository. They must be obtained separately from the original data source.
-
-The external-validation workflow includes:
-
-1. preprocessing of NGSIM trajectories;
-2. mobility feature extraction;
-3. adaptation to the V2X decision pipeline;
-4. ML-based network-state prediction;
-5. expert-policy evaluation;
-6. LLM decision evaluation;
-7. comparison between internal and external scenarios.
-
-This validation is intended to assess the robustness and transferability of the proposed architecture under mobility conditions not directly generated by the primary simulation campaign.
-
-## Experimental Environment
-
-The validated Python environment is documented in:
-
-~~~text
-ENVIRONMENT.md
-~~~
-
-The main software environment includes:
-
-- Python 3.12.3
-- NumPy 2.5.1
-- Pandas 3.0.5
-- Matplotlib 3.11.1
-- Seaborn 0.13.2
-- Scikit-learn 1.9.0
-- XGBoost 3.4.0
-- Joblib 1.5.3
-- SHAP 0.52.0
-- PyTorch 2.13.0
-
-The local PyTorch environment was validated with a CUDA-enabled build.
-
-## Installation
-
-Create and activate a Python virtual environment:
-
-~~~bash
-python3 -m venv .venv
-source .venv/bin/activate
-~~~
-
-Upgrade pip:
-
-~~~bash
-python -m pip install --upgrade pip
-~~~
-
-Install the project dependencies:
-
-~~~bash
-python -m pip install -r requirements.txt
-~~~
-
-Verify the environment:
-
-~~~bash
-python -m pip check
-~~~
-
-Validate the Python source code:
-
-~~~bash
-python -m compileall -q scripts src
-~~~
+---
 
 ## Reproducibility
 
-The project separates the experimental workflow into several stages:
+The project separates:
 
-~~~text
+```text
 Simulation
-    |
-    v
-Raw measurements
-    |
-    v
-Dataset construction
-    |
-    v
-Mobility / QoS / Handover synchronization
-    |
-    v
-Network-state prediction
-    |
-    v
-Expert decision policy
-    |
-    v
-LLM reasoning
-    |
-    v
-Consistency and performance evaluation
-~~~
+   -> Dataset generation
+   -> ML prediction
+   -> Expert policy
+   -> LLM inference
+   -> Statistical evaluation
+   -> External validation
+```
 
-The directory organization reflects this separation to facilitate experimental reproducibility and traceability.
+Experiment scripts are organized by function inside the `scripts/` directory.
 
-Simulation scripts are located in:
+Raw third-party datasets such as NGSIM and LuSTScenario are not included in this repository and must be obtained separately from their original sources.
 
-~~~text
-scripts/simulation/
-~~~
+---
 
-Dataset construction scripts are located in:
+## Scientific Limitations
 
-~~~text
-scripts/dataset/
-~~~
+The current study has several limitations:
 
-Mobility processing scripts are located in:
+- the primary dataset contains 190 valid observations;
+- no handover failures are present in the final valid simulation set;
+- LLM decision agreement remains limited under zero-shot prompting;
+- local LLM inference latency is too high for direct real-time V2X control;
+- NGSIM provides real mobility trajectories but not synchronized real-world 5G radio measurements.
 
-~~~text
-scripts/mobility/
-~~~
+The proposed framework should therefore be interpreted as a **high-level intelligent decision-support architecture**, rather than a replacement for low-level real-time cellular control mechanisms.
 
-Handover processing scripts are located in:
+---
 
-~~~text
-scripts/handover/
-~~~
+## Future Work
 
-ML experiments are located in:
+Future work includes:
 
-~~~text
-scripts/ml/
-~~~
+- expanding the ns-3 simulation campaign;
+- introducing richer handover-failure scenarios;
+- integrating real radio and mobility measurements;
+- fine-tuning lightweight LLMs for V2X decision alignment;
+- uncertainty-aware ML prediction;
+- adaptive decision policies;
+- additional external validation datasets.
 
-LLM experiments are located in:
+---
 
-~~~text
-scripts/llm/
-~~~
+## Author
 
-Analysis and visualization scripts are located in:
+**Ayoub Sbiaa**
 
-~~~text
-scripts/analysis/
-~~~
+National Institute of Posts and Telecommunications (INPT)  
+Rabat, Morocco
 
-## Scientific Scope
-
-The proposed architecture follows a hybrid approach rather than delegating direct radio-resource control to a generative model.
-
-The roles are separated as follows:
-
-- **ns-3 / 5G-LENA** provides controlled network experimentation;
-- **SUMO** provides vehicular mobility information;
-- **ML models** estimate relevant network-state indicators;
-- **the expert policy** constrains the admissible decision space;
-- **the LLM** performs high-level contextual reasoning and generates an explanation;
-- **the validation layer** checks decision consistency.
-
-This separation is intended to improve interpretability, reproducibility and control of the decision process.
-
-## Limitations
-
-The experimental results must be interpreted within the scope of the implemented scenarios.
-
-In particular:
-
-- ns-3 simulations represent controlled approximations of real V2X environments;
-- the generated datasets cover a finite set of network and mobility configurations;
-- handover behavior depends on the implemented 5G-LENA configuration;
-- ML performance depends on the representativeness of the training scenarios;
-- LLM agreement with the expert policy does not by itself demonstrate optimal radio-resource management;
-- external NGSIM validation primarily strengthens the mobility-generalization analysis and does not constitute a complete real-world 5G network validation.
-
-Consequently, the proposed system should be interpreted as a research prototype for intelligent high-level V2X decision support rather than as a production-ready autonomous network controller.
+---
 
 ## Repository Status
 
-This repository contains the consolidated experimental implementation retained for the final PFE workflow.
+This repository contains the experimental implementation and results associated with an ongoing scientific research manuscript.
 
-Legacy experiments and intermediate artifacts that are not required by the retained pipeline are excluded from the active project structure.
-
-The principal retained components are:
-
-- ns-3 / 5G-LENA V2X simulations;
-- QoS experimentation;
-- SUMO mobility processing;
-- handover analysis;
-- synchronized temporal datasets;
-- ML network-state prediction;
-- expert decision policy;
-- LLM evaluation;
-- external NGSIM validation;
-- scientific figures and experimental results;
-- LaTeX report material.
-
-## Academic Context
-
-This work was developed as part of an engineering final-year project (PFE) on the use of Large Language Models for intelligent decision-making in V2X communications over 5G/6G networks.
-
-The repository is intended to support experimental traceability, reproducibility of the retained pipeline, and the preparation of the associated academic report and scientific publication.
+The repository is currently maintained as a **private research repository**.
